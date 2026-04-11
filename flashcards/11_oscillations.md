@@ -3,6 +3,8 @@ order = 11
 tags = ["mechanics", "physics", "oscillations", "SHM", "pendulum"]
 +++
 
+# Classical Mechanics — Oscillations
+
 ## 11.1 Periodic Motion
 
 Q: What defines periodic motion, and what quantities describe its time behavior?
@@ -60,7 +62,7 @@ C: Total mechanical energy in SHM is $E = \frac{1}{2}kA^2$ (constant). Doubling 
 ## 11.7 Simple Pendulum
 
 Q: Under what approximation does a simple pendulum exhibit SHM, and why?
-A: For small angles ($\theta < 15°$), $\sin\theta \approx \theta$ (in radians). The tangential restoring force $F = -mg\sin\theta \approx -mg\theta = -(mg/L)s/L$ becomes linear in displacement, satisfying the SHM condition with effective stiffness $k_{eff} = mg/L$.
+A: For small angles ($\theta < 15°$), $\sin\theta \approx \theta$ (in radians). The tangential restoring force is $F = -mg\sin\theta \approx -mg\theta$. Using arc length $s = L\theta$ (so $\theta = s/L$), this becomes $F \approx -(mg/L)s$ — linear in displacement $s$, satisfying the SHM condition with effective stiffness $k_{eff} = mg/L$.
 
 Q: What are the angular frequency and period of a simple pendulum for small angles?
 A: $\omega = \sqrt{g/L}$ and $T = 2\pi\sqrt{L/g}$, where $L$ is the pendulum length (m) and $g$ is the gravitational acceleration (m/s²). The period is independent of mass and, for small angles, independent of amplitude.
@@ -76,8 +78,17 @@ C: For a physical pendulum, $T = 2\pi\sqrt{I/(mgd)}$, where $I$ is the [moment o
 
 ## 11.9 Damped Oscillations
 
-Q: What are the three regimes of damped oscillation, and how does each behave?
-A: With damping force $F_{damp} = -bv$: (1) Underdamped ($b^2 < 4km$): oscillates with exponentially decaying amplitude $A(t) = A_0 e^{-\gamma t}$ where $\gamma = b/(2m)$. (2) Critically damped ($b^2 = 4km$): returns to equilibrium as quickly as possible without oscillating. (3) Overdamped ($b^2 > 4km$): returns slowly to equilibrium without oscillating.
+Q: What form does the damping force take in a linearly damped oscillator, and what new term does it add to the equation of motion?
+A: $F_{damp} = -bv$, where $b \geq 0$ is the damping coefficient (N·s/m) and $v$ is the velocity. Newton's second law becomes $m\ddot{x} = -kx - b\dot{x}$, or equivalently $\ddot{x} + 2\gamma\dot{x} + \omega_0^2 x = 0$ with $\gamma = b/(2m)$ and $\omega_0^2 = k/m$.
+
+Q: What characterizes the underdamped regime?
+A: The condition is $b^2 < 4km$ (equivalently $\gamma < \omega_0$). The system still oscillates, but its amplitude decays exponentially: $A(t) = A_0 e^{-\gamma t}$, where $\gamma = b/(2m)$. The oscillation frequency is slightly reduced: $\omega_d = \sqrt{\omega_0^2 - \gamma^2}$.
+
+Q: What characterizes the critically damped regime?
+A: The condition is $b^2 = 4km$ (equivalently $\gamma = \omega_0$). The system returns to equilibrium as quickly as possible without overshooting or oscillating. Critical damping is the design target for many shock absorbers and measurement instruments.
+
+Q: What characterizes the overdamped regime?
+A: The condition is $b^2 > 4km$ (equivalently $\gamma > \omega_0$). The system returns to equilibrium slowly, without oscillating — slower than the critically damped case, because excess damping impedes motion toward equilibrium.
 
 C: In an underdamped oscillator, amplitude decays as $A(t) = A_0 e^{[-\gamma t]}$ where $\gamma = b/(2m)$ and $b$ is the damping coefficient. Critical damping gives the [fastest] return to equilibrium without oscillation.
 

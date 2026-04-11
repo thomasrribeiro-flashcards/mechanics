@@ -95,3 +95,34 @@ C: In addition and subtraction, the result is rounded to the [least number of de
 
 Q: Why must precision in a final answer be justified by the measurements?
 A: Writing extra digits implies a precision that was never measured, which is misleading. Physical results can only be as precise as the least precise input.
+
+## 1.7 Worked Example — Dimensional Analysis of Free Fall
+
+P: A stone is released from rest at height $h$ above the ground. Without using the kinematic equations, use dimensional analysis alone to determine how the time of fall $t$ depends on $h$ and the gravitational acceleration $g$, up to a dimensionless constant.
+
+S:
+**IDENTIFY**: We want $t$ as a function of $h$ (dimension L) and $g$ (dimension L/T²). Assume a power-law form $t = C\,h^a g^b$, where $C$ is a dimensionless constant and $a$, $b$ are unknown exponents.
+
+**PLAN**:
+- Write the dimensional equation: $[t] = [h]^a[g]^b$.
+- Expand and collect powers of each base dimension (L and T).
+- Match the powers on both sides and solve for $a$ and $b$.
+
+**EXECUTE**:
+
+Dimensions: $[t] = T$, $[h] = L$, $[g] = L/T^2 = LT^{-2}$.
+
+$$T = L^a(LT^{-2})^b = L^{a+b}\,T^{-2b}$$
+
+Matching powers of each base dimension:
+- Powers of $L$: $a + b = 0$
+- Powers of $T$: $-2b = 1 \implies b = -\tfrac{1}{2}$
+
+Substitute back: $a = -b = +\tfrac{1}{2}$.
+
+Therefore $t \sim h^{1/2}g^{-1/2} = \sqrt{h/g}$.
+
+**EVALUATE**:
+- The exact kinematic result is $t = \sqrt{2h/g}$, so the dimensionless constant is $C = \sqrt{2} \approx 1.41$ — of order unity as expected ✓
+- Dimensional analysis cannot pin down $C$, only the functional form. This is the generic limitation of the method.
+- Sanity check: doubling $h$ multiplies $t$ by $\sqrt{2}$, not by 2 — consistent with intuition that falling twice as far takes less than twice as long because the object speeds up ✓

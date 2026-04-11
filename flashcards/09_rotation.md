@@ -3,6 +3,8 @@ order = 9
 tags = ["mechanics", "physics", "rotation", "torque", "angular momentum"]
 +++
 
+# Classical Mechanics — Rotational Motion
+
 ## 9.1 Angular Position and Displacement
 
 Q: Why are radians the natural unit for angle in physics rather than degrees?
@@ -45,8 +47,20 @@ C: Torque $\tau = rF\sin\phi$. The torque is zero when $\phi = [0°]$ or $[180°
 Q: What is moment of inertia, and why does it depend on the choice of rotation axis?
 A: $I = \sum m_i r_i^2$ (discrete) or $I = \int r^2\,dm$ (continuous), where $r_i$ is the perpendicular distance of each mass element from the rotation axis. Unit: kg·m². It is the rotational analogue of mass (resistance to angular acceleration). The same object has different $I$ values about different axes because the distances $r_i$ change.
 
-Q: List the moment of inertia formulas for five common uniform objects about their symmetry axes.
-A: Point mass at radius $R$: $I = mR^2$. Hollow ring (all mass at $R$): $I = MR^2$. Solid disk or cylinder: $I = \frac{1}{2}MR^2$. Solid sphere: $I = \frac{2}{5}MR^2$. Uniform rod about center: $I = \frac{1}{12}ML^2$, where $M$ is total mass, $R$ is radius, and $L$ is length.
+Q: What is the moment of inertia of a point mass $m$ at perpendicular distance $R$ from the axis?
+A: $I = mR^2$. This is the building block from which all other moments of inertia are derived by summation or integration.
+
+Q: What is the moment of inertia of a thin hollow ring of mass $M$ and radius $R$ about its central (symmetry) axis?
+A: $I = MR^2$. Because every mass element sits at the same distance $R$ from the axis, the ring has the same $I$ as a point mass $M$ at radius $R$.
+
+Q: What is the moment of inertia of a uniform solid disk (or cylinder) of mass $M$ and radius $R$ about its central axis?
+A: $I = \frac{1}{2}MR^2$. It is less than $MR^2$ because much of the disk's mass is closer to the axis than $R$.
+
+Q: What is the moment of inertia of a uniform solid sphere of mass $M$ and radius $R$ about a diameter?
+A: $I = \frac{2}{5}MR^2$.
+
+Q: What is the moment of inertia of a uniform thin rod of mass $M$ and length $L$ about an axis through its center perpendicular to the rod?
+A: $I = \frac{1}{12}ML^2$.
 
 C: A solid disk has $I = \frac{1}{2}MR^2$ and a hollow ring has $I = [MR^2]$ about the central axis. The hollow ring has a [larger] moment of inertia because all its mass is at the maximum radius.
 

@@ -3,6 +3,8 @@ order = 7
 tags = ["mechanics", "physics", "energy", "work", "conservation"]
 +++
 
+# Classical Mechanics — Work and Energy
+
 ## 7.1 Work
 
 Q: Why is work defined as a dot product rather than just $F \times d$?

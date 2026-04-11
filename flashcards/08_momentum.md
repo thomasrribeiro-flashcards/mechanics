@@ -3,6 +3,8 @@ order = 8
 tags = ["mechanics", "physics", "momentum", "impulse", "collisions"]
 +++
 
+# Classical Mechanics — Momentum and Collisions
+
 ## 8.1 Linear Momentum
 
 Q: Why is momentum a more fundamental quantity than kinetic energy when describing "quantity of motion"?

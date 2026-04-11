@@ -3,6 +3,8 @@ order = 10
 tags = ["mechanics", "physics", "gravitation", "orbits", "Kepler"]
 +++
 
+# Classical Mechanics — Gravitation
+
 ## 10.1 Newton's Law of Universal Gravitation
 
 Q: Why is gravity called an "inverse-square law," and what is its physical implication?
@@ -86,3 +88,32 @@ Q: How can Kepler's third law be used to determine the mass of a planet or star?
 A: Observe the orbital period $T$ and semi-major axis $a$ of a natural or artificial satellite, then solve $M = \dfrac{4\pi^2 a^3}{GT^2}$. This is how planetary masses, the Sun's mass, and masses of distant stars in binary systems are determined.
 
 C: Kepler's Third Law states $T^2 \propto [a^3]$. It can be used to calculate the [mass] of the central body from the period and semi-major axis of any orbiting object.
+
+## 10.10 Worked Example — ISS Orbital Parameters
+
+P: The International Space Station orbits Earth at an altitude $h = 400$ km. Using $G = 6.67\times10^{-11}$ N·m²/kg², $M_E = 5.97\times10^{24}$ kg, and $R_E = 6.37\times10^6$ m, find: (a) the orbital radius, (b) the orbital speed, (c) the orbital period in minutes.
+
+S:
+**IDENTIFY**: Circular orbit around Earth. Gravity supplies the centripetal force. Given altitude $h$, find orbital radius $r$, speed $v$, and period $T$.
+
+**PLAN**:
+- Orbital radius: $r = R_E + h$
+- Orbital speed: $v = \sqrt{GM_E/r}$ (from equating $GM_Em/r^2 = mv^2/r$)
+- Orbital period: $T = 2\pi r/v$
+
+**EXECUTE**:
+
+(a) $r = R_E + h = 6.37\times10^6 + 4.00\times10^5 = 6.77\times10^6$ m
+
+(b) First compute $GM_E$:
+$$GM_E = (6.67\times10^{-11})(5.97\times10^{24}) = 3.98\times10^{14} \text{ m}^3/\text{s}^2$$
+
+$$v = \sqrt{\frac{GM_E}{r}} = \sqrt{\frac{3.98\times10^{14}}{6.77\times10^6}} = \sqrt{5.88\times10^7} \approx 7670 \text{ m/s} \approx 7.67 \text{ km/s}$$
+
+(c) $T = \dfrac{2\pi r}{v} = \dfrac{2\pi(6.77\times10^6)}{7670} \approx 5545$ s $\approx 92.4$ min
+
+**EVALUATE**:
+- ISS orbital speed is known to be $\approx 7.7$ km/s ✓
+- ISS period is known to be $\approx 90$ min (16 orbits per day) ✓
+- Units: $[GM/r] = (\text{m}^3/\text{s}^2)/\text{m} = \text{m}^2/\text{s}^2$, so $\sqrt{\cdot}$ has units m/s ✓
+- The orbit is only 6% higher than Earth's radius, so $v$ is close to surface-level circular speed $\sqrt{gR_E} \approx 7.9$ km/s ✓

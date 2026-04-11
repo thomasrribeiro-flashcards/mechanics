@@ -84,11 +84,14 @@ C: Two springs in parallel have an effective spring constant $k_{eff} = [k_1 + k
 
 ## 6.7 Drag and Terminal Velocity
 
-Q: What is drag force and how does it depend on speed?
-A: Drag is the resistive force exerted by a fluid (air or liquid) on a moving object. At low speeds (Stokes regime): $F_d = 6\pi\eta r v$, where $\eta$ is dynamic viscosity (Pa·s), $r$ is object radius (m), and $v$ is speed (m/s). At high speeds: $F_d \approx \frac{1}{2}C_d\rho A v^2$, where $C_d$ is drag coefficient, $\rho$ is fluid density (kg/m³), and $A$ is cross-sectional area (m²).
+Q: What is drag force, and in which direction does it act?
+A: Drag is the resistive force exerted by a fluid (air or liquid) on a moving object. It always acts opposite to the object's velocity relative to the fluid, because it arises from the fluid pushing back on the object as the object pushes fluid out of the way.
+
+Q: How does the high-speed (quadratic) drag force depend on speed?
+A: $F_d = \frac{1}{2}C_d\rho A v^2$, where $C_d$ is the dimensionless drag coefficient (shape-dependent), $\rho$ is the fluid density (kg/m³), $A$ is the object's cross-sectional area perpendicular to the motion (m²), and $v$ is its speed (m/s). Because $F_d \propto v^2$, doubling speed quadruples drag.
 
 Q: What is terminal velocity and how is it reached?
-A: Terminal velocity is the constant speed reached when drag force equals the gravitational force: $F_d = mg$, so net force $= 0$ and acceleration $= 0$. The object falls (or moves) at constant velocity from that point on.
+A: Terminal velocity is the constant speed reached when the drag force grows to equal the gravitational force: $F_d = mg$, so net force $= 0$ and acceleration $= 0$. The object falls (or moves) at constant velocity from that point on.
 
 C: At terminal velocity, the condition $[mg = F_d]$ holds, where $mg$ is the weight (N) and $F_d$ is the drag force (N), giving zero net force and zero acceleration.
 
