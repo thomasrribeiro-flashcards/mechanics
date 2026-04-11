@@ -1,5 +1,6 @@
 +++
 order = 1
+subject = "Physics"
 tags = ["mechanics", "physics", "measurement", "units", "dimensional analysis"]
 +++
 
