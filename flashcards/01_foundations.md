@@ -56,7 +56,7 @@ A: Units formed by combining base units through multiplication or division. For 
 Q: Why must every valid physical equation be dimensionally consistent?
 A: Because you cannot add or equate quantities of different physical kinds — adding a length to a time is meaningless. Dimensional consistency is a necessary (though not sufficient) condition for a correct equation.
 
-C: The notation $[v] = \text{L/T}$ means the [dimension] of velocity is length divided by time.
+C: The notation $\lbrack v \rbrack = \text{L/T}$ means the [dimension] of velocity is length divided by time.
 
 Q: How do you check whether a proposed equation is dimensionally consistent?
 A: Replace every quantity with its dimensions (L, M, T, etc.) and verify that the dimensions on the left-hand side equal those on the right-hand side.
