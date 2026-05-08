@@ -51,8 +51,11 @@ A: m/s² (meters per second squared).
 Q: Under what single condition do the kinematic equations apply?
 A: The acceleration must be constant (uniform) throughout the motion.
 
+Q: Before deriving the first kinematic equation, predict: if acceleration is constant, how should velocity change with time?
+A: Linearly. Constant slope on a $v$-$t$ graph means $v(t) = v_0 + at$.
+
 Q: How is the first kinematic equation derived?
-A: Integrate constant acceleration $a = dv/dt$ with respect to time: $v = v_0 + at$, where $v_0$ is the initial velocity, $a$ is the constant acceleration, and $t$ is the elapsed time.
+A: Integrate $a = dv/dt$ with $a$ constant: $v = v_0 + at$, where $v_0$ = initial velocity, $a$ = constant acceleration, $t$ = elapsed time.
 
 C: First kinematic equation: $v = [v_0 + at]$, where $v_0$ = initial velocity (m/s), $a$ = constant acceleration (m/s²), $t$ = elapsed time (s).
 
@@ -67,6 +70,12 @@ A: $v^2 = v_0^2 + 2a\Delta x$, since it does not contain $t$.
 
 Q: Which kinematic equation should you use when final velocity is unknown?
 A: $x = x_0 + v_0 t + \frac{1}{2}at^2$, since it does not contain $v$.
+
+Q: A problem gives you initial velocity, acceleration, and final position; asks for final velocity. Which equation?
+A: $v^2 = v_0^2 + 2a\Delta x$ — time-independent, all four given/asked variables present.
+
+Q: A problem gives you initial velocity, acceleration, and time; asks for displacement. Which equation?
+A: $x = x_0 + v_0 t + \tfrac{1}{2}at^2$ — final velocity not needed.
 
 ## 3.5 Free Fall
 

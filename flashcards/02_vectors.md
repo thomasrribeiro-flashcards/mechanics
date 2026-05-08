@@ -54,8 +54,11 @@ C: Vector subtraction is defined as adding the [negative] of the second vector: 
 
 ## 2.4 Scalar (Dot) Product
 
+Q: Before defining the dot product: predict what kind of operation extracts "how much of $\vec{A}$ points along $\vec{B}$"?
+A: A scalar-valued projection; for perpendicular vectors it should be zero, for parallel it should be $|\vec{A}||\vec{B}|$. That's the dot product.
+
 Q: Why is the dot product useful in physics?
-A: It extracts the component of one vector along another. Work is the dot product of force and displacement: $W = \vec{F}\cdot\vec{d}$, capturing only the force component in the direction of motion.
+A: It extracts the component of one vector along another. Work is $W = \vec{F}\cdot\vec{d}$, capturing only the force component in the direction of motion.
 
 C: The dot product $\vec{A}\cdot\vec{B} = AB\cos\theta$, where $A$ and $B$ are the magnitudes, and $\theta$ is [the angle between the two vectors].
 

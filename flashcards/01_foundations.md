@@ -29,8 +29,11 @@ C: The scientific method follows the cycle: [observation] → hypothesis → exp
 Q: What distinguishes a "theory" in physics from a guess?
 A: A physical theory is a well-tested model that has survived repeated experimental scrutiny and makes quantitative predictions. In everyday language "theory" implies uncertainty; in physics it implies established, validated explanation.
 
-Q: What is the difference between a hypothesis, a theory, and a law in physics?
-A: A hypothesis is a testable initial conjecture. A theory is a well-tested explanatory model. A law is a concise description of an observed regularity (often mathematical), but does not by itself explain why.
+Q: What is a hypothesis in physics?
+A: A testable initial conjecture, not yet validated by experiment.
+
+Q: What distinguishes a physical law from a theory?
+A: A law concisely describes an observed regularity (often mathematical) but doesn't explain why; a theory provides the explanatory framework.
 
 ## 1.3 SI Units and Base Quantities
 

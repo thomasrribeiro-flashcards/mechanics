@@ -73,15 +73,24 @@ A: When you push a wall with force $\vec{F}$, the wall pushes back on your hand 
 Q: What is the purpose of a free body diagram (FBD)?
 A: To isolate a single object and show every force acting on it, making it clear what to include in $\sum\vec{F} = m\vec{a}$. It prevents including forces that the object exerts on others, which would be wrong.
 
-Q: What are the rules for drawing a correct free body diagram?
-A: (1) Isolate one object. (2) Represent it as a point or simple shape. (3) Draw arrows for every force acting on it, labeled with type and magnitude. (4) Do NOT draw forces the object exerts on other objects. (5) Choose a coordinate system aligned with the acceleration direction.
+Q: What is rule 1 of drawing a free body diagram?
+A: Isolate one object — show only forces acting *on* it, never forces it exerts on others.
+
+Q: What is rule 2 of drawing a free body diagram?
+A: Draw an arrow for every force, labeled with type (gravity, normal, friction, tension, etc.) and magnitude.
+
+Q: What is rule 3 of drawing a free body diagram?
+A: Choose coordinate axes aligned with the acceleration direction (e.g., parallel to an incline).
 
 C: A free body diagram shows only forces acting [on] the object of interest, not forces it exerts on other objects.
 
 ## 5.7 Applying Newton's Second Law — Strategy
 
+Q: A problem gives a block on an incline with friction; asks for acceleration. What's your first step?
+A: Free body diagram of the block, axes parallel/perpendicular to the incline.
+
 Q: What is the systematic procedure for applying Newton's Second Law to a problem?
-A: (1) Identify the system (which object). (2) Draw a free body diagram showing all forces. (3) Choose coordinate axes (preferably aligned with the acceleration). (4) Resolve all forces into components. (5) Write $\sum F_x = ma_x$ and $\sum F_y = ma_y$. (6) Solve for unknowns.
+A: Isolate the object (FBD) → choose axes (aligned with acceleration) → resolve forces into components → write $\sum F_x = ma_x$, $\sum F_y = ma_y$ → solve.
 
 ## 5.8 Worked Example — Block on a Frictionless Incline
 
