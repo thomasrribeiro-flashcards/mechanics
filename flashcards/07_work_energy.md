@@ -37,8 +37,11 @@ C: Kinetic energy is $K = \frac{1}{2}mv^2$. Doubling an object's speed [quadrupl
 
 ## 7.4 Work-Energy Theorem
 
+Q: Before stating it: predict how net work should relate to kinetic energy.
+A: They should be equal — work has units of energy, and applying force over distance is precisely how speed (and thus $K$) is built up.
+
 Q: State the work-energy theorem and explain its significance.
-A: $W_{net} = \Delta K = K_f - K_i$. The net work done on an object equals its change in kinetic energy. This holds for any net force, constant or variable, and connects the concepts of force and displacement directly to changes in speed.
+A: $W_{net} = \Delta K = K_f - K_i$. Net work on an object equals its change in kinetic energy. Holds for any net force, constant or variable.
 
 Q: A 2 kg object at rest has a net force of 6 N applied over 3 m. What is its final speed?
 A: $W_{net} = F \cdot d = 18$ J. By the work-energy theorem: $\frac{1}{2}mv_f^2 = 18$ J, so $v_f = \sqrt{2(18)/2} = \sqrt{18} \approx 4.24$ m/s.
@@ -86,6 +89,17 @@ Q: What is the instantaneous power delivered by a force $\vec{F}$ to a moving ob
 A: $P = \vec{F}\cdot\vec{v}$, where $\vec{v}$ is the velocity of the object. This follows from $P = dW/dt = \vec{F}\cdot(d\vec{r}/dt) = \vec{F}\cdot\vec{v}$.
 
 C: Average power is $\bar{P} = W/\Delta t$. One horsepower equals [746] W.
+
+## 7.9a Pattern Recognition: Energy Methods
+
+Q: A problem asks "find speed at point B given height/spring extension." What technique?
+A: Energy conservation: $K_A + U_A = K_B + U_B$ (only if no friction). One unknown, one equation.
+
+Q: A problem mentions friction or drag and asks for final speed/distance. What technique?
+A: Work-energy theorem with non-conservative work: $\Delta K + \Delta U = W_{nc}$ (negative for friction).
+
+Q: A problem says "find force exerted by surface on object" and gives kinematic info. Use energy or Newton's 2nd?
+A: Energy methods don't yield force directly — use $\sum F = ma$. Reach for energy when speeds and heights are the unknowns.
 
 ## 7.10 Procedural: Energy Conservation with Friction
 

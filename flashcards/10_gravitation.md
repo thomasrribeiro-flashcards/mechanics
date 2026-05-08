@@ -89,6 +89,20 @@ A: Observe the orbital period $T$ and semi-major axis $a$ of a natural or artifi
 
 C: Kepler's Third Law states $T^2 \propto [a^3]$. It can be used to calculate the [mass] of the central body from the period and semi-major axis of any orbiting object.
 
+## 10.9a Pattern Recognition: Gravitation
+
+Q: A problem says "find escape speed from planet X." What technique?
+A: $v_{esc} = \sqrt{2GM/R}$ — derived from $K + U = 0$ (just barely reaches infinity).
+
+Q: A problem says "satellite at altitude $h$, find orbital period." What technique?
+A: $T = 2\pi\sqrt{r^3/(GM)}$ where $r = R + h$ (Kepler's third in Newtonian form).
+
+Q: A problem gives perihelion/aphelion distances and asks about speed ratios. What technique?
+A: Angular momentum conservation: $v_p r_p = v_a r_a$ (Kepler's second).
+
+Q: A problem asks "how does $g$ change at altitude $h$?" What technique?
+A: $g(h) = GM/(R+h)^2$. Use binomial expansion if $h \ll R$.
+
 ## 10.10 Worked Example — ISS Orbital Parameters
 
 P: The International Space Station orbits Earth at an altitude $h = 400$ km. Using $G = 6.67\times10^{-11}$ N·m²/kg², $M_E = 5.97\times10^{24}$ kg, and $R_E = 6.37\times10^6$ m, find: (a) the orbital radius, (b) the orbital speed, (c) the orbital period in minutes.

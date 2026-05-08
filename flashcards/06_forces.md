@@ -82,6 +82,17 @@ C: Two springs in series have an effective spring constant $1/k_{eff} = [1/k_1 +
 
 C: Two springs in parallel have an effective spring constant $k_{eff} = [k_1 + k_2]$, where $k_1$ and $k_2$ are the individual spring constants (N/m). The combined spring is stiffer than either alone.
 
+## 6.6a Pattern Recognition: Friction
+
+Q: A problem says "block is at rest on rough surface, what's the friction force?" What's your first move?
+A: Check applied tangential force. Static friction equals it (up to $\mu_s N$); only the maximum is $\mu_s N$, not the actual value.
+
+Q: A problem says "block sliding on rough surface, find acceleration." What technique?
+A: Kinetic friction: $f_k = \mu_k N$ (fixed, opposing velocity). Then $\sum F = ma$.
+
+Q: A problem asks "what is the maximum push force before the block slides?" What technique?
+A: Set applied force = $\mu_s N$ — the threshold where static friction maxes out and slipping starts.
+
 ## 6.7 Drag and Terminal Velocity
 
 Q: What is drag force, and in which direction does it act?

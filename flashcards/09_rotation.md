@@ -101,6 +101,20 @@ A: If $\vec{\tau}_{net} = 0$ on a system, then $\vec{L} = I\omega = \text{consta
 
 C: Conservation of angular momentum: when net torque is zero, $I_i\omega_i = [I_f\omega_f]$. A figure skater who pulls in their arms [decreases] $I$ and therefore [increases] $\omega$.
 
+## 9.9a Pattern Recognition: Rotation
+
+Q: A problem says "find angular speed after some torque is applied for time $t$." What technique?
+A: $\tau_{net} = I\alpha$, then $\omega = \omega_0 + \alpha t$.
+
+Q: A problem describes a skater pulling in arms or a star collapsing. What technique?
+A: Angular momentum conservation: $I_i \omega_i = I_f \omega_f$ (no external torque).
+
+Q: A problem says "object rolls without slipping down a ramp; find speed at bottom." What technique?
+A: Energy conservation with both translational and rotational KE: $mgh = \tfrac{1}{2}mv^2 + \tfrac{1}{2}I\omega^2$, with constraint $v = R\omega$.
+
+Q: A problem gives an axis NOT through the CM. What technique?
+A: Parallel axis theorem: $I = I_{cm} + Md^2$.
+
 ## 9.10 Procedural: Applying $\tau_{net} = I\alpha$
 
 P: A solid disk has mass $M = 2$ kg and radius $R = 0.5$ m. Starting from rest, a constant torque $\tau = 4$ N·m is applied about its center axis. Find: (a) angular acceleration $\alpha$, (b) angular velocity $\omega$ after $t = 3$ s, (c) rotational kinetic energy after 3 s.

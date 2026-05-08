@@ -44,8 +44,14 @@ C: Conservation of momentum requires that the [net external force] on the system
 
 ## 8.5 Types of Collisions
 
-Q: What are the three types of collisions, and what is conserved in each?
-A: (1) Elastic: both momentum and kinetic energy conserved. (2) Inelastic: only momentum conserved; KE decreases. (3) Perfectly inelastic: objects stick together, maximum KE loss consistent with momentum conservation. Real collisions fall between elastic and perfectly inelastic.
+Q: What is conserved in an elastic collision?
+A: Both momentum and kinetic energy.
+
+Q: What is conserved in an inelastic collision?
+A: Momentum only — kinetic energy decreases (converts to heat/sound/deformation).
+
+Q: What defines a perfectly inelastic collision?
+A: Objects stick together with a common final velocity; maximum KE loss consistent with momentum conservation.
 
 C: In an elastic collision both [momentum] and [kinetic energy] are conserved. In any collision, [momentum] is conserved as long as there is no net external force.
 
@@ -78,6 +84,17 @@ Q: What is the velocity of the center of mass, and how does it behave when no ex
 A: $\vec{v}_{cm} = \dfrac{\sum m_i\vec{v}_i}{M} = \dfrac{\vec{p}_{total}}{M}$. When $\vec{F}_{ext} = 0$, $\vec{v}_{cm}$ is constant — the CM moves at constant velocity (or stays at rest) regardless of internal explosions or collisions.
 
 C: In an isolated system (no external forces), the center of mass moves at [constant velocity]. Internal forces like collisions and explosions [cannot] change the velocity of the center of mass.
+
+## 8.8a Pattern Recognition: Collisions
+
+Q: A problem says "two objects collide and stick together." What technique?
+A: Momentum conservation only ($v_f = (m_1 v_1 + m_2 v_2)/(m_1+m_2)$). KE is NOT conserved — don't try energy conservation.
+
+Q: A problem says "elastic collision, target at rest." What technique?
+A: Use the special-case formulas $v_1' = \frac{m_1-m_2}{m_1+m_2}v_1$ and $v_2' = \frac{2m_1}{m_1+m_2}v_1$ — derived from solving momentum + KE conservation simultaneously.
+
+Q: A problem describes an explosion (one object splits into pieces). What technique?
+A: Momentum conservation. Total $\vec{p}_{before} = 0$ (if at rest), so the pieces' momenta must sum to zero.
 
 ## 8.9 Procedural: Perfectly Inelastic Collision Energy Analysis
 

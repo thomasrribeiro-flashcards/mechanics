@@ -102,6 +102,20 @@ A: Useful: (1) MRI machines use resonance to excite hydrogen nuclei at their Lar
 
 C: In a driven oscillator, resonance occurs when the driving frequency [equals] the natural frequency $\omega_0 = \sqrt{k/m}$. Greater damping produces a [lower] and [broader] resonance peak.
 
+## 11.10a Pattern Recognition: Oscillations
+
+Q: A problem describes a system with restoring force; asks for period. What technique?
+A: Identify effective $k$ and $m$ (or $I$ and $d$ for pendulum), then $T = 2\pi\sqrt{m/k}$ (or $2\pi\sqrt{L/g}$, $2\pi\sqrt{I/(mgd)}$).
+
+Q: A problem describes oscillator amplitude decaying. What technique?
+A: Damped SHM: amplitude $A_0 e^{-\gamma t}$ with $\gamma = b/(2m)$. Check whether under/critical/overdamped via $b^2$ vs $4km$.
+
+Q: A problem mentions "small angle" or "small oscillation about equilibrium." What technique?
+A: Linearize the restoring force ($\sin\theta \approx \theta$), reducing to SHM with effective $k$.
+
+Q: A problem describes a driven system whose response peaks at a specific frequency. What technique?
+A: Resonance: peak occurs at $\omega_{drive} = \omega_0 = \sqrt{k/m}$.
+
 ## 11.11 Procedural: Spring-Mass SHM Analysis
 
 P: A spring-mass system has $k = 50$ N/m and $m = 0.5$ kg. Initial conditions: $x_0 = 0.2$ m, $v_0 = 0$. Find: (a) $\omega$ and $T$, (b) the full expression for $x(t)$, (c) maximum speed, (d) total mechanical energy.

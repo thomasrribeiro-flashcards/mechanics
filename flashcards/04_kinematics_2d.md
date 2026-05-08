@@ -61,8 +61,22 @@ A: Always toward the center of the circle (centripetal = center-seeking). It is 
 
 ## 4.5 Why Centripetal Acceleration Points Inward
 
+Q: Before deriving it: predict what direction $\Delta\vec{v}$ should point if the velocity rotates around a circle.
+A: Toward the center. Each $\vec{v}$ is tangent; subtracting two nearby tangents leaves a vector aimed at the circle's center.
+
 Q: Derive qualitatively why the acceleration of an object in uniform circular motion points toward the center.
-A: The velocity is always tangent to the circle. Over a small time interval $\Delta t$, $\vec{v}$ rotates by the same angle as the position. The change $\Delta\vec{v} = \vec{v}_2 - \vec{v}_1$ points inward (toward the center), so $\vec{a} = \Delta\vec{v}/\Delta t$ also points inward.
+A: $\vec{v}$ is always tangent. Over $\Delta t$, $\vec{v}$ rotates by the same angle as the position. $\Delta\vec{v} = \vec{v}_2 - \vec{v}_1$ points inward, so $\vec{a} = \Delta\vec{v}/\Delta t$ also points inward.
+
+## 4.5a Pattern Recognition
+
+Q: A problem says "object launched at angle $\theta$ from level ground; find range." What technique?
+A: Range formula $R = v_0^2 \sin(2\theta)/g$ — only valid when launch and landing heights are equal.
+
+Q: A problem gives projectile launch from a cliff (lands below launch point). Why can't you use $R = v_0^2 \sin(2\theta)/g$?
+A: It assumes equal launch/landing height. Use full $y(t)$ equation, solve for $t$ when $y$ = landing height, then $x = v_{0x} t$.
+
+Q: A problem gives constant speed in a circle and asks for the force needed. What technique?
+A: Centripetal: $F_{net} = m v^2 / r$ directed toward center. Identify which real force(s) provide it.
 
 ## 4.6 Non-Uniform Circular Motion
 
