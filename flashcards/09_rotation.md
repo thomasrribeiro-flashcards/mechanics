@@ -63,14 +63,14 @@ A: $I = \frac{2}{5}MR^2$.
 Q: What is the moment of inertia of a uniform thin rod of mass $M$ and length $L$ about an axis through its center perpendicular to the rod?
 A: $I = \frac{1}{12}ML^2$.
 
-C: A solid disk has $I = \frac{1}{2}MR^2$ and a hollow ring has $I = [MR^2]$ about the central axis. The hollow ring has a [larger] moment of inertia because all its mass is at the maximum radius.
+C: A solid disk has $I = \frac{1}{2}MR^2$ and a hollow ring has $I = \lbrack MR^2\rbrack $ about the central axis. The hollow ring has a [larger] moment of inertia because all its mass is at the maximum radius.
 
 ## 9.6 Newton's Second Law for Rotation
 
 Q: State Newton's second law for rotation about a fixed axis and identify its translational analogue.
 A: $\tau_{net} = I\alpha$, where $\tau_{net}$ is the net torque about the axis (N·m), $I$ is the moment of inertia about that same axis (kg·m²), and $\alpha$ is the angular acceleration (rad/s²). This is the direct rotational analogue of $F_{net} = ma$.
 
-C: For rotation about a fixed axis: $\tau_{net} = [I\alpha]$. The rotational analogue of mass is [moment of inertia $I$].
+C: For rotation about a fixed axis: $\tau_{net} = \lbrack I\alpha\rbrack $. The rotational analogue of mass is [moment of inertia $I$].
 
 ## 9.7 Parallel Axis Theorem
 
@@ -100,7 +100,7 @@ A: For a rigid body: $L = I\omega$, where $I$ is the moment of inertia (kg·m²)
 Q: State the law of conservation of angular momentum and give an example.
 A: If $\vec{\tau}_{net} = 0$ on a system, then $\vec{L} = I\omega = \text{constant}$. Example: a figure skater pulling in their arms reduces $I$, so $\omega$ must increase to keep $L$ constant. Other examples: a gyroscope resisting tipping, a diver tucking for faster rotation, planetary orbital speed increasing at perihelion.
 
-C: Conservation of angular momentum: when net torque is zero, $I_i\omega_i = [I_f\omega_f]$. A figure skater who pulls in their arms [decreases] $I$ and therefore [increases] $\omega$.
+C: Conservation of angular momentum: when net torque is zero, $I_i\omega_i = \lbrack I_f\omega_f\rbrack $. A figure skater who pulls in their arms [decreases] $I$ and therefore [increases] $\omega$.
 
 ## 9.9a Pattern Recognition: Rotation
 

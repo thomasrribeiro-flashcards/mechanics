@@ -11,7 +11,7 @@ tags = ["mechanics", "physics", "oscillations", "SHM", "pendulum"]
 Q: What defines periodic motion, and what quantities describe its time behavior?
 A: Periodic motion repeats exactly after a fixed time interval. Period $T$ (s) is the time for one complete cycle. Frequency $f = 1/T$ (Hz = cycles/s) is the number of cycles per second. Angular frequency $\omega = 2\pi f = 2\pi/T$ (rad/s) converts cycles to radians. Amplitude $A$ is the maximum displacement from the equilibrium position.
 
-C: Period $T$, frequency $f$, and angular frequency $\omega$ are related by $f = 1/T$ and $\omega = [2\pi f] = [2\pi/T]$. The unit of frequency is the [hertz] (Hz).
+C: Period $T$, frequency $f$, and angular frequency $\omega$ are related by $f = 1/T$ and $\omega = \lbrack 2\pi f\rbrack  = \lbrack 2\pi/T\rbrack $. The unit of frequency is the [hertz] (Hz).
 
 ## 11.2 SHM Condition
 
@@ -58,7 +58,7 @@ A: At position $x$: $K = \frac{1}{2}m\omega^2(A^2 - x^2)$ and $U = \frac{1}{2}kx
 Q: How does total energy in SHM depend on amplitude?
 A: $E = \frac{1}{2}kA^2$. Total energy is proportional to the square of amplitude. Doubling the amplitude quadruples the total energy.
 
-C: Total mechanical energy in SHM is $E = \frac{1}{2}kA^2$ (constant). Doubling the amplitude [quadruples] the total energy, because $E \propto [A^2]$.
+C: Total mechanical energy in SHM is $E = \frac{1}{2}kA^2$ (constant). Doubling the amplitude [quadruples] the total energy, because $E \propto \lbrack A^2\rbrack $.
 
 ## 11.7 Simple Pendulum
 
@@ -91,7 +91,7 @@ A: The condition is $b^2 = 4km$ (equivalently $\gamma = \omega_0$). The system r
 Q: What characterizes the overdamped regime?
 A: The condition is $b^2 > 4km$ (equivalently $\gamma > \omega_0$). The system returns to equilibrium slowly, without oscillating — slower than the critically damped case, because excess damping impedes motion toward equilibrium.
 
-C: In an underdamped oscillator, amplitude decays as $A(t) = A_0 e^{[-\gamma t]}$ where $\gamma = b/(2m)$ and $b$ is the damping coefficient. Critical damping gives the [fastest] return to equilibrium without oscillation.
+C: In an underdamped oscillator, amplitude decays as $A(t) = A_0 e^{\lbrack -\gamma t\rbrack }$ where $\gamma = b/(2m)$ and $b$ is the damping coefficient. Critical damping gives the [fastest] return to equilibrium without oscillation.
 
 ## 11.10 Resonance
 

@@ -14,7 +14,7 @@ A: The gravitational force $F_g \propto 1/r^2$: doubling the distance between tw
 Q: State Newton's law of universal gravitation.
 A: $F_g = G\dfrac{m_1 m_2}{r^2}$, where $G = 6.674\times10^{-11}$ N·m²/kg² is the gravitational constant, $m_1$ and $m_2$ are the two masses (kg), and $r$ is the distance between their centers (m). The force is always attractive and acts along the line joining the centers.
 
-C: In Newton's law of gravitation, $F_g = Gm_1m_2/r^2$, doubling the separation $r$ reduces the gravitational force by a factor of [4], because $F_g \propto [1/r^2]$.
+C: In Newton's law of gravitation, $F_g = Gm_1m_2/r^2$, doubling the separation $r$ reduces the gravitational force by a factor of [4], because $F_g \propto \lbrack 1/r^2\rbrack $.
 
 ## 10.2 Deriving $g$ from $G$
 
@@ -41,7 +41,7 @@ C: The general gravitational PE is $U_g = -Gm_1m_2/r$. This is [negative] for al
 Q: Derive the escape velocity from the surface of a body of mass $M$ and radius $R$.
 A: Set total energy to zero (minimum energy to just reach $r = \infty$ with zero speed): $K + U = 0$, so $\frac{1}{2}mv_{esc}^2 - \dfrac{GMm}{R} = 0$. Solving: $v_{esc} = \sqrt{\dfrac{2GM}{R}}$. The $m$ of the escaping object cancels, so escape velocity is independent of the projectile's mass.
 
-C: Escape velocity is $v_{esc} = \sqrt{2GM/R}$. It is [independent] of the mass of the escaping object. For Earth, $v_{esc} \approx [11.2]$ km/s.
+C: Escape velocity is $v_{esc} = \sqrt{2GM/R}$. It is [independent] of the mass of the escaping object. For Earth, $v_{esc} \approx \lbrack 11.2\rbrack $ km/s.
 
 ## 10.5 Circular Orbits
 
@@ -88,7 +88,7 @@ A: $T^2 = \dfrac{4\pi^2}{GM}a^3$, where $T$ is the orbital period (s), $a$ is th
 Q: How can Kepler's third law be used to determine the mass of a planet or star?
 A: Observe the orbital period $T$ and semi-major axis $a$ of a natural or artificial satellite, then solve $M = \dfrac{4\pi^2 a^3}{GT^2}$. This is how planetary masses, the Sun's mass, and masses of distant stars in binary systems are determined.
 
-C: Kepler's Third Law states $T^2 \propto [a^3]$. It can be used to calculate the [mass] of the central body from the period and semi-major axis of any orbiting object.
+C: Kepler's Third Law states $T^2 \propto \lbrack a^3\rbrack $. It can be used to calculate the [mass] of the central body from the period and semi-major axis of any orbiting object.
 
 ## 10.9a Pattern Recognition: Gravitation
 

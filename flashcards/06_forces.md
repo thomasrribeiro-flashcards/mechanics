@@ -74,7 +74,7 @@ A: Always opposite to the velocity of the sliding surface — it opposes relativ
 Q: What is Hooke's Law and under what condition is it valid?
 A: For a spring displaced from its natural length, the restoring force is proportional to the displacement: $F_s = -kx$. It is valid within the elastic limit — if stretched or compressed beyond this, the spring deforms permanently and Hooke's Law breaks down.
 
-C: Hooke's Law: $F_s = [-kx]$, where $k$ is the spring constant (N/m, larger $k$ = stiffer spring), $x$ is the displacement from the natural length (m), and the negative sign means the force is a [restoring force] opposing the displacement.
+C: Hooke's Law: $F_s = \lbrack -kx\rbrack $, where $k$ is the spring constant (N/m, larger $k$ = stiffer spring), $x$ is the displacement from the natural length (m), and the negative sign means the force is a [restoring force] opposing the displacement.
 
 Q: What does a large spring constant $k$ mean physically?
 A: A large $k$ means a stiff spring — a given displacement requires a larger force (or equivalently, a given force produces a smaller displacement). Units of $k$ are N/m.
