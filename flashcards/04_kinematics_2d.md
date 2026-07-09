@@ -1,5 +1,6 @@
 +++
 order = 4
+subject = "Physics"
 tags = ["mechanics", "physics", "kinematics", "projectile", "circular", "relative motion"]
 +++
 

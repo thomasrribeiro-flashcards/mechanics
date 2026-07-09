@@ -1,5 +1,6 @@
 +++
 order = 2
+subject = "Physics"
 tags = ["mechanics", "physics", "vectors", "math", "dot product", "cross product"]
 +++
 

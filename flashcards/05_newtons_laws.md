@@ -1,5 +1,6 @@
 +++
 order = 5
+subject = "Physics"
 tags = ["mechanics", "physics", "Newton", "forces", "dynamics", "inertia"]
 +++
 

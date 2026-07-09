@@ -1,5 +1,6 @@
 +++
 order = 11
+subject = "Physics"
 tags = ["mechanics", "physics", "oscillations", "SHM", "pendulum"]
 +++
 
