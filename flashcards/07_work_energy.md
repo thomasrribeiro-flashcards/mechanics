@@ -14,7 +14,11 @@ A: Because only the component of force along the displacement does work. A force
 Q: What is the definition of work done by a constant force?
 A: $W = \vec{F} \cdot \vec{d} = Fd\cos\theta$, where $F$ is the force magnitude (N), $d$ is the displacement magnitude (m), and $\theta$ is the angle between the force vector and the displacement vector. Work is a scalar. Its SI unit is the joule (J = N·m).
 
-C: Work is [positive] when the force has a component along the direction of motion, [negative] when the force opposes motion, and [zero] when the force is perpendicular to displacement.
+C: Work is [positive] when the force has a component along the direction of motion.
+
+C: Work is [negative] when the force opposes the motion.
+
+C: Work is [zero] when the force is perpendicular to the displacement.
 
 Q: A box is pushed 4 m along a floor by a 10 N force directed 60° above horizontal. How much work does the pushing force do?
 A: $W = Fd\cos\theta = (10)(4)\cos 60° = 40 \times 0.5 = 20$ J.
@@ -38,7 +42,7 @@ C: Kinetic energy is $K = \frac{1}{2}mv^2$. Doubling an object's speed [quadrupl
 
 ## 7.4 Work-Energy Theorem
 
-Q: Before stating it: predict how net work should relate to kinetic energy.
+Q: How should the net work done on an object relate to its kinetic energy?
 A: They should be equal — work has units of energy, and applying force over distance is precisely how speed (and thus $K$) is built up.
 
 Q: State the work-energy theorem and explain its significance.
@@ -62,7 +66,7 @@ A: Because gravity is a conservative force, the work it does is path-independent
 Q: What is the expression for gravitational potential energy near Earth's surface, and what determines the reference level?
 A: $U_g = mgh$, where $m$ is mass (kg), $g = 9.8$ m/s², and $h$ is height above the chosen reference level (m). The reference level is arbitrary; only changes $\Delta U_g = mg\Delta h$ have physical meaning.
 
-C: Work done by gravity equals $-\Delta U_g$, so as an object falls and $h$ [decreases], gravitational PE [decreases] and kinetic energy [increases].
+C: Work done by gravity equals $-\Delta U_g$, so as an object falls, gravitational PE [decreases] and kinetic energy [increases].
 
 ## 7.7 Elastic Potential Energy
 

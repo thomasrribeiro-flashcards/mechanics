@@ -15,7 +15,7 @@ C: Position in 2D is written $\vec{r}(t) = x(t)\hat{i} + y(t)\hat{j}$, where $x(
 
 C: Velocity in 2D is $\vec{v} = d\vec{r}/dt = \dot{x}\hat{i} + \dot{y}\hat{j}$, where the dot notation $\dot{x}$ means [the derivative of $x$ with respect to time].
 
-C: Acceleration in 2D is $\vec{a} = d\vec{v}/dt = \ddot{x}\hat{i} + \ddot{y}\hat{j}$, where each component is [the second derivative of the corresponding position component with respect to time].
+C: Acceleration in 2D is $\vec{a} = d\vec{v}/dt = \ddot{x}\hat{i} + \ddot{y}\hat{j}$, where each component is the [second derivative] of the corresponding position component with respect to time.
 
 ## 4.2 Projectile Motion — Setup
 

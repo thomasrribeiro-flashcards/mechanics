@@ -31,7 +31,7 @@ A: Impulse is $\vec{J} = \int_{t_1}^{t_2}\vec{F}\,dt$. The impulse-momentum theo
 Q: Why do airbags and padded helmets reduce injury, using the concept of impulse?
 A: The change in momentum $\Delta\vec{p}$ (and therefore the impulse) is fixed by the crash. Airbags increase the collision time $\Delta t$, and since $F_{avg} = \Delta p / \Delta t$, a longer $\Delta t$ produces a smaller average force on the occupant, reducing injury.
 
-C: Impulse equals [change in momentum]: $\vec{J} = \Delta\vec{p}$. Extending the collision time [decreases] the average force for a given change in momentum.
+C: Impulse equals [change in momentum]: $\vec{J} = \Delta\vec{p}$. Extending the collision time [decreases] the average force for a given impulse.
 
 ## 8.4 Conservation of Linear Momentum
 
@@ -54,7 +54,9 @@ A: Momentum only — kinetic energy decreases (converts to heat/sound/deformatio
 Q: What defines a perfectly inelastic collision?
 A: Objects stick together with a common final velocity; maximum KE loss consistent with momentum conservation.
 
-C: In an elastic collision both [momentum] and [kinetic energy] are conserved. In any collision, [momentum] is conserved as long as there is no net external force.
+C: In an elastic collision both [momentum] and [kinetic energy] are conserved.
+
+C: In any collision, [momentum] is conserved as long as there is no net external force.
 
 ## 8.6 Perfectly Inelastic Collision
 

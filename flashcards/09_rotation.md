@@ -100,7 +100,9 @@ A: For a rigid body: $L = I\omega$, where $I$ is the moment of inertia (kg·m²)
 Q: State the law of conservation of angular momentum and give an example.
 A: If $\vec{\tau}_{net} = 0$ on a system, then $\vec{L} = I\omega = \text{constant}$. Example: a figure skater pulling in their arms reduces $I$, so $\omega$ must increase to keep $L$ constant. Other examples: a gyroscope resisting tipping, a diver tucking for faster rotation, planetary orbital speed increasing at perihelion.
 
-C: Conservation of angular momentum: when net torque is zero, $I_i\omega_i = \lbrack I_f\omega_f\rbrack $. A figure skater who pulls in their arms [decreases] $I$ and therefore [increases] $\omega$.
+C: Conservation of angular momentum: when net torque is zero, $I_i\omega_i = [I_f\omega_f]$.
+
+C: A figure skater who pulls in their arms [decreases] $I$ and therefore [increases] $\omega$, keeping angular momentum constant.
 
 ## 9.9a Pattern Recognition: Rotation
 

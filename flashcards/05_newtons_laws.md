@@ -83,7 +83,7 @@ A: Draw an arrow for every force, labeled with type (gravity, normal, friction, 
 Q: What is rule 3 of drawing a free body diagram?
 A: Choose coordinate axes aligned with the acceleration direction (e.g., parallel to an incline).
 
-C: A free body diagram shows only forces acting [on] the object of interest, not forces it exerts on other objects.
+C: A free body diagram shows only forces acting on the object of interest, not forces [it exerts on other objects].
 
 ## 5.7 Applying Newton's Second Law — Strategy
 

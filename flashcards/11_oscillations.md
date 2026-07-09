@@ -11,7 +11,9 @@ tags = ["mechanics", "physics", "oscillations", "SHM", "pendulum"]
 Q: What defines periodic motion, and what quantities describe its time behavior?
 A: Periodic motion repeats exactly after a fixed time interval. Period $T$ (s) is the time for one complete cycle. Frequency $f = 1/T$ (Hz = cycles/s) is the number of cycles per second. Angular frequency $\omega = 2\pi f = 2\pi/T$ (rad/s) converts cycles to radians. Amplitude $A$ is the maximum displacement from the equilibrium position.
 
-C: Period $T$, frequency $f$, and angular frequency $\omega$ are related by $f = 1/T$ and $\omega = \lbrack 2\pi f\rbrack  = \lbrack 2\pi/T\rbrack $. The unit of frequency is the [hertz] (Hz).
+C: Period $T$, frequency $f$, and angular frequency $\omega$ are related by $f = 1/T$ and $\omega = [2\pi f] = [2\pi/T]$.
+
+C: The SI unit of frequency is the [hertz] (Hz), equal to one cycle per second.
 
 ## 11.2 SHM Condition
 
@@ -41,7 +43,9 @@ A: $v(t) = \dot{x} = -A\omega\sin(\omega t + \phi)$. $a(t) = \ddot{x} = -A\omega
 Q: Where in SHM is the speed maximum, and where is the magnitude of acceleration maximum?
 A: Maximum speed $v_{max} = A\omega$ occurs at $x = 0$ (equilibrium), where the restoring force is zero. Maximum acceleration $a_{max} = A\omega^2$ occurs at $x = \pm A$ (turning points), where the restoring force is greatest.
 
-C: In SHM, speed is [maximum] at $x = 0$ and [zero] at $x = \pm A$. Acceleration magnitude is [maximum] at $x = \pm A$ and [zero] at $x = 0$.
+C: In SHM, speed is [maximum] at $x = 0$ and [zero] at $x = \pm A$.
+
+C: In SHM, acceleration magnitude is [maximum] at $x = \pm A$ and [zero] at $x = 0$.
 
 ## 11.5 Spring-Mass System
 
@@ -68,7 +72,9 @@ A: For small angles ($\theta < 15°$), $\sin\theta \approx \theta$ (in radians).
 Q: What are the angular frequency and period of a simple pendulum for small angles?
 A: $\omega = \sqrt{g/L}$ and $T = 2\pi\sqrt{L/g}$, where $L$ is the pendulum length (m) and $g$ is the gravitational acceleration (m/s²). The period is independent of mass and, for small angles, independent of amplitude.
 
-C: The period of a simple pendulum is $T = 2\pi\sqrt{L/g}$. It is independent of [mass] and (for small angles) independent of [amplitude]. A longer pendulum has a [longer] period.
+C: The period of a simple pendulum is $T = 2\pi\sqrt{L/g}$. It is independent of [mass] and (for small angles) independent of [amplitude].
+
+C: For a simple pendulum with period $T = 2\pi\sqrt{L/g}$, a longer pendulum has a [longer] period.
 
 ## 11.8 Physical Pendulum
 
@@ -101,7 +107,9 @@ A: Resonance occurs when the driving frequency matches the natural frequency $\o
 Q: Give two examples where resonance is useful and one where it is destructive.
 A: Useful: (1) MRI machines use resonance to excite hydrogen nuclei at their Larmor frequency. (2) Tuned mass dampers in skyscrapers absorb vibrational energy at the building's natural frequency. Destructive: The 1940 Tacoma Narrows Bridge collapsed when wind-induced oscillations matched the bridge's natural frequency.
 
-C: In a driven oscillator, resonance occurs when the driving frequency [equals] the natural frequency $\omega_0 = \sqrt{k/m}$. Greater damping produces a [lower] and [broader] resonance peak.
+C: In a driven oscillator, resonance occurs when the driving frequency [equals] the natural frequency $\omega_0 = \sqrt{k/m}$.
+
+C: For a driven oscillator, greater damping produces a [lower] and [broader] resonance peak.
 
 ## 11.10a Pattern Recognition: Oscillations
 

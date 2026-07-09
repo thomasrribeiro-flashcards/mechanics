@@ -61,7 +61,7 @@ A: Kinetic friction acts between surfaces already sliding relative to each other
 
 C: Kinetic friction is $f_k = [\mu_k N]$, where $\mu_k$ is the coefficient of kinetic friction (dimensionless) and $N$ is the normal force (N).
 
-C: The coefficient of kinetic friction is always [less than] the coefficient of static friction for the same surface pair: $\mu_k < \mu_s$.
+C: The coefficient of kinetic friction is always [less than] the coefficient of static friction for the same surface pair.
 
 Q: Why does $\mu_k < \mu_s$ (kinetic friction is less than maximum static friction)?
 A: When surfaces are stationary, surface asperities (microscopic bumps) can interlock more deeply. Once sliding begins, contact time is shorter, fewer asperities engage simultaneously, so the resistive force is smaller.

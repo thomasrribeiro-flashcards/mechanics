@@ -61,14 +61,18 @@ A: $E = K + U = \dfrac{1}{2}mv^2 - \dfrac{GMm}{r} = \dfrac{GMm}{2r} - \dfrac{GMm
 Q: What does the sign of the total orbital energy $E$ indicate?
 A: $E < 0$: bound orbit (ellipse or circle). $E = 0$: parabolic trajectory (escaping with zero final speed). $E > 0$: hyperbolic trajectory (escaping with leftover kinetic energy). Moving to a higher orbit requires adding energy (making $E$ less negative).
 
-C: The total energy of a circular orbit is $E = -GMm/(2r)$. This is [negative], indicating a [bound] orbit. Raising the orbit (increasing $r$) [increases] the total energy (makes it less negative).
+C: The total energy of a circular orbit is $E = -GMm/(2r)$. This is [negative], indicating a [bound] orbit.
+
+C: For a circular orbit with total energy $E = -GMm/(2r)$, raising the orbit (increasing $r$) [increases] the total energy (makes it less negative).
 
 ## 10.7 Kepler's First Law
 
 Q: State Kepler's first law and define the key geometric features of an ellipse.
 A: Kepler's First Law: every planet orbits the Sun in an ellipse with the Sun at one focus. An ellipse has two foci, semi-major axis $a$ (half the long axis), and eccentricity $e$ ($0 \leq e < 1$). The point closest to the Sun is the perihelion; the farthest is the aphelion. A circle is a special case with $e = 0$.
 
-C: Kepler's First Law: planets orbit in [ellipses] with the Sun at one [focus]. The closest orbital point to the Sun is called [perihelion].
+C: Kepler's First Law: planets orbit in [ellipses] with the Sun at one [focus].
+
+C: In an elliptical orbit, the orbital point closest to the Sun is called [perihelion].
 
 ## 10.8 Kepler's Second Law
 
@@ -78,7 +82,9 @@ A: A line drawn from the Sun to a planet sweeps out equal areas in equal time in
 Q: Using Kepler's second law, compare the planet's speed at perihelion versus aphelion.
 A: The planet moves fastest at perihelion (closest to Sun) and slowest at aphelion (farthest). At both points velocity is perpendicular to $\vec{r}$, so $L = mv_p r_p = mv_a r_a$, giving $v_p/v_a = r_a/r_p > 1$.
 
-C: Kepler's Second Law is a consequence of conservation of [angular momentum]. The planet moves [fastest] at perihelion and [slowest] at aphelion.
+C: Kepler's Second Law is a consequence of conservation of [angular momentum].
+
+C: By Kepler's Second Law, a planet moves [fastest] at perihelion and [slowest] at aphelion.
 
 ## 10.9 Kepler's Third Law
 
