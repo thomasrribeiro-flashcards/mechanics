@@ -1,6 +1,6 @@
 +++
 order = 9
-subject = "Physics"
+subject = "physics"
 tags = ["mechanics", "physics", "rotation", "torque", "angular momentum"]
 +++
 

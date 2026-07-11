@@ -1,6 +1,6 @@
 +++
 order = 3
-subject = "Physics"
+subject = "physics"
 tags = ["mechanics", "physics", "kinematics", "motion", "calculus", "free fall"]
 +++
 

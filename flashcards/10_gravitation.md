@@ -1,6 +1,6 @@
 +++
 order = 10
-subject = "Physics"
+subject = "physics"
 tags = ["mechanics", "physics", "gravitation", "orbits", "Kepler"]
 +++
 
