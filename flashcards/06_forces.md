@@ -14,7 +14,7 @@ A: Weight is the gravitational force exerted on an object by Earth (or another a
 C: Weight is $W = [mg]$ directed downward, where $m$ is mass (kg) and $g$ is local gravitational acceleration (m/s²; $g \approx 9.8$ m/s² near Earth's surface).
 
 Q: Why does weight change on the Moon but mass does not?
-A: Mass is an intrinsic property of the object (amount of matter). Weight $W = mg$ depends on $g$, which is $\approx 1.6$ m/s² on the Moon versus $9.8$ m/s² on Earth. A 70 kg person weighs $\approx 686$ N on Earth and $\approx 112$ N on the Moon, but their mass is 70 kg in both places.
+A: Mass measures inertia and is intrinsic to the object. Weight $W = mg$ depends on the local gravitational field, so the same mass has less weight where $g$ is smaller.
 
 ## 6.2 Normal Force
 
@@ -22,7 +22,7 @@ Q: What is the normal force and why is it called "normal"?
 A: The normal force is a contact force that a surface exerts on an object perpendicular to the surface. "Normal" is the geometric term for perpendicular — the force is always perpendicular (normal) to the contact surface.
 
 Q: Why is the normal force not always equal to $mg$?
-A: The normal force adjusts to whatever value is needed to prevent the object from penetrating the surface — it satisfies $\sum F_{\perp} = 0$ (or $ma_{\perp}$ if accelerating). On a horizontal surface at rest $N = mg$, on an incline $N = mg\cos\theta$, and in an elevator accelerating upward at $a$, $N = m(g + a)$.
+A: The normal force is set by the perpendicular equation of motion, not by a universal formula. It can differ from $mg$ and can fall to zero when contact is lost; an ordinary surface can push but cannot pull the object back toward itself.
 
 C: For a block at rest on a horizontal surface, the normal force is $N = [mg]$, where $m$ is mass (kg) and $g$ is gravitational acceleration (m/s²).
 
@@ -33,7 +33,7 @@ C: For a block on a frictionless incline at angle $\theta$, the normal force is 
 Q: What is tension and in which direction does it act on an object?
 A: Tension is the pulling force exerted by a taut string, rope, or cable along its length. It acts away from the object toward the string — tension can only pull, never push.
 
-C: For a massless inextensible string, the tension magnitude is [the same throughout] the entire string, regardless of the string's shape.
+C: In an ideal massless string passing over ideal frictionless, massless pulleys, the tension magnitude is [the same throughout] the string.
 
 Q: How does a massless frictionless pulley affect tension in a rope?
 A: It changes only the direction of the rope (and thus the direction the tension pulls), but does not change the magnitude of the tension. The same tension acts throughout both segments of the rope.
@@ -52,27 +52,30 @@ Q: What determines the maximum value of static friction?
 A: The maximum static friction force is $f_{s,max} = \mu_s N$, where $\mu_s$ is the coefficient of static friction (dimensionless, depends on the material pair) and $N$ is the normal force (N). Once applied force exceeds this maximum, the surfaces begin to slide.
 
 Q: Why does static friction have no fixed value until the maximum is reached?
-A: Static friction is a reaction force. It adjusts to exactly match the applied tangential force until the applied force exceeds $\mu_s N$. Below that threshold, the friction force is self-adjusting, not fixed at $\mu_s N$.
+A: Static friction takes the value required by the tangential equation of motion, up to $f_s\leq\mu_sN$. It is not automatically equal to either one applied force or its maximum.
 
 ## 6.5 Kinetic Friction
 
 Q: How does kinetic friction differ from static friction?
-A: Kinetic friction acts between surfaces already sliding relative to each other. Unlike static friction (which is self-adjusting), kinetic friction has a fixed magnitude $f_k = \mu_k N$ independent of speed (for most surfaces) and always opposes the direction of sliding.
+A: Kinetic friction acts when surfaces slide relative to each other. In the elementary dry-friction model its magnitude is approximated by $f_k=\mu_kN$, and on each surface it points opposite that surface's relative slip.
 
 C: Kinetic friction is $f_k = [\mu_k N]$, where $\mu_k$ is the coefficient of kinetic friction (dimensionless) and $N$ is the normal force (N).
 
-C: The coefficient of kinetic friction is always [less than] the coefficient of static friction for the same surface pair.
+C: In the simple dry-friction model, the coefficient of kinetic friction is [usually less than or approximately equal to] the coefficient of static friction for the same surface pair.
 
-Q: Why does $\mu_k < \mu_s$ (kinetic friction is less than maximum static friction)?
-A: When surfaces are stationary, surface asperities (microscopic bumps) can interlock more deeply. Once sliding begins, contact time is shorter, fewer asperities engage simultaneously, so the resistive force is smaller.
+Q: Why is maximum static friction often larger than kinetic friction for dry surfaces?
+A: Initiating slip requires breaking microscopic adhesive junctions and interlocking contacts. During continued sliding those junctions have less time to reform, but this is an empirical tendency—not a universal law for every material and speed.
 
 Q: In which direction does kinetic friction act?
-A: Always opposite to the velocity of the sliding surface — it opposes relative motion between the surfaces.
+A: On each surface, it points opposite that surface's velocity relative to the other surface at the contact—not necessarily opposite its velocity relative to the ground.
+
+Q: Does friction always point opposite an object's motion relative to the ground?
+A: No. Friction opposes actual or impending **relative slip at the contact**. Static friction can point in the same direction as an object's center-of-mass motion, as when the ground accelerates a rolling tire forward.
 
 ## 6.6 Hooke's Law
 
 Q: What is Hooke's Law and under what condition is it valid?
-A: For a spring displaced from its natural length, the restoring force is proportional to the displacement: $F_s = -kx$. It is valid within the elastic limit — if stretched or compressed beyond this, the spring deforms permanently and Hooke's Law breaks down.
+A: Near equilibrium, an ideal linear spring exerts $F_s=-kx$. It is valid over the spring's proportional (linear) range; a spring can become nonlinear before it is permanently deformed.
 
 C: Hooke's Law: $F_s = \lbrack -kx\rbrack $, where $k$ is the spring constant (N/m, larger $k$ = stiffer spring), $x$ is the displacement from the natural length (m), and the negative sign means the force is a [restoring force] opposing the displacement.
 
@@ -107,8 +110,8 @@ A: Terminal velocity is the constant speed reached when the drag force grows to 
 
 C: At terminal velocity, the condition $[mg = F_d]$ holds, where $mg$ is the weight (N) and $F_d$ is the drag force (N), giving zero net force and zero acceleration.
 
-Q: Why do heavier objects have a higher terminal velocity than lighter objects of the same shape?
-A: Terminal velocity is reached when $F_d = mg$. In the high-speed drag regime, $F_d = \frac{1}{2}C_d\rho A v_t^2$, so $v_t = \sqrt{2mg/(C_d\rho A)}$. A larger mass $m$ requires a higher speed $v_t$ before drag can balance weight.
+Q: Why does greater mass raise terminal speed when shape and frontal area are unchanged?
+A: In quadratic drag, $v_t = \sqrt{2mg/(C_d\rho A)}$. With $C_d$, fluid density $\rho$, and frontal area $A$ fixed, larger weight requires a larger speed before drag balances it.
 
 ## 6.8 Worked Example — Box on Rough Floor
 
@@ -135,4 +138,4 @@ $$50 - 30 = 10 \times a \implies 20 = 10a \implies a = 2 \text{ m/s}^2$$
 - If $\mu_k = 0$: $a = F/m = 5$ m/s² (frictionless — faster) ✓
 - Friction force (30 N) $<$ Applied force (50 N), so the box accelerates forward ✓
 - If $F = f_k = 30$ N: $a = 0$ (constant velocity) — consistent ✓
-- Units: $[F/m] = \text{N/kg} = \text{kg·m/s}^2/\text{kg} = \text{m/s}^2$ ✓
+- Units: $[F/m]=\text{N/kg}=(\text{kg}\cdot\text{m}/\text{s}^2)/\text{kg}=\text{m}/\text{s}^2$ ✓

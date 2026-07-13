@@ -1,7 +1,7 @@
 +++
 order = 2
 subject = "physics"
-tags = ["mechanics", "physics", "vectors", "math", "dot product", "cross product"]
+tags = ["mechanics", "physics", "vectors", "math", "dot-product", "cross-product"]
 +++
 
 # Classical Mechanics — Vectors
@@ -22,7 +22,7 @@ C: A scalar has [magnitude only], while a vector has both magnitude and [directi
 Q: What is the parallelogram rule for vector addition?
 A: Place the two vectors tail-to-tail. The diagonal of the parallelogram formed by the two vectors is their vector sum.
 
-C: The notation $\vec{v}$ or $\hat{v}$ is used for vectors, where $\hat{v}$ specifically denotes a [unit vector] (magnitude = 1).
+C: An arrow such as $\vec{v}$ denotes a vector; a hat such as $\hat{v}$ specifically denotes a [unit vector] of magnitude 1.
 
 ## 2.2 Cartesian Components
 
@@ -37,8 +37,8 @@ C: For a vector at angle $\theta$ from the $x$-axis, the $y$-component is $A_y =
 
 C: The magnitude of a 2D vector with components $A_x$ and $A_y$ is $A = [\sqrt{A_x^2 + A_y^2}]$.
 
-Q: How do you find the angle $\theta$ a 2D vector makes with the positive $x$-axis?
-A: $\theta = \arctan(A_y / A_x)$, where $A_y$ is the $y$-component and $A_x$ is the $x$-component. Use the quadrant of $(A_x, A_y)$ to resolve the ambiguity.
+Q: How do you find the angle $\theta$ a 2D vector makes with the positive $x$-axis without losing quadrant information?
+A: Use $\theta = \operatorname{atan2}(A_y,A_x)$. A one-argument $\arctan(A_y/A_x)$ is ambiguous by $180°$ and fails when $A_x=0$.
 
 ## 2.3 Vector Addition
 

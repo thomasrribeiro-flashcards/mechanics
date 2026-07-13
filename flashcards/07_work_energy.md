@@ -66,12 +66,12 @@ A: Because gravity is a conservative force, the work it does is path-independent
 Q: What is the expression for gravitational potential energy near Earth's surface, and what determines the reference level?
 A: $U_g = mgh$, where $m$ is mass (kg), $g = 9.8$ m/s², and $h$ is height above the chosen reference level (m). The reference level is arbitrary; only changes $\Delta U_g = mg\Delta h$ have physical meaning.
 
-C: Work done by gravity equals $-\Delta U_g$, so as an object falls, gravitational PE [decreases] and kinetic energy [increases].
+C: Work done by gravity equals $-\Delta U_g$. If gravity is the only force doing work, falling gravitational PE [decreases] while kinetic energy [increases].
 
 ## 7.7 Elastic Potential Energy
 
 Q: What is the elastic potential energy stored in a spring, and why is it always non-negative?
-A: $U_e = \frac{1}{2}kx^2$, where $k$ is the spring constant (N/m) and $x$ is the displacement from equilibrium (m). It is always $\geq 0$ because $x^2 \geq 0$, whether the spring is compressed or stretched.
+A: Choosing $U_e=0$ at the unstretched equilibrium, an ideal linear spring has $U_e=\frac12kx^2\geq0$. Compression and extension store the same energy at equal $|x|$.
 
 C: The work done by a spring force equals $-\Delta U_e = -(\frac{1}{2}kx_f^2 - \frac{1}{2}kx_i^2)$. When the spring returns to equilibrium ($x_f = 0$), it does [positive] work equal to $\frac{1}{2}kx_i^2$.
 
@@ -81,9 +81,12 @@ Q: State the law of conservation of mechanical energy and identify when it appli
 A: $E_{mech} = K + U = \text{constant}$ when only conservative forces do work on the system. Equivalently, $K_i + U_i = K_f + U_f$. It applies only when friction, drag, and other non-conservative forces are absent or do no work.
 
 Q: How is conservation of mechanical energy modified when non-conservative forces act?
-A: $\Delta E_{mech} = W_{nc}$, where $W_{nc}$ is the work done by non-conservative forces. Kinetic friction does negative work ($W_{nc} < 0$), so mechanical energy decreases; the lost energy becomes thermal energy.
+A: With the system and potential energies defined, $\Delta E_{mech}=W_{nc}$. For a block sliding across a stationary rough surface, kinetic friction does negative work on the block and mechanical energy becomes thermal energy.
 
-C: When friction acts, $\Delta E_{mech} = W_{friction} < 0$, meaning mechanical energy [decreases] and is converted to [thermal energy].
+Q: Friction reduces mechanical energy. Does that violate conservation of energy?
+A: No. Friction converts organized mechanical energy into internal/thermal energy. The total energy of a closed system remains conserved even though $K+U$ is not.
+
+C: For a block sliding on a stationary rough surface, kinetic friction makes the block's mechanical energy [decrease] while thermal energy [increases].
 
 ## 7.9 Power
 
@@ -101,7 +104,7 @@ Q: A problem asks "find speed at point B given height/spring extension." What te
 A: Energy conservation: $K_A + U_A = K_B + U_B$ (only if no friction). One unknown, one equation.
 
 Q: A problem mentions friction or drag and asks for final speed/distance. What technique?
-A: Work-energy theorem with non-conservative work: $\Delta K + \Delta U = W_{nc}$ (negative for friction).
+A: Use work–energy with non-conservative work, $\Delta K+\Delta U=W_{nc}$. Determine the sign from $\int\vec F\cdot d\vec r$ rather than assuming every friction force does negative work.
 
 Q: A problem says "find force exerted by surface on object" and gives kinematic info. Use energy or Newton's 2nd?
 A: Energy methods don't yield force directly — use $\sum F = ma$. Reach for energy when speeds and heights are the unknowns.

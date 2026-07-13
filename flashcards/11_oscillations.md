@@ -1,15 +1,18 @@
 +++
 order = 11
 subject = "physics"
-tags = ["mechanics", "physics", "oscillations", "SHM", "pendulum"]
+tags = ["mechanics", "physics", "oscillations", "shm", "pendulum"]
 +++
 
 # Classical Mechanics — Oscillations
 
 ## 11.1 Periodic Motion
 
-Q: What defines periodic motion, and what quantities describe its time behavior?
-A: Periodic motion repeats exactly after a fixed time interval. Period $T$ (s) is the time for one complete cycle. Frequency $f = 1/T$ (Hz = cycles/s) is the number of cycles per second. Angular frequency $\omega = 2\pi f = 2\pi/T$ (rad/s) converts cycles to radians. Amplitude $A$ is the maximum displacement from the equilibrium position.
+Q: What defines periodic motion?
+A: Periodic motion repeats after a fixed time $T$, called the period. Frequency is the number of cycles per unit time, so $f=1/T$.
+
+Q: How do angular frequency and amplitude describe an oscillation?
+A: Angular frequency $\omega=2\pi f$ measures phase advance in radians per second. Amplitude $A$ is the maximum magnitude of displacement from equilibrium.
 
 C: Period $T$, frequency $f$, and angular frequency $\omega$ are related by $f = 1/T$ and $\omega = [2\pi f] = [2\pi/T]$.
 
@@ -49,8 +52,8 @@ C: In SHM, acceleration magnitude is [maximum] at $x = \pm A$ and [zero] at $x =
 
 ## 11.5 Spring-Mass System
 
-Q: What are the angular frequency and period of a spring-mass system, and what is unique about the period in SHM?
-A: $\omega = \sqrt{k/m}$, $T = 2\pi\sqrt{m/k}$, where $k$ is the spring constant (N/m) and $m$ is the mass (kg). The period is independent of amplitude — a hallmark of SHM. A heavier mass oscillates more slowly; a stiffer spring oscillates more quickly.
+Q: What are the angular frequency and period of an ideal horizontal spring-mass oscillator?
+A: For a mass $m$ and linear spring constant $k$, $\omega=\sqrt{k/m}$ and $T=2\pi\sqrt{m/k}$. Within this ideal SHM model the period is independent of amplitude.
 
 C: The period of a spring-mass system is $T = 2\pi\sqrt{m/k}$. It is [independent] of amplitude. A stiffer spring (larger $k$) gives a [shorter] period.
 
@@ -67,7 +70,7 @@ C: Total mechanical energy in SHM is $E = \frac{1}{2}kA^2$ (constant). Doubling 
 ## 11.7 Simple Pendulum
 
 Q: Under what approximation does a simple pendulum exhibit SHM, and why?
-A: For small angles ($\theta < 15°$), $\sin\theta \approx \theta$ (in radians). The tangential restoring force is $F = -mg\sin\theta \approx -mg\theta$. Using arc length $s = L\theta$ (so $\theta = s/L$), this becomes $F \approx -(mg/L)s$ — linear in displacement $s$, satisfying the SHM condition with effective stiffness $k_{eff} = mg/L$.
+A: When the angular amplitude is small enough that $\sin\theta\approx\theta$ with $\theta$ in radians. Then $F_t=-mg\sin\theta\approx-(mg/L)s$, which is linear in arc displacement $s=L\theta$. “Small enough” depends on the tolerated error; it is not a universal cutoff angle.
 
 Q: What are the angular frequency and period of a simple pendulum for small angles?
 A: $\omega = \sqrt{g/L}$ and $T = 2\pi\sqrt{L/g}$, where $L$ is the pendulum length (m) and $g$ is the gravitational acceleration (m/s²). The period is independent of mass and, for small angles, independent of amplitude.
@@ -101,13 +104,19 @@ C: In an underdamped oscillator, amplitude decays as $A(t) = A_0 e^{\lbrack -\ga
 
 ## 11.10 Resonance
 
-Q: What is resonance, and when does it occur in a driven oscillator?
-A: Resonance occurs when the driving frequency matches the natural frequency $\omega_0 = \sqrt{k/m}$ of the oscillator. At resonance, energy is transferred most efficiently from the driver to the oscillator, and the amplitude reaches its maximum value. The maximum amplitude at resonance is limited only by damping.
+Q: For a damped oscillator driven sinusoidally, where does the displacement-amplitude resonance peak occur?
+A: It occurs near the undamped natural frequency $\omega_0=\sqrt{k/m}$. For linear damping $2\gamma\dot x$, the peak is at $\omega_r=\sqrt{\omega_0^2-2\gamma^2}$ when that peak exists, so weak damping makes $\omega_r\approx\omega_0$.
 
-Q: Give two examples where resonance is useful and one where it is destructive.
-A: Useful: (1) MRI machines use resonance to excite hydrogen nuclei at their Larmor frequency. (2) Tuned mass dampers in skyscrapers absorb vibrational energy at the building's natural frequency. Destructive: The 1940 Tacoma Narrows Bridge collapsed when wind-induced oscillations matched the bridge's natural frequency.
+Q: What controls the steady-state amplitude of a driven oscillator near resonance?
+A: The drive amplitude, frequency mismatch, and damping. With damping the response is finite; in the ideal undamped model, exact resonant driving makes the amplitude grow with time rather than approach a finite steady value.
 
-C: In a driven oscillator, resonance occurs when the driving frequency [equals] the natural frequency $\omega_0 = \sqrt{k/m}$.
+Q: Why does pushing a playground swing once per cycle at the right phase build a large amplitude?
+A: Each push does positive work in step with the swing, so energy accumulates over many cycles. Driving near the natural frequency keeps the pushes phase-coherent; damping removes some energy each cycle.
+
+Q: Why is the Tacoma Narrows Bridge collapse not a clean example of elementary forced resonance?
+A: Its destructive torsional motion was a self-excited aeroelastic flutter instability involving feedback between wind and bridge motion, not simply a periodic external force matching one natural frequency.
+
+C: For a weakly damped driven oscillator, the displacement response peaks at a driving frequency [near] the undamped natural frequency $\omega_0$.
 
 C: For a driven oscillator, greater damping produces a [lower] and [broader] resonance peak.
 
@@ -123,7 +132,7 @@ Q: A problem mentions "small angle" or "small oscillation about equilibrium." Wh
 A: Linearize the restoring force ($\sin\theta \approx \theta$), reducing to SHM with effective $k$.
 
 Q: A problem describes a driven system whose response peaks at a specific frequency. What technique?
-A: Resonance: peak occurs at $\omega_{drive} = \omega_0 = \sqrt{k/m}$.
+A: Analyze the driven response and damping. For weak damping, the displacement-amplitude peak lies near $\omega_0=\sqrt{k/m}$, but not generally exactly at it.
 
 ## 11.11 Procedural: Spring-Mass SHM Analysis
 

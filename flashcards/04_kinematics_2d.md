@@ -1,7 +1,7 @@
 +++
 order = 4
 subject = "physics"
-tags = ["mechanics", "physics", "kinematics", "projectile", "circular", "relative motion"]
+tags = ["mechanics", "physics", "kinematics", "projectile", "circular", "relative-motion"]
 +++
 
 # Classical Mechanics — Kinematics in Two Dimensions
@@ -9,7 +9,7 @@ tags = ["mechanics", "physics", "kinematics", "projectile", "circular", "relativ
 ## 4.1 Position and Velocity in 2D
 
 Q: Why can the x and y components of motion be treated independently in 2D kinematics?
-A: Newton's second law acts independently along each axis. An acceleration in the x-direction changes only $v_x$; it has no effect on $v_y$. This independence is the key principle that makes 2D kinematics tractable.
+A: The vector equations hold component by component: $a_x$ changes $v_x$ and $a_y$ changes $v_y$. The components share the same time but can be solved separately once their accelerations and initial conditions are known.
 
 C: Position in 2D is written $\vec{r}(t) = x(t)\hat{i} + y(t)\hat{j}$, where $x(t)$ and $y(t)$ are the [Cartesian components] of position as functions of time.
 
@@ -31,13 +31,19 @@ A: Horizontal: $a_x = 0$ (no horizontal force, so uniform motion). Vertical: $a_
 
 ## 4.3 Projectile Trajectory Equations
 
-C: Horizontal position of a projectile: $x = [v_0\cos\theta \cdot t]$, where $v_0$ is the launch speed, $\theta$ is the launch angle, and $t$ is elapsed time. This reflects uniform horizontal motion.
+C: With no air resistance, a projectile's horizontal position is $x(t) = [x_0 + (v_0\cos\theta)t]$, where $x_0$ is initial horizontal position, $v_0$ is launch speed, and $\theta$ is launch angle.
 
-C: Vertical position of a projectile: $y = v_0\sin\theta \cdot t - \frac{1}{2}gt^2$, where $v_0$ is launch speed, $\theta$ is the launch angle, $g = 9.8$ m/s² is gravitational acceleration, and $t$ is [elapsed time].
+C: With upward positive, a projectile's vertical position is $y(t) = [y_0 + (v_0\sin\theta)t - \frac{1}{2}gt^2]$, where $y_0$ is initial height and $g$ is gravitational acceleration magnitude.
 
 C: Horizontal velocity of a projectile is $v_x = [v_0\cos\theta]$ — constant throughout the flight, because there is no horizontal acceleration.
 
 C: Vertical velocity of a projectile is $v_y = v_0\sin\theta - gt$, where $g = 9.8$ m/s² and $t$ is time, showing [velocity decreasing due to gravitational acceleration].
+
+Q: At the highest point of an angled projectile's path, which velocity component is zero?
+A: Only $v_y$ is zero. The horizontal component remains $v_x=v_0\cos\theta$, so the projectile is not momentarily at rest unless it was launched vertically.
+
+Q: Why is the no-drag projectile trajectory a parabola?
+A: Eliminate $t$ using $t=(x-x_0)/v_{0x}$ in the quadratic vertical equation. The result has the form $y=y_0+a(x-x_0)-b(x-x_0)^2$.
 
 C: The range formula for a projectile launched from and landing at the same height is $R = [v_0^2\sin(2\theta)/g]$, where $v_0$ is launch speed and $g$ is gravitational acceleration.
 
@@ -82,7 +88,7 @@ A: Centripetal: $F_{net} = m v^2 / r$ directed toward center. Identify which rea
 ## 4.6 Non-Uniform Circular Motion
 
 Q: What is the difference between centripetal and tangential acceleration in circular motion?
-A: Centripetal acceleration $a_c = v^2/r$ is perpendicular to velocity and changes only the direction of motion (toward the center). Tangential acceleration $a_t = |dv/dt|$ is parallel to velocity and changes the speed. Both occur in non-uniform circular motion.
+A: Centripetal acceleration $a_c=v^2/r$ points inward and changes velocity's direction. Tangential acceleration has signed component $a_t=dv/dt$: it points with the velocity when speeding up and against it when slowing down.
 
 C: The total acceleration magnitude in non-uniform circular motion is $a = [\sqrt{a_c^2 + a_t^2}]$, where $a_c = v^2/r$ is the centripetal component and $a_t = |dv/dt|$ is the tangential component.
 

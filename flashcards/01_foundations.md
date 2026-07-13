@@ -1,7 +1,7 @@
 +++
 order = 1
 subject = "physics"
-tags = ["mechanics", "physics", "measurement", "units", "dimensional analysis"]
+tags = ["mechanics", "physics", "measurement", "units", "dimensional-analysis"]
 +++
 
 # Classical Mechanics — Foundations
@@ -24,7 +24,7 @@ C: Classical mechanics is organized around [Newton's laws] as its central framew
 Q: Why is falsifiability essential in physics?
 A: A claim that cannot in principle be disproved by experiment provides no predictive power and is outside the domain of science. Falsifiability ensures theories can be tested and potentially overturned by evidence.
 
-C: The scientific method follows the cycle: [observation] → hypothesis → experiment → theory.
+C: A scientific hypothesis must lead to [testable predictions] that evidence could support or contradict.
 
 Q: What distinguishes a "theory" in physics from a guess?
 A: A physical theory is a well-tested model that has survived repeated experimental scrutiny and makes quantitative predictions. In everyday language "theory" implies uncertainty; in physics it implies established, validated explanation.
@@ -80,7 +80,7 @@ A: Break a complex quantity into simpler sub-quantities you can estimate individ
 C: In Fermi estimation, quantities are expressed as [powers of 10] and combined to give an order-of-magnitude result.
 
 Q: What are the steps in an order-of-magnitude estimate?
-A: Identify the key quantities needed, estimate each to the nearest power of ten using known facts or reasonable guesses, then combine them to get the final estimate.
+A: Identify the controlling quantities, estimate each to one significant digit or a nearby power of ten, combine them, then check whether the scale and units are plausible.
 
 ## 1.6 Significant Figures
 

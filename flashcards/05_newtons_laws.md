@@ -1,7 +1,7 @@
 +++
 order = 5
 subject = "physics"
-tags = ["mechanics", "physics", "Newton", "forces", "dynamics", "inertia"]
+tags = ["mechanics", "physics", "newton", "forces", "dynamics", "inertia"]
 +++
 
 # Classical Mechanics — Newton's Laws of Motion
@@ -14,14 +14,14 @@ A: A force is an interaction between two objects (or between an object and a fie
 Q: What distinguishes contact forces from field forces?
 A: Contact forces (normal force, friction, tension, spring force) require physical touching between surfaces. Field forces (gravity, electrostatic, magnetic) act at a distance through fields without direct contact.
 
-C: The SI unit of force is the [Newton (N)], defined as $1\,\text{N} = 1\,\text{kg·m/s}^2$.
+C: The SI unit of force is the [newton (N)], defined as $1\,\text{N}=1\,\text{kg}\cdot\text{m}/\text{s}^2$.
 
 C: The net force on an object is the [vector sum] of all individual forces acting on it.
 
 ## 5.2 Newton's First Law — Law of Inertia
 
-Q: Why is Newton's First Law non-trivial? (What view did it overturn?)
-A: Aristotle taught that a force is needed to maintain motion. Newton's First Law says the opposite: no net force is needed to maintain constant velocity. Rest and uniform motion are equivalent natural states.
+Q: A puck moves at constant velocity across an ideal frictionless surface. Must a forward net force keep it moving?
+A: No. Constant velocity requires zero net force; a nonzero forward net force would make the puck accelerate.
 
 Q: State Newton's First Law.
 A: An object at rest remains at rest, and an object moving at constant velocity continues to move at that constant velocity, unless acted upon by a net external force.
@@ -29,12 +29,12 @@ A: An object at rest remains at rest, and an object moving at constant velocity 
 C: Newton's First Law defines the concept of [inertia] — the tendency of an object to resist any change in its state of motion.
 
 Q: What is an inertial reference frame?
-A: A reference frame in which Newton's First Law holds exactly — an object with no net force either stays at rest or moves at constant velocity. Unaccelerated frames are inertial; accelerating frames are not.
+A: A frame in which a force-free object moves at constant velocity. Frames moving at constant velocity without rotation relative to an inertial frame are also inertial; accelerating or rotating frames are not.
 
 ## 5.3 Inertial vs Non-Inertial Reference Frames
 
 Q: Why do fictitious forces appear in non-inertial frames?
-A: In an accelerating frame, an object that is actually force-free (in an inertial frame) appears to accelerate backward. To apply Newton's second law in that frame, you must introduce a fictitious force equal to $-m\vec{a}_{frame}$ to account for the frame's own acceleration.
+A: The frame itself accelerates, so a force-free object appears to accelerate relative to it. Newton's law can retain its usual form only by adding inertial terms, such as $-m\vec a_{frame}$ for a translating frame and centrifugal/Coriolis terms for a rotating frame.
 
 C: Examples of fictitious forces in non-inertial frames are the [centrifugal force] (rotating frame) and the [Coriolis force] (rotating frame).
 
@@ -46,7 +46,7 @@ A: No — Earth rotates, introducing small Coriolis and centrifugal effects. For
 Q: Why is mass the measure of inertia in Newton's Second Law?
 A: The same net force produces less acceleration on a more massive object. Mass quantifies how strongly an object resists changes in velocity; a larger mass requires a larger force to produce the same acceleration.
 
-C: Newton's Second Law: $\vec{F}_{net} = [m\vec{a}]$, where $\vec{F}_{net}$ is the vector sum of all forces (N), $m$ is mass (kg), and $\vec{a}$ is the resulting acceleration (m/s²).
+C: For a constant-mass object, Newton's Second Law is $\vec{F}_{net} = [m\vec{a}]$, where $\vec{F}_{net}$ is the vector sum of all external forces.
 
 C: In component form, Newton's Second Law gives $\sum F_x = [ma_x]$ and $\sum F_y = [ma_y]$, where $m$ is mass (kg) and $a_x$, $a_y$ are the components of acceleration (m/s²).
 
@@ -78,10 +78,10 @@ Q: What is rule 1 of drawing a free body diagram?
 A: Isolate one object — show only forces acting *on* it, never forces it exerts on others.
 
 Q: What is rule 2 of drawing a free body diagram?
-A: Draw an arrow for every force, labeled with type (gravity, normal, friction, tension, etc.) and magnitude.
+A: Draw one arrow for every external force acting on the object and label its type or symbol. Unknown magnitudes remain symbolic.
 
 Q: What is rule 3 of drawing a free body diagram?
-A: Choose coordinate axes aligned with the acceleration direction (e.g., parallel to an incline).
+A: Choose convenient coordinate axes—often along a surface, constraint, or known acceleration—to minimize component algebra.
 
 C: A free body diagram shows only forces acting on the object of interest, not forces [it exerts on other objects].
 
@@ -91,11 +91,11 @@ Q: A problem gives a block on an incline with friction; asks for acceleration. W
 A: Free body diagram of the block, axes parallel/perpendicular to the incline.
 
 Q: What is the systematic procedure for applying Newton's Second Law to a problem?
-A: Isolate the object (FBD) → choose axes (aligned with acceleration) → resolve forces into components → write $\sum F_x = ma_x$, $\sum F_y = ma_y$ → solve.
+A: Define the system, draw its FBD, choose convenient axes, resolve forces, write $\sum F_i=ma_i$ for each axis, then solve and check signs and constraints.
 
 ## 5.8 Worked Example — Block on a Frictionless Incline
 
-P: A block of mass $m = 5$ kg rests on a frictionless incline of angle $\theta = 30°$. Find its acceleration down the incline and the normal force. Use $g = 10$ m/s².
+P: A block of mass $m = 5$ kg is released on a frictionless incline of angle $\theta = 30°$. Find its acceleration down the incline and the normal force. Use $g = 10$ m/s².
 
 S:
 **IDENTIFY**: Newton's second law applied to a block on an incline. Two forces: weight $\vec{W} = mg$ downward and normal force $\vec{N}$ perpendicular to the surface. No friction.

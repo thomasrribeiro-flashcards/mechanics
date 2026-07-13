@@ -2,6 +2,8 @@
 
 Flashcards for Classical Mechanics — for spaced repetition review via [flashcards](https://github.com/thomasrribeiro/flashcards).
 
+Card creation and auditing follow the evidence-based rules in [CARD_README.md](CARD_README.md). The deck is designed to complement—not replace—solving novel mixed mechanics problems on paper.
+
 ## Coverage
 
 | File | Topic |
@@ -17,3 +19,4 @@ Flashcards for Classical Mechanics — for spaced repetition review via [flashca
 | 09_rotation | Angular kinematics, torque, moment of inertia, angular momentum |
 | 10_gravitation | Newton's law of gravity, orbits, escape velocity, Kepler's laws |
 | 11_oscillations | SHM, spring-mass, pendulum, energy, damping, resonance |
+| 12_synthesis | Model selection, representation translation, mixed-method problems |

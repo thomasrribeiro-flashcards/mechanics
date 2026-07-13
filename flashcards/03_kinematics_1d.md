@@ -1,7 +1,7 @@
 +++
 order = 3
 subject = "physics"
-tags = ["mechanics", "physics", "kinematics", "motion", "calculus", "free fall"]
+tags = ["mechanics", "physics", "kinematics", "motion", "calculus", "free-fall"]
 +++
 
 # Classical Mechanics — Kinematics in One Dimension
@@ -24,7 +24,7 @@ A: A runner completes a full lap of a 400 m track. Distance = 400 m. Displacemen
 ## 3.2 Velocity
 
 Q: Why distinguish average velocity from instantaneous velocity?
-A: Average velocity describes overall motion over a time interval; it can miss momentary details. Instantaneous velocity describes motion at a single instant, which is what Newton's laws relate to forces.
+A: Average velocity describes net displacement over an interval and can hide reversals or pauses. Instantaneous velocity describes the motion at one instant and is the slope of $x(t)$ there.
 
 C: Average velocity is $\bar{v} = [\Delta x / \Delta t]$, where $\Delta x$ is displacement and $\Delta t$ is the time interval.
 
@@ -88,11 +88,11 @@ C: Near Earth's surface, free-fall acceleration is $g = [9.8 \text{ m/s}^2]$ dir
 Q: What is the standard sign convention for free-fall problems?
 A: Take upward as positive. Then the acceleration due to gravity is $a = -g = -9.8$ m/s², and the kinematic equations apply with this substitution.
 
-Q: What are the velocity and acceleration of a projectile at its highest point?
-A: Instantaneous velocity is zero ($v = 0$), but acceleration is still $-g = -9.8$ m/s² downward. The object is momentarily at rest, but gravity continues to act.
+Q: For an object thrown straight upward, what are its velocity and acceleration at the highest point?
+A: Its velocity is momentarily zero, but its acceleration remains $-g$ downward. Zero velocity at an instant does not imply zero acceleration.
 
 Q: Why does a stone thrown upward take the same time to rise as to fall back to the same height?
-A: By time-reversal symmetry of the kinematic equations: the speed at any given height is the same on the way up as on the way down, so the time intervals are equal.
+A: With constant gravitational acceleration and negligible air resistance, the kinematic equations are time-reversal symmetric: at a given height the upward and downward speeds have equal magnitude, so the time intervals are equal.
 
 ## 3.6 Interpreting Position-Time Graphs
 
