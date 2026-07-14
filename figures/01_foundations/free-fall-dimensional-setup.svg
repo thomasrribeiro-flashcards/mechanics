@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" role="img" aria-labelledby="title desc">
+  <title id="title">Free-fall setup for dimensional analysis</title>
+  <desc id="desc">A stone is released from rest a vertical height h above level ground. A downward arrow labels gravitational acceleration g.</desc>
+  <rect width="520" height="420" fill="#ffffff"/>
+  <text x="260" y="32" text-anchor="middle" font-family="monospace" font-size="16" fill="#1a1a1a">released from rest at t = 0</text>
+
+  <circle cx="270" cy="88" r="18" fill="#F5C842" stroke="#1a1a1a" stroke-width="3"/>
+  <text x="302" y="94" font-family="monospace" font-size="16" fill="#1a1a1a">v₀ = 0</text>
+
+  <line x1="270" y1="120" x2="270" y2="272" stroke="#777777" stroke-width="2" stroke-dasharray="6 7"/>
+  <line x1="350" y1="104" x2="350" y2="200" stroke="#1a1a1a" stroke-width="3"/>
+  <path d="M350 216l-10-18h20Z" fill="#1a1a1a"/>
+  <text x="370" y="164" font-family="monospace" font-size="20" font-style="italic" fill="#1a1a1a">g</text>
+
+  <line x1="145" y1="88" x2="145" y2="330" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="132" y1="88" x2="158" y2="88" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="132" y1="330" x2="158" y2="330" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="116" y="216" text-anchor="middle" font-family="monospace" font-size="22" font-style="italic" fill="#1a1a1a">h</text>
+
+  <path d="M52 330H468 M52 344l24-14 24 14 24-14 24 14 24-14 24 14 24-14 24 14 24-14 24 14 24-14 24 14 24-14 24 14 24-14 24 14 24-14" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+  <text x="260" y="390" text-anchor="middle" font-family="monospace" font-size="15" fill="#555555">level ground</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 250" role="img" aria-labelledby="title desc">
+  <title id="title">A point on a logarithmic scale between two powers of ten</title>
+  <desc id="desc">A logarithmic number line runs from ten squared to ten cubed. Point M marks six times ten squared and lies closer to ten cubed on the logarithmic scale.</desc>
+  <rect width="680" height="250" fill="#ffffff"/>
+  <text x="340" y="32" text-anchor="middle" font-family="monospace" font-size="16" fill="#1a1a1a">one decade on a logarithmic scale</text>
+
+  <line x1="80" y1="132" x2="600" y2="132" stroke="#1a1a1a" stroke-width="3"/>
+  <g stroke="#1a1a1a" stroke-width="1.5">
+    <line x1="80" y1="114" x2="80" y2="151" stroke-width="2.5"/>
+    <line x1="237" y1="121" x2="237" y2="143"/>
+    <line x1="328" y1="121" x2="328" y2="143"/>
+    <line x1="393" y1="121" x2="393" y2="143"/>
+    <line x1="444" y1="121" x2="444" y2="143"/>
+    <line x1="485" y1="121" x2="485" y2="143"/>
+    <line x1="519" y1="121" x2="519" y2="143"/>
+    <line x1="550" y1="121" x2="550" y2="143"/>
+    <line x1="576" y1="121" x2="576" y2="143"/>
+    <line x1="600" y1="114" x2="600" y2="151" stroke-width="2.5"/>
+  </g>
+
+  <circle cx="485" cy="89" r="11" fill="#F5C842" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="485" y1="100" x2="485" y2="121" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="485" y="66" text-anchor="middle" font-family="monospace" font-size="18" font-weight="700" fill="#1a1a1a">M</text>
+  <text x="485" y="183" text-anchor="middle" font-family="monospace" font-size="15" fill="#1a1a1a">6 × 10²</text>
+
+  <g font-family="monospace" font-size="18" fill="#1a1a1a" text-anchor="middle">
+    <text x="80" y="183">10²</text>
+    <text x="600" y="183">10³</text>
+  </g>
+</svg>

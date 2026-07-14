@@ -132,12 +132,26 @@ C: In Fermi estimation, quantities are expressed as [powers of 10] and combined 
 Q: What are the steps in an order-of-magnitude estimate?
 A: Identify the controlling quantities, estimate each to one significant digit or a nearby power of ten, combine them, then check whether the scale and units are plausible.
 
+<!-- card-id: card-0164a7ce-c85f-4345-93e3-318306625784 -->
+Q: Point $M$ marks $6\times10^2$ on the logarithmic scale. To the nearest power of ten, what is its order of magnitude, and why?
+
+![Logarithmic scale from ten squared to ten cubed with point M at six times ten squared](../figures/01_foundations/order-of-magnitude-scale.svg)
+
+A: Its order of magnitude is $10^3$. On a logarithmic scale, the boundary between $10^2$ and $10^3$ is their geometric mean, $\sqrt{10^2\cdot10^3}\approx3.16\times10^2$, and $6\times10^2$ lies above it.
+
 ## 1.6 Significant Figures
 
 <!-- card-id: card-b47c52df-f589-4763-923e-66e959c1b3a0 -->
 <!-- card-alias: ec0816c53a1529b3553c2ee21d2c2566ffe47c1c424774592d84527c57f2d894 -->
 Q: What do significant figures represent?
 A: The precision of a measurement. Reporting more significant figures than the measurement device can resolve is misleading; reporting fewer discards real information.
+
+<!-- card-id: card-e3a5d2cd-fc98-4f29-8b7a-8b12f1fb02eb -->
+Q: The ruler's smallest marked division is $0.1\,\text{cm}$. Read the yellow object's endpoint with appropriate precision. Which digit is estimated?
+
+![Ruler marked every tenth of a centimeter with a yellow endpoint between 3.4 and 3.5 centimeters](../figures/01_foundations/measurement-precision.svg)
+
+A: The reading is approximately $3.46\,\text{cm}$; the hundredths digit, $6$, is estimated between the $3.4$ and $3.5\,\text{cm}$ marks. The tenths digit is fixed by the scale, while one additional digit is reported by interpolation.
 
 <!-- card-id: card-a1c54f77-666e-4b6b-a4bc-4b2fc2c6957c -->
 <!-- card-alias: fff6cd3f15e3c995e6b02700d839cb309e6351f0bbaf928f1d91c870eeb46b3e -->
@@ -167,6 +181,8 @@ A: Writing extra digits implies a precision that was never measured, which is mi
 <!-- card-id: card-73a91d37-cf6c-49d7-9818-887028440e4d -->
 <!-- card-alias: 96a7affa20ed2b2bccde51543a4204cc351c7f90d938443e92692f06c4e2b363 -->
 P: A stone is released from rest at height $h$ above the ground. Without using the kinematic equations, use dimensional analysis alone to determine how the time of fall $t$ depends on $h$ and the gravitational acceleration $g$, up to a dimensionless constant.
+
+![Stone released from rest at height h above level ground with gravitational acceleration g downward](../figures/01_foundations/free-fall-dimensional-setup.svg)
 
 S:
 **IDENTIFY**: We want $t$ as a function of $h$ (dimension L) and $g$ (dimension L/T²). Assume a power-law form $t = C\,h^a g^b$, where $C$ is a dimensionless constant and $a$, $b$ are unknown exponents.

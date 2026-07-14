@@ -165,6 +165,15 @@ Prefer visual retrieval over passive illustration:
 - use progressive or separate cards when one completed figure would reveal several independent answers;
 - create a new card identity for a new visual retrieval task instead of attaching its progress to a previously mastered textual task.
 
+For technical figures, prefer original SVGs with a `viewBox`, high contrast,
+meaningful alt text, and stable descriptive filenames. Use the deck's black,
+white, gray, and gold palette consistently. A setup figure's visible labels and
+alt text must not disclose the requested answer; a completed solution figure
+belongs after the answer. Keep externally sourced figures only when an original
+diagram would be inferior, and record the creator, URL, and compatible license.
+Never use a generated raster illustration for quantitative geometry, graph
+shape, force direction, scale, or labeling that must be physically exact.
+
 ### 2.6 Misconception and error-diagnosis cards (`Q:/A:`)
 
 Use for errors that are common, consequential, and plausible.
