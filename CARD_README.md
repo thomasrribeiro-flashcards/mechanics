@@ -157,6 +157,14 @@ Useful directions include:
 
 When no figure asset exists, describe a small, precise graph or diagram in words. Add a real diagram only when it is required to answer the question; decorative images add no retrieval value.
 
+Prefer visual retrieval over passive illustration:
+
+- ask the learner to predict, sketch, label, identify, compare, or translate the figure before reveal;
+- place an unlabeled/setup figure on the front only when it does not disclose the answer;
+- place labeled diagrams, completed constructions, and worked-example figures on the back;
+- use progressive or separate cards when one completed figure would reveal several independent answers;
+- create a new card identity for a new visual retrieval task instead of attaching its progress to a previously mastered textual task.
+
 ### 2.6 Misconception and error-diagnosis cards (`Q:/A:`)
 
 Use for errors that are common, consequential, and plausible.
@@ -269,9 +277,12 @@ Rules:
 - Image Markdown is not a deletion. Place setup-only figures after the question; place figures containing a solution after the answer.
 - Preserve frontmatter order and lowercase subject metadata.
 
-Cards are content-addressed. Editing a learned card changes its hash and therefore its review identity. During an audit:
+Every card block in this deck has a stable `card-id`. The accompanying `card-alias` records its original content hash so existing FSRS state can migrate without being reset. During an audit:
 
-- fix incorrect, ambiguous, or harmful cards even if their hashes change;
+- preserve the existing `card-id` for figures, formatting, clearer feedback, and corrections that test the same underlying retrieval;
+- assign a new `card-id` when the front now asks for materially different knowledge or a new visual retrieval task;
+- never remove generated `card-alias` lines merely for tidiness, because a device may still need them for migration;
+- fix incorrect, ambiguous, or harmful cards even when the change is substantive;
 - do not rewrite a correct card merely for stylistic preference;
 - record substantive edits in the commit message;
 - run the parser/validation checks before committing.
