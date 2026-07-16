@@ -1,0 +1,18 @@
+% flashcards-title: Upward-positive free-fall setup
+% flashcards-desc: A vertical y axis points upward from a release level to a top point; the one-dimensional motion line is dashed and a separate acceleration arrow points downward.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[mech axis,-{Stealth[length=3mm,width=2.2mm]}] (0,-0.8) -- (0,6.3) node[above] {\(+y\)};
+  \draw[mech tick] (-0.14,0.3) -- (0.14,0.3);
+  \node[left=4pt] at (0,0.3) {release \(y_i\)};
+  \draw[mech guide] (0.45,0.45) -- (0.45,5.35);
+  \fill[mechBlue] (0.45,0.45) circle (3.5pt);
+  \fill[mechBlue] (0.45,5.35) circle (3.5pt);
+  \node[right=5pt] at (0.45,5.35) {top};
+  \node[right=5pt] at (0.45,2.8) {vertical motion line};
+  \draw[mech primary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (3.4,4.7) -- (3.4,2.1);
+  \node[right=4pt,align=left] at (3.4,3.4) {modeled\\acceleration};
+\end{tikzpicture}
+\end{document}

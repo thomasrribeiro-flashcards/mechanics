@@ -1,225 +1,392 @@
 +++
 order = 3
 subject = "physics"
-tags = ["mechanics", "physics", "kinematics", "motion", "calculus", "free-fall"]
+tags = ["mechanics", "physics", "kinematics", "one-dimensional-motion"]
+prerequisites = ["chapter:01_foundations", "concept:vector-components"]
+provides = ["one-dimensional-motion", "kinematic-graphs", "constant-acceleration", "near-earth-free-fall"]
 +++
 
-# Classical Mechanics — Kinematics in One Dimension
+# One-dimensional kinematics
 
-## 3.1 Position and Displacement
+<!-- card-id: 68a3cff5-ae10-499d-91bd-16c91544da94 -->
+Q: **Motion** means change of position over time. To describe motion along one straight line, choose a coordinate axis with a spatial origin \(x=0\), a positive direction, and a time origin \(t=0\). The **position** \(x(t)\) is the object's signed coordinate at clock reading \(t\).
 
-<!-- card-id: card-f07298d7-d964-4594-b8f1-7c7862ccf468 -->
-<!-- card-alias: 58ac5420827e526710a5c01e2b5b7f685e049bef0a48f58f51dafdc16ee99d29 -->
-Q: Why is a reference frame necessary when describing position?
-A: Position is a coordinate, not an absolute location. It requires an agreed-upon origin and positive direction. Two observers with different reference frames assign different numbers to the same point.
+![A one-dimensional coordinate setup with an object at a labeled tick left of the spatial origin and a separately labeled time origin.](../figures/03_kinematics_1d/coordinate-choice.svg)
 
-<!-- card-id: card-372f8f1c-4a9e-4325-a376-2a34512296a1 -->
-<!-- card-alias: 1febb4dc5394a48d0d6ebcaf6bd70d863245ec28a4b0318a183a4f30df285bad -->
-C: Position $x(t)$ gives the [coordinate] of an object at time $t$ relative to a chosen origin and direction.
+What is the object's position in the shown coordinate system, and what does its sign mean?
+A: \(x=-2\ \mathrm{m}\). The negative sign means the object is \(2\ \mathrm{m}\) from the spatial origin on the side opposite the chosen positive direction; it does not mean a negative distance traveled.
 
-<!-- card-id: card-dd882fd4-cd10-4717-b7c9-d5d09b593aca -->
-<!-- card-alias: 18ce423b168ff9830051c8bec351fdc72fce4fc5552c3dd34e93f2d73a548646 -->
-Q: What is displacement, and how does it differ from distance?
-A: Displacement $\Delta x = x_f - x_i$ is the change in position — a vector quantity with sign indicating direction. Distance is the total path length traveled, always non-negative (a scalar).
+<!-- card-id: b730a3e9-2bbf-4445-945f-49c8d20b5c51 -->
+Q: Clock readings depend on the chosen time origin. For an initial event at \(t_i\) and a later final event at \(t_f\), **elapsed time** is \(\Delta t=t_f-t_i>0\). If the time origin is shifted so both clock readings increase by \(5\ \mathrm{s}\), what happens to \(\Delta t\)?
+A: It is unchanged: \((t_f+5\ \mathrm{s})-(t_i+5\ \mathrm{s})=t_f-t_i\). A clock reading and an elapsed time are different quantities.
 
-<!-- card-id: card-3af14a47-a9ea-459d-8a1c-5198a3250de8 -->
-<!-- card-alias: 93255f14919b3dc6e359cf73a57ba10d41bbcadb024ec210313820b5ae5b7d1b -->
-C: Displacement $\Delta x = [x_f - x_i]$, where $x_f$ is the final position and $x_i$ is the initial position.
+<!-- card-id: ae6e8c8f-c77f-4acb-8b61-45b6c37974ee -->
+Q: **Displacement** over an interval is the signed change in position,
+\(\Delta x=x_f-x_i\). An object moves from \(x_i=-3\ \mathrm{m}\) to
+\(x_f=2\ \mathrm{m}\). What is its displacement?
+A: \(\Delta x=2-(-3)=+5\ \mathrm{m}\). The positive sign gives the displacement direction along the chosen axis.
 
-<!-- card-id: card-e5b0ef6a-f98d-41f7-b40f-d25410639307 -->
-<!-- card-alias: b278a4fb48ea2b40b054421e0c7a72271efabcac22115652ab4057d6e88d80bd -->
-Q: Give an example where displacement and distance differ.
-A: A runner completes a full lap of a 400 m track. Distance = 400 m. Displacement = 0 m (returns to starting point).
+<!-- card-id: 3091cea2-831f-4e27-a53b-a7890ce06c9f -->
+Q: **Distance traveled** is the total nonnegative path length. It accumulates each part of a trip, while displacement uses only the initial and final positions.
 
-## 3.2 Velocity
+![A one-dimensional trip that starts at one labeled position, reaches the rightmost marked position, and ends at a labeled position to the left.](../figures/03_kinematics_1d/distance-displacement.svg)
 
-<!-- card-id: card-24288818-0698-4a41-9713-c0512add521b -->
-<!-- card-alias: 91e43097d07f37d61a6668c10ff020441b8760f9014d2b335078de8c50532d3d -->
-Q: Why distinguish average velocity from instantaneous velocity?
-A: Average velocity describes net displacement over an interval and can hide reversals or pauses. Instantaneous velocity describes the motion at one instant and is the slope of $x(t)$ there.
+For the shown trip from \(x=1\ \mathrm{m}\) to \(x=5\ \mathrm{m}\) and then to \(x=-2\ \mathrm{m}\), what are the distance traveled and displacement?
+A: Distance \(=|5-1|+|-2-5|=11\ \mathrm{m}\). Displacement \(=-2-1=-3\ \mathrm{m}\).
 
-<!-- card-id: card-ebe5fd98-25bf-4016-8c67-83278d56e720 -->
-<!-- card-alias: e7860596e97b491ce28ffdde1402d71ebce4621a1c482a8b73a8d306d789b955 -->
-C: Average velocity is $\bar{v} = [\Delta x / \Delta t]$, where $\Delta x$ is displacement and $\Delta t$ is the time interval.
+<!-- card-id: 8634bc2c-98d9-4ad2-ad53-7ef78269a965 -->
+Q: If a coordinate origin is shifted but the positive direction is unchanged, what happens to position, displacement, and distance traveled? What changes if the axis direction is reversed instead?
+A: Shifting the origin changes position coordinates but not displacement or distance. Reversing the axis changes the signs of position and displacement, while distance remains unchanged.
 
-<!-- card-id: card-45680ff7-2cd2-47ad-a36e-a31c8c23a2d9 -->
-<!-- card-alias: 23cbdec5fab395881cae3a4aa2058e72d2be582f9b03a930186b2826c41b3dde -->
-C: Instantaneous velocity is $v = [dx/dt]$ — the derivative of position with respect to time.
+<!-- card-id: b186f464-673b-4d3c-bfab-6d3888ec2c90 -->
+Q: **Average velocity** is signed displacement per elapsed time:
+\[
+\bar v=\frac{\Delta x}{\Delta t}.
+\]
+An object goes from \(x=-3\ \mathrm{m}\) at \(t=1\ \mathrm{s}\) to \(x=5\ \mathrm{m}\) at \(t=5\ \mathrm{s}\). What is its average velocity?
+A: \(\bar v=(5-(-3))/(5-1)=+2\ \mathrm{m/s}\). Its sign gives the direction of the net position change.
 
-<!-- card-id: card-2c216452-da4d-4ad0-afc8-885415cfc73a -->
-<!-- card-alias: d7005c6a8fc16f3a26564050d4736f69704e4752088de7898d77ccd1d1d6866b -->
-Q: What is the difference between velocity and speed?
-A: Velocity is a signed (or vector) quantity that includes direction. Speed is $|v|$, the magnitude of velocity, always non-negative. An object moving left has negative velocity but positive speed.
+<!-- card-id: bd3cf925-0733-40b1-b600-3e75609dd434 -->
+Q: **Average speed** is total distance traveled divided by elapsed time. What decisive feature distinguishes it from the magnitude of average velocity?
+A: Average speed uses the entire path length; \(|\bar v|\) uses only \(|\Delta x|\). They are equal only when no part of the motion reverses direction along the line.
 
-<!-- card-id: card-7d4bfa80-afa8-4a9e-9c14-d1dd3bb07ada -->
-<!-- card-alias: 9914547211022151adc48f301c5972e9604103f250ab4900257687000f0f2dce -->
-<!-- card-alias: 86437184a8aecf24f469b95266a5a8bb6e7667f727e328570b0147bc6f5fac05 -->
-C: Speed is always [non-negative]; velocity can be [negative] (indicating direction opposite to the positive reference).
+<!-- card-id: e44c2334-0e0a-4d31-acd9-ed5cb1eb3903 -->
+P: An object travels from \(x=0\) to \(x=12\ \mathrm{m}\), then back to \(x=4\ \mathrm{m}\), in a total elapsed time of \(10\ \mathrm{s}\). Find its average velocity and average speed.
+S: **IDENTIFY:** Average velocity uses displacement; average speed uses total path length.
 
-## 3.3 Acceleration
+**PLAN:** Compute \(\Delta x=4-0\) and distance \(=12+8\), then divide each by \(10\ \mathrm{s}\).
 
-<!-- card-id: card-efb7f937-7d91-4a57-9b2c-d74db310421d -->
-<!-- card-alias: dc870acecd17aa965fc1e9991e5ac7e198450f9a47d6378180813bc37da12c92 -->
-Q: Why can an object be decelerating even when its acceleration is positive?
-A: Deceleration means slowing down, i.e., $|v|$ is decreasing. If the object moves in the negative direction ($v < 0$) and acceleration is positive, $v$ increases toward zero — the object slows down.
+**EXECUTE:** \(\bar v=4/10=+0.40\ \mathrm{m/s}\). Average speed \(=20/10=2.0\ \mathrm{m/s}\).
 
-<!-- card-id: card-599d6d18-6c0c-4c7c-8bd7-ed70b188ab9b -->
-<!-- card-alias: bb9df42ebfec4634b2a4b5ae212070f6bf26b5221ad663655179c8bfb218ff56 -->
-C: Average acceleration is $\bar{a} = [\Delta v / \Delta t]$, where $\Delta v$ is the change in velocity and $\Delta t$ is the elapsed time.
+**EVALUATE:** The speed is larger because the return segment adds distance but partly cancels displacement.
 
-<!-- card-id: card-a4dfb38d-ac95-42be-915c-25d5e2e1cecf -->
-<!-- card-alias: 0b28e0c6eb53f6010b884b4ff21bb598e9865a57533a164705b6ae9df1e994e1 -->
-C: Instantaneous acceleration is $a = [dv/dt] = d^2x/dt^2$ — the second derivative of position with respect to time.
+<!-- card-id: 2415fdb1-3bc7-4f4a-8fc3-faa14c040a72 -->
+Q: A **position–time graph** plots clock reading \(t\) horizontally and signed position \(x(t)\) vertically. Each point tells where the object is at one time.
 
-<!-- card-id: card-0ca875da-0cc7-4489-8689-9ecc451d0da6 -->
-<!-- card-alias: 5339a5e816b0ab2039b67ad07a7306a66f889b672d69638036ac9b122323a078 -->
-Q: What are the SI units of acceleration?
-A: m/s² (meters per second squared).
+![A piecewise position-time graph with labeled axes and four vertices.](../figures/03_kinematics_1d/position-time-segments.svg)
 
-## 3.4 Constant Acceleration Equations
+Why should the drawn line not be read as the object's spatial path?
+A: Its horizontal direction represents time, not another spatial direction. The object moves only along the one-dimensional \(x\)-axis; the graph records how its coordinate changes with time.
 
-<!-- card-id: card-ca4dbc1e-a6c8-44a4-b740-7dd576938e27 -->
-<!-- card-alias: 6303a1ca12205bcb6d74e86d4f0b10cf2a88cac020614d1aaa156b23bfa2e806 -->
-Q: Under what single condition do the kinematic equations apply?
-A: The acceleration must be constant (uniform) throughout the motion.
+<!-- card-id: 99447c89-e441-4181-9b35-1566537dea50 -->
+Q: On a position–time graph, the slope of the secant line between two points is
+\(\Delta x/\Delta t\), the average velocity over that interval. What is the average velocity from \(t=0\) to \(t=2\ \mathrm{s}\) in the graph?
 
-<!-- card-id: card-0c93708a-3d16-485d-ad66-10f2386f44cc -->
-<!-- card-alias: 2031aaf92604ab5a9761f29703a9ef66404a268cbb3e943c7c06ca3bb8e124cb -->
-Q: Before deriving the first kinematic equation, predict: if acceleration is constant, how should velocity change with time?
-A: Linearly. Constant slope on a $v$-$t$ graph means $v(t) = v_0 + at$.
+![A piecewise position-time graph with labeled axes and four vertices.](../figures/03_kinematics_1d/position-time-segments.svg)
+A: \((2-(-2))/(2-0)=+2\ \mathrm{m/s}\). The upward slope corresponds to positive average velocity.
 
-<!-- card-id: card-46862814-3783-4de0-ae0e-cfb654df1333 -->
-<!-- card-alias: 3a672d904d7c545d04c459b5adbd3547d002efe9a3b73612ac8e314c2c4b529c -->
-Q: How is the first kinematic equation derived?
-A: Integrate $a = dv/dt$ with $a$ constant: $v = v_0 + at$, where $v_0$ = initial velocity, $a$ = constant acceleration, $t$ = elapsed time.
+<!-- card-id: 3b19ebba-3c77-4b2c-a03c-b7e50694e72b -->
+Q: In the same position–time graph, what does each segment from \(2\) to \(4\ \mathrm{s}\) and from \(4\) to \(6\ \mathrm{s}\) say about the motion?
 
-<!-- card-id: card-3b14f6a9-ff10-47b2-a7cf-72cca83a4cee -->
-<!-- card-alias: 3f01b34566835990a02b80d43e9eb206c0da5519c328b1dd57856a6f6abce483 -->
-C: First kinematic equation: $v = [v_0 + at]$, where $v_0$ = initial velocity (m/s), $a$ = constant acceleration (m/s²), $t$ = elapsed time (s).
+![A piecewise position-time graph with labeled axes and four vertices.](../figures/03_kinematics_1d/position-time-segments.svg)
+A: From \(2\) to \(4\ \mathrm{s}\), position is constant, so velocity is zero. From \(4\) to \(6\ \mathrm{s}\), position decreases, so velocity is negative.
 
-<!-- card-id: card-90c8afd5-6d7d-460f-8fce-d13a03b2255c -->
-<!-- card-alias: 9ae69075e649a2a0d0515e7daef832bc8b41b6c6d8cb0be6df9d8e2c8db535ac -->
-C: Second kinematic equation: $x = x_0 + v_0 t + \frac{1}{2}at^2$, where $x_0$ is the [initial position], $v_0$ is the initial velocity, $a$ is the constant acceleration, and $t$ is the elapsed time.
+<!-- card-id: ec51b1ac-a8cd-4544-a12c-fac1cfe044bb -->
+P: Use the position–time graph over \(0\le t\le6\ \mathrm{s}\). Find the displacement, distance traveled, and average velocity for the full interval.
 
-<!-- card-id: card-7296f581-1aaf-41ff-b921-b3c61ae0eabf -->
-<!-- card-alias: 22b6f1c17fa218c8e42e39350dbc44c943e7e89232e029a180da0dd76b7f25a2 -->
-C: Third kinematic equation (time-independent): $v^2 = [v_0^2 + 2a\Delta x]$, where $\Delta x = x - x_0$ is the displacement.
+![A piecewise position-time graph with labeled axes and four vertices.](../figures/03_kinematics_1d/position-time-segments.svg)
+S: **IDENTIFY:** Read successive positions \(-2,\ 2,\ 2,\ -1\ \mathrm{m}\).
 
-<!-- card-id: card-56680465-bd98-4744-a2de-8cc5a6437824 -->
-<!-- card-alias: 3bddfed87d83f16cd09cd94b682628c7e6888d83de403cf3039778701afc6881 -->
-C: Fourth kinematic equation: $x = x_0 + \frac{v_0 + v}{2}t$, which uses the [average velocity] $\frac{v_0+v}{2}$ when acceleration is constant.
+**PLAN:** Endpoint subtraction gives displacement; absolute changes give distance; displacement divided by \(6\ \mathrm{s}\) gives average velocity.
 
-<!-- card-id: card-df891c9d-8378-4f60-9c56-244ded5eb415 -->
-<!-- card-alias: 896cf024837c257f3c9e74cbf38ae574e1d9a531c3e241e53a9503661fd2ed1d -->
-Q: Which kinematic equation should you use when time is unknown?
-A: $v^2 = v_0^2 + 2a\Delta x$, since it does not contain $t$.
+**EXECUTE:** \(\Delta x=-1-(-2)=+1\ \mathrm{m}\). Distance \(=|2-(-2)|+|2-2|+|-1-2|=7\ \mathrm{m}\). Thus \(\bar v=1/6\ \mathrm{m/s}\).
 
-<!-- card-id: card-ec46a3d8-e9ae-4f07-8536-c962ad739485 -->
-<!-- card-alias: a5c8d96e2c7c1bc4622454abe97e469d3a3c0459df6350ed3a9e14fe267bfdff -->
-Q: Which kinematic equation should you use when final velocity is unknown?
-A: $x = x_0 + v_0 t + \frac{1}{2}at^2$, since it does not contain $v$.
+**EVALUATE:** Distance exceeds \(|\Delta x|\) because the graph reverses from increasing to decreasing position.
 
-<!-- card-id: card-9f0576eb-5a75-4dac-8833-f195b0c10336 -->
-<!-- card-alias: d3d4ac520302f3031639b62524700a600486b29e74a254849298d53195686a7e -->
-Q: A problem gives you initial velocity, acceleration, and final position; asks for final velocity. Which equation?
-A: $v^2 = v_0^2 + 2a\Delta x$ — time-independent, all four given/asked variables present.
+<!-- card-id: 795e0e5f-65dd-42a1-8946-93eb9699d0b3 -->
+Q: Average velocity over \(t\) to \(t+\Delta t\) is
+\(\Delta x/\Delta t\). As \(\Delta t\) shrinks toward zero, these secant slopes approach the **instantaneous velocity**
+\[
+v(t)=\lim_{\Delta t\to0}\frac{x(t+\Delta t)-x(t)}{\Delta t}
+=\frac{dx}{dt}.
+\]
 
-<!-- card-id: card-8426f36d-ece2-4148-a8b4-cd8cbd8448e5 -->
-<!-- card-alias: dd39e7f0590b22b384901a22bd9cf1ffd7b614d83c08265ad2c03e25eeb6415d -->
-Q: A problem gives you initial velocity, acceleration, and time; asks for displacement. Which equation?
-A: $x = x_0 + v_0 t + \tfrac{1}{2}at^2$ — final velocity not needed.
+![A curved position-time graph with a secant through two nearby points and a tangent at the earlier point.](../figures/03_kinematics_1d/position-time-tangent.svg)
 
-## 3.5 Free Fall
+What geometric quantity on the graph represents \(v(t)\)?
+A: The slope of the tangent line to \(x(t)\) at that instant. Its units are position units divided by time units, such as \(\mathrm{m/s}\).
 
-<!-- card-id: card-35f15753-4fa9-40cc-9ce7-a03be69efb33 -->
-<!-- card-alias: 8ce1da49f46687445338eee7c48e83491fa87bf6b62acea79feff54dd95fd317 -->
-Q: What did Galileo discover about falling objects?
-A: Near Earth's surface, all objects fall with the same constant downward acceleration regardless of their mass, provided air resistance is negligible.
+<!-- card-id: 6d664d06-8155-4785-83f8-56f22df14093 -->
+P: A position model is \(x(t)=(1+4t-t^2)\ \mathrm{m}\), with \(t\) in seconds. Find the instantaneous velocity at \(t=1\ \mathrm{s}\).
+S: **IDENTIFY:** Instantaneous velocity is the derivative of position.
 
-<!-- card-id: card-62ceae68-5b11-4e31-9177-e3ebba2a6978 -->
-<!-- card-alias: 579ef4c870cfb081bc41e68f5385b9ea8def634266f7b0a11a095f0c5963b44c -->
-C: Near Earth's surface, free-fall acceleration is $g = [9.8 \text{ m/s}^2]$ directed downward, independent of mass.
+**PLAN:** Differentiate \(x(t)\), then evaluate at \(t=1\ \mathrm{s}\).
 
-<!-- card-id: card-0eb6c73c-e59a-4034-bb99-e7ebebef8659 -->
-<!-- card-alias: 2d381e22a666797f365c28fbba4c47f7db3639ea59d7b205471f395df2a47508 -->
-Q: What is the standard sign convention for free-fall problems?
-A: Take upward as positive. Then the acceleration due to gravity is $a = -g = -9.8$ m/s², and the kinematic equations apply with this substitution.
+**EXECUTE:** \(v(t)=dx/dt=(4-2t)\ \mathrm{m/s}\), so \(v(1\ \mathrm{s})=+2\ \mathrm{m/s}\).
 
-<!-- card-id: card-235b7118-40d9-4393-8a0b-040e57973910 -->
-<!-- card-alias: 4e641c8c842639368e308d3646ab926c1495bc31613e9478cad1c777dd709e53 -->
-Q: For an object thrown straight upward, what are its velocity and acceleration at the highest point?
-A: Its velocity is momentarily zero, but its acceleration remains $-g$ downward. Zero velocity at an instant does not imply zero acceleration.
+**EVALUATE:** The positive result means position is increasing at that instant; the units are \(L/T\).
 
-<!-- card-id: card-af89ac5d-b0b5-4b0f-b001-2c51d088a232 -->
-<!-- card-alias: 52e55cfa779e2f4b023e1222780b497b1d0e6db96354a51c94e5232f0e7f5e04 -->
-Q: Why does a stone thrown upward take the same time to rise as to fall back to the same height?
-A: With constant gravitational acceleration and negligible air resistance, the kinematic equations are time-reversal symmetric: at a given height the upward and downward speeds have equal magnitude, so the time intervals are equal.
+<!-- card-id: 7e790cf7-054a-4e7d-b80c-4e23c55e63d0 -->
+Q: **Instantaneous speed** is the magnitude of instantaneous velocity, \(|v|\). If \(v=-3\ \mathrm{m/s}\), what are the speed and direction of motion?
+A: Speed \(=3\ \mathrm{m/s}\); motion is in the negative coordinate direction. Speed is nonnegative and discards direction.
 
-## 3.6 Interpreting Position-Time Graphs
+<!-- card-id: f697ffbc-5d4f-49bc-a2d6-0c76e4995b7c -->
+Q: A one-dimensional **turning point** is an instant when the direction of motion reverses. For differentiable \(x(t)\), what must happen to \(v\) there, and why is \(v=0\) alone not sufficient evidence of a turn?
+A: Velocity must pass through \(0\) and change sign. An object can have \(v=0\) at one instant and then continue in the same direction, so the sign change establishes reversal.
 
-<!-- card-id: card-fa71db92-26c5-463c-96ae-1447035768cb -->
-<!-- card-alias: a71eb5d4cf7321a161552ae6587e49f7e7510c124dca4c296ce3750ae8c60c1e -->
-Q: What does the slope of a position-time graph represent?
-A: Velocity. A steeper slope means higher speed; a negative slope means the object moves in the negative direction.
+<!-- card-id: 7053c9f2-0646-4243-a3d3-599d23256551 -->
+Q: **Average acceleration** is signed velocity change per elapsed time:
+\[
+\bar a=\frac{\Delta v}{\Delta t}=\frac{v_f-v_i}{t_f-t_i}.
+\]
+Velocity changes from \(+2\ \mathrm{m/s}\) to \(-4\ \mathrm{m/s}\) in \(3\ \mathrm{s}\). What is \(\bar a\), and what does its unit mean?
+A: \(\bar a=(-4-2)/3=-2\ \mathrm{m/s^2}\). Each second, velocity changes by \(-2\ \mathrm{m/s}\) on average.
 
-<!-- card-id: card-4facb14e-359d-45e4-a7c7-00b272202462 -->
-<!-- card-alias: 4fafab5300fcaae1fb902f1171c51d2b576d77ef18b59b19fd43b04e370bbd24 -->
-Q: What shape does a position-time graph have for constant acceleration?
-A: A parabola, because $x(t) = x_0 + v_0 t + \frac{1}{2}at^2$ is quadratic in $t$.
+<!-- card-id: 8428a38f-81b7-40d6-b9c0-8e6c83dadf88 -->
+Q: Shrinking the acceleration interval gives
+\[
+a(t)=\lim_{\Delta t\to0}\frac{v(t+\Delta t)-v(t)}{\Delta t}
+=\frac{dv}{dt}=\frac{d^2x}{dt^2}.
+\]
 
-<!-- card-id: card-fc98040d-fbd7-404c-8ab0-b6ef1554c337 -->
-<!-- card-alias: c44f535566d0ac2e84173ee874a705e9a7ad7499690d4a6ca5d94a6beb8d19bf -->
-C: On a position-time graph, a [horizontal line] indicates that velocity is zero (object at rest).
+![A curved velocity-time graph with a tangent line at a marked instant.](../figures/03_kinematics_1d/velocity-time-tangent.svg)
 
-## 3.7 Interpreting Velocity-Time Graphs
+What does the tangent slope on this velocity–time graph represent?
+A: Instantaneous acceleration at that time. The second derivative notation means position is differentiated once to get velocity and again to get acceleration.
 
-<!-- card-id: card-d8e7d1d4-5e96-4358-8880-2016a8e96448 -->
-<!-- card-alias: 20f027fb7d9b4a392844e73623d1a5bb601eb005163c47c8e324a19fa3bbb2ab -->
-Q: What does the slope of a velocity-time graph represent?
-A: Acceleration. Constant slope means constant acceleration; a horizontal line means zero acceleration (constant velocity).
+<!-- card-id: 8bc01de7-76e5-4f4e-9192-5914ac201dbb -->
+P: A velocity model is \(v(t)=(6-2t)\ \mathrm{m/s}\), with \(t\) in seconds. Find the instantaneous acceleration.
+S: **IDENTIFY:** Acceleration is \(dv/dt\).
 
-<!-- card-id: card-d8d792b7-8161-434b-9e86-586f808439ef -->
-<!-- card-alias: 9ee676066a39cb1369113c67d913b62167349e788751fe51d8bd44aafbe4c5ca -->
-Q: What does the area under a velocity-time curve represent?
-A: Displacement. Area = $\int v\,dt = \Delta x$.
+**PLAN:** Differentiate the velocity with respect to time.
 
-<!-- card-id: card-4de1c743-c8a0-4e08-857b-d90ac85ba319 -->
-<!-- card-alias: 624fe787fc95736f23382cdfb1c8bb3b402c38b058b9e2ab5a613e0b041d988d -->
-C: On a velocity-time graph, the [area under the curve] equals the displacement.
+**EXECUTE:** \(a=dv/dt=-2\ \mathrm{m/s^2}\).
 
-<!-- card-id: card-be413c10-c8dc-4d56-bed4-017840c69bdb -->
-<!-- card-alias: 4634768c49a08a2250a738ae96fd157deb4854170b28e5c799b2ea62821ff486 -->
-C: On a velocity-time graph, a [constant slope] indicates constant acceleration, for which the kinematic equations apply.
+**EVALUATE:** The constant negative derivative means velocity decreases by \(2\ \mathrm{m/s}\) each second, matching the expression's slope.
 
-## 3.8 Worked Example — Free Fall from a Cliff
+<!-- card-id: c5f080cf-66d9-4180-87c0-8538c844453d -->
+Q: In one dimension, how do the signs of velocity and acceleration determine whether speed is increasing or decreasing?
+A: Same signs mean speed increases; opposite signs mean speed decreases. Acceleration describes velocity change, so “negative acceleration” does not by itself mean “slowing down.”
 
-<!-- card-id: card-16a2487a-b6b3-4d5e-b053-3034d59574fe -->
-<!-- card-alias: 27a0268bf792081dae0b8bfd6cea41e704240ed8679dfd5392ddad9167918087 -->
-P: A stone is thrown upward at $v_0 = 20$ m/s from a cliff edge 45 m above the ground. When does it hit the ground and at what speed? Take $g = 10$ m/s² and upward as positive.
+<!-- card-id: 8a446a9a-f7ce-47a6-a38f-7e7f9cd75962 -->
+Q: At an instant when \(v=0\), what can and cannot be concluded about acceleration?
+A: Nothing definite follows about acceleration: it may be positive, negative, or zero. Nonzero acceleration at \(v=0\) changes the velocity through zero; a turning point additionally requires a velocity sign change.
 
-S:
-**IDENTIFY**: 1D kinematics with constant acceleration (free fall). The stone starts at height $y_0 = 45$ m, initial velocity $v_0 = +20$ m/s (upward), acceleration $a = -g = -10$ m/s², final position $y = 0$ (ground).
+<!-- card-id: c50c22e6-8423-4c56-8e86-db0575e9ee8e -->
+Q: A velocity–time graph plots \(v(t)\) vertically and \(t\) horizontally. What do the graph's vertical value and tangent slope represent at one instant?
 
-**PLAN**:
-- Use $y = y_0 + v_0 t + \frac{1}{2}at^2$ to find the time $t$ when $y = 0$.
-- Then use $v = v_0 + at$ to find the final speed.
+![A velocity-time graph with a marked point and tangent line.](../figures/03_kinematics_1d/velocity-time-tangent.svg)
+A: The vertical value is instantaneous velocity; the tangent slope is instantaneous acceleration. Reading the height and calculating the slope are different operations.
 
-**EXECUTE**:
+<!-- card-id: d2056811-74d8-49dd-94b5-6dda96905aae -->
+Q: Over a short interval with nearly constant velocity, displacement is approximately \(v\,\Delta t\), the signed area of a thin rectangle on a velocity–time graph. Summing and shrinking the intervals gives
+\[
+\Delta x=\int_{t_i}^{t_f}v(t)\,dt.
+\]
 
-Setting $y = 0$:
-$$0 = 45 + 20t - \frac{1}{2}(10)t^2 = 45 + 20t - 5t^2$$
+![A piecewise velocity-time graph with one region above and one region below the time axis, distinguished by fill and solid or dashed outlines.](../figures/03_kinematics_1d/velocity-time-signed-area.svg)
 
-Rearrange: $5t^2 - 20t - 45 = 0$, divide by 5: $t^2 - 4t - 9 = 0$
+Why does area below the time axis contribute negative displacement?
+A: There \(v<0\), while \(\Delta t>0\), so each contribution \(v\,\Delta t\) is negative. The signed integral preserves direction.
 
-Quadratic formula: $t = \frac{4 \pm \sqrt{16 + 36}}{2} = \frac{4 \pm \sqrt{52}}{2} = \frac{4 \pm 7.21}{2}$
+<!-- card-id: 774803df-6d0b-4769-97bb-aaaae83e82e2 -->
+P: In the velocity–time graph, \(v=+2\ \mathrm{m/s}\) from \(0\) to \(2\ \mathrm{s}\), then \(v=-1\ \mathrm{m/s}\) from \(2\) to \(5\ \mathrm{s}\). Find the displacement.
 
-Taking the positive root: $t = \frac{4 + 7.21}{2} \approx 5.6$ s
+![A piecewise velocity-time graph with one region above and one region below the time axis, distinguished by fill and solid or dashed outlines.](../figures/03_kinematics_1d/velocity-time-signed-area.svg)
+S: **IDENTIFY:** Displacement is signed area under \(v(t)\).
 
-Final velocity: $v = 20 + (-10)(5.6) = 20 - 56 = -36$ m/s
+**PLAN:** Add the positive and negative rectangle areas.
 
-Speed at impact: $|v| = 36$ m/s
+**EXECUTE:** \(\Delta x=(2)(2)+(-1)(3)=+1\ \mathrm{m}\).
 
-**EVALUATE**:
-- Positive root is physically meaningful (negative root gives time before launch) ✓
-- Stone hits the ground moving downward ($v < 0$) ✓
-- Speed at impact ($36$ m/s) is greater than launch speed ($20$ m/s) — sensible, since it fell an extra 45 m ✓
+**EVALUATE:** Units are \((\mathrm{m/s})(\mathrm{s})=\mathrm{m}\), and the small positive result reflects partial cancellation.
+
+<!-- card-id: c3530ae2-610e-425c-8dea-805c8d43df27 -->
+Q: For the same velocity–time graph, what distance is traveled from \(0\) to \(5\ \mathrm{s}\)?
+
+![A piecewise velocity-time graph with one region above and one region below the time axis, distinguished by fill and solid or dashed outlines.](../figures/03_kinematics_1d/velocity-time-signed-area.svg)
+A: \(4+3=7\ \mathrm{m}\). Distance is the area under speed \(|v|\), so negative-velocity regions contribute positive path length rather than canceling.
+
+<!-- card-id: 95c0bbcb-ae76-49c5-a119-a2b2d46b705f -->
+Q: On an acceleration–time graph, the vertical value is acceleration. Since \(\Delta v\approx a\,\Delta t\) over a short interval, the signed area gives
+\[
+\Delta v=\int_{t_i}^{t_f}a(t)\,dt.
+\]
+
+![A piecewise acceleration-time graph with positive and negative rectangular regions distinguished by fill and solid or dashed outlines.](../figures/03_kinematics_1d/acceleration-time-signed-area.svg)
+
+What are the units of this signed area?
+A: \((\mathrm{m/s^2})(\mathrm{s})=\mathrm{m/s}\), the units of velocity change.
+
+<!-- card-id: a10f03ac-3c26-427f-8cb9-db94ab3225ac -->
+P: In the acceleration–time graph, \(a=+2\ \mathrm{m/s^2}\) from \(0\) to \(2\ \mathrm{s}\), then \(a=-1\ \mathrm{m/s^2}\) from \(2\) to \(5\ \mathrm{s}\). If \(v_i=-2\ \mathrm{m/s}\), find \(v_f\).
+
+![A piecewise acceleration-time graph with positive and negative rectangular regions distinguished by fill and solid or dashed outlines.](../figures/03_kinematics_1d/acceleration-time-signed-area.svg)
+S: **IDENTIFY:** Signed area gives velocity change.
+
+**PLAN:** Compute \(\Delta v=(2)(2)+(-1)(3)\), then use \(v_f=v_i+\Delta v\).
+
+**EXECUTE:** \(\Delta v=+1\ \mathrm{m/s}\), so \(v_f=-2+1=-1\ \mathrm{m/s}\).
+
+**EVALUATE:** The net positive area makes velocity more positive, though the final velocity remains negative.
+
+<!-- card-id: 5143704d-cce3-42dd-a760-afd510feac05 -->
+Q: Match each retrieval operation to its result: slope of \(x(t)\), slope of \(v(t)\), signed area under \(v(t)\), and signed area under \(a(t)\).
+A: They give, respectively, velocity, acceleration, displacement, and velocity change. A graph's vertical value, slope, and area answer different questions.
+
+<!-- card-id: d969405c-8eb5-4644-9b43-5743441b2229 -->
+Q: A graph is **concave down** when its tangent slope decreases as time increases. The top panel shows such a smooth position–time graph. Which candidate velocity graph, A, B, or C, is consistent with its tangent slopes?
+
+![A concave-down position-time graph above three candidate velocity-time graphs labeled A, B, and C.](../figures/03_kinematics_1d/graph-translation.svg)
+A: B. The position slope decreases from positive through zero to negative, so velocity must decrease through zero; A has the wrong trend and C never becomes negative.
+
+<!-- card-id: c88a1378-60eb-47f0-848b-135d5c53b9b9 -->
+P: A velocity–time graph is a straight line that rises from \(-4\ \mathrm{m/s}\) at \(t=0\) to \(+4\ \mathrm{m/s}\) at \(t=4\ \mathrm{s}\). A graph is **concave up** when its tangent slope increases as time increases. Without choosing a position origin, describe the corresponding acceleration–time graph and the qualitative shape of the position–time graph.
+S: **IDENTIFY:** Acceleration is the slope of \(v(t)\); velocity is the slope of \(x(t)\).
+
+**PLAN:** Find the constant velocity slope, then translate the changing sign of velocity into the position trend.
+
+**EXECUTE:** \(a=(4-(-4))/4=+2\ \mathrm{m/s^2}\), so \(a(t)\) is a horizontal line at \(+2\). Position decreases at first, has a smooth minimum when \(v=0\) at \(2\ \mathrm{s}\), then increases; its graph is concave up.
+
+**EVALUATE:** A positive constant acceleration requires a velocity line with positive slope, matching the given graph.
+
+<!-- card-id: 078d47f5-ee33-442b-a9a8-79b3c42dc1e1 -->
+Q: A **constant-velocity model** assumes the same signed velocity throughout a stated interval, so \(x_f=x_i+v\Delta t\). What three graph signatures follow?
+
+![A consistent position-time, velocity-time, and acceleration-time graph family for positive constant velocity.](../figures/03_kinematics_1d/constant-velocity-model.svg)
+A: \(x_f=x_i+v\Delta t\). The position graph is a straight line of slope \(v\), the velocity graph is horizontal, and the acceleration graph is zero.
+
+<!-- card-id: 35588433-2056-4da0-8f7d-df89ec615f56 -->
+P: A marker follows a constant-velocity model with \(x_i=-5\ \mathrm{m}\) at \(t_i=2\ \mathrm{s}\) and \(v=+3\ \mathrm{m/s}\). Find its position at \(t_f=6\ \mathrm{s}\).
+S: **IDENTIFY:** Constant velocity makes displacement \(v\Delta t\).
+
+**PLAN:** Compute elapsed time, then add displacement to the initial position.
+
+**EXECUTE:** \(\Delta t=4\ \mathrm{s}\), so \(x_f=-5+(3)(4)=+7\ \mathrm{m}\).
+
+**EVALUATE:** The \(+12\ \mathrm{m}\) displacement from \(-5\ \mathrm{m}\) ends at \(+7\ \mathrm{m}\); units reduce to metres.
+
+<!-- card-id: 00c6cfa3-bf23-4a5d-bf12-26cecaff71bb -->
+Q: A **constant-acceleration model** assumes the same signed acceleration throughout a stated interval.
+
+![A consistent position-time, velocity-time, and acceleration-time graph family for positive constant acceleration.](../figures/03_kinematics_1d/constant-acceleration-model.svg)
+
+What graph signatures distinguish it from constant velocity?
+A: Acceleration is a horizontal nonzero line, velocity is linear in time, and position is quadratic (curved). Constant velocity instead has zero acceleration and a linear position graph.
+
+<!-- card-id: 94f7465f-5cbc-4d0d-b7ba-059319a4be69 -->
+Q: Starting from \(\bar a=\Delta v/\Delta t\), why does constant acceleration imply
+\[
+v_f=v_i+a\Delta t?
+\]
+A: With constant \(a\), instantaneous and average acceleration over the interval are the same. Thus \(a=(v_f-v_i)/\Delta t\), and rearranging gives the equation.
+
+<!-- card-id: d7bda785-e280-462c-80c8-7950269e5558 -->
+Q: For constant acceleration, the velocity–time graph is a straight line from \(v_i\) to \(v_f\). How does its area give
+\[
+\Delta x=\frac{v_i+v_f}{2}\Delta t?
+\]
+A: The area is a trapezoid whose average height is \((v_i+v_f)/2\) and width is \(\Delta t\). Equivalently, the average velocity is the arithmetic mean of the endpoint velocities only because \(v(t)\) is linear.
+
+<!-- card-id: e6bb966a-ce90-4c7d-bb24-d0244c478eec -->
+Q: Use \(v_f=v_i+a\Delta t\) in
+\(\Delta x=((v_i+v_f)/2)\Delta t\). What constant-acceleration position relation follows?
+A: \[
+\Delta x=v_i\Delta t+\frac12a(\Delta t)^2.
+\]
+It follows by substitution and applies only over an interval where \(a\) is constant.
+
+<!-- card-id: f2245f18-bc0f-4625-bc3b-833529fad089 -->
+Q: Eliminate \(\Delta t\) between
+\(v_f=v_i+a\Delta t\) and
+\(\Delta x=((v_i+v_f)/2)\Delta t\). What no-time relation results?
+A: \[
+v_f^2=v_i^2+2a\Delta x.
+\]
+Using \(\Delta t=(v_f-v_i)/a\) gives \(2a\Delta x=(v_i+v_f)(v_f-v_i)=v_f^2-v_i^2\); the \(a=0\) case is already the constant-velocity model.
+
+<!-- card-id: f8246a13-2db6-40ad-9692-e3a70b31ecdb -->
+Q: A measured velocity–time graph is noticeably curved over the interval. Why is using one set of constant-acceleration equations across the whole interval not justified merely because an average acceleration can be calculated?
+A: A curved \(v(t)\) has changing slope, so acceleration is not constant. An average acceleration describes only the net velocity change; use the actual function/graph or shorter intervals where a constant-\(a\) approximation is adequate.
+
+<!-- card-id: 28c23d43-913a-4bc7-807b-ae214c39aa21 -->
+Q: Under a verified constant-acceleration model, \(v_i\), \(a\), and \(\Delta x\) are known; \(v_f\) is wanted and time is neither known nor wanted. Which relation is the direct choice, and why?
+A: Use \(v_f^2=v_i^2+2a\Delta x\), because it contains the wanted quantity and all three known quantities but omits \(\Delta t\). First check constant acceleration, then choose by knowns and unknowns.
+
+<!-- card-id: 848d3326-6242-45e3-ad22-a8fa1de71cbf -->
+P: A marker has \(v_i=+2.0\ \mathrm{m/s}\) and constant \(a=+3.0\ \mathrm{m/s^2}\) for \(\Delta t=4.0\ \mathrm{s}\). Find \(v_f\) and \(\Delta x\).
+S: **IDENTIFY:** Constant acceleration is stated; \(v_i,a,\Delta t\) are known.
+
+**PLAN:** Use \(v_f=v_i+a\Delta t\) and \(\Delta x=v_i\Delta t+\tfrac12a(\Delta t)^2\).
+
+**EXECUTE:** \(v_f=2.0+(3.0)(4.0)=14\ \mathrm{m/s}\). \(\Delta x=(2.0)(4.0)+\tfrac12(3.0)(4.0)^2=32\ \mathrm{m}\).
+
+**EVALUATE:** Dimensions are \(L/T\) and \(L\); positive \(v\) and \(a\) agree with increasing speed and positive displacement.
+
+<!-- card-id: 33f757f6-42d2-4bd8-a3b5-f4f97f2f7968 -->
+P: A marker changes from \(v_i=+12\ \mathrm{m/s}\) to \(v_f=0\) under constant \(a=-3.0\ \mathrm{m/s^2}\). Time is not requested. Choose the direct relation and find \(\Delta x\).
+S: **IDENTIFY:** Known \(v_i,v_f,a\), unknown \(\Delta x\); constant acceleration is stated.
+
+**PLAN:** Use the no-time relation and solve for displacement.
+
+**EXECUTE:** \(\Delta x=(v_f^2-v_i^2)/(2a)=(0-144)/(2(-3.0))=+24\ \mathrm{m}\).
+
+**EVALUATE:** Negative acceleration reduces a positive velocity to zero while the object still moves \(24\ \mathrm{m}\) in the positive direction.
+
+<!-- card-id: 49cf288e-bdbc-48b8-87fa-615e10ef86f2 -->
+P: Starting from rest, a marker undergoes constant \(a=+2.0\ \mathrm{m/s^2}\) and displacement \(\Delta x=+25\ \mathrm{m}\). Independently find the elapsed time.
+S: **IDENTIFY:** \(v_i=0\), \(a\), and \(\Delta x\) are known; \(\Delta t\) is wanted.
+
+**PLAN:** Use \(\Delta x=v_i\Delta t+\tfrac12a(\Delta t)^2\).
+
+**EXECUTE:** \(25=\tfrac12(2.0)(\Delta t)^2\), so \(\Delta t=\sqrt{25}=5.0\ \mathrm{s}\). The algebraic negative root is rejected because elapsed time is positive.
+
+**EVALUATE:** Substitution gives \((1.0\ \mathrm{m/s^2})(25\ \mathrm{s^2})=25\ \mathrm{m}\).
+
+<!-- card-id: 21684772-fc6a-4ea7-937e-b040decf1d18 -->
+P: During three consecutive \(1\ \mathrm{s}\) intervals, an object's position increases by \(3\ \mathrm{m}\) in each interval. Which simpler model is supported over those intervals—constant velocity or nonzero constant acceleration—and what observation is decisive?
+S: **IDENTIFY:** Compare equal-time position changes with the graph signatures of the two models.
+
+**PLAN:** Equal displacement in every equal time interval means equal average velocity on each interval.
+
+**EXECUTE:** Constant velocity, \(v=+3\ \mathrm{m/s}\), is supported. Nonzero constant acceleration would make the equal-time displacement increments change.
+
+**EVALUATE:** The conclusion is limited to the observed intervals; it does not prove velocity stays constant outside them.
+
+<!-- card-id: 72f7ac11-3a90-4628-a1f2-10a5bdcad49f -->
+Q: **Near-Earth free fall** is a vertical-motion model in which Earth's gravity is the only retained influence. Over a modest height range, while **air effects**—changes caused by the surrounding air—are negligible, acceleration is approximated as constant downward with magnitude \(g\approx9.8\ \mathrm{m/s^2}\).
+
+![A vertical free-fall setup with positive y upward, a launch point, a top point, and a downward acceleration arrow.](../figures/03_kinematics_1d/free-fall-setup.svg)
+
+If \(+y\) is upward, what algebraic acceleration belongs in the constant-acceleration equations?
+A: \(a_y=-g\approx-9.8\ \mathrm{m/s^2}\), because the modeled acceleration points opposite \(+y\). The approximation can fail when air effects or variation of \(g\) matter, or after contact.
+
+<!-- card-id: b2a9b62f-9252-48f6-94f4-52e952a42807 -->
+Q: In the upward-positive free-fall setup, **dropped** means released with \(v_i=0\), while **thrown upward** means \(v_i>0\). At the smooth top turning point of an upward throw, what are the velocity and acceleration?
+
+![A vertical free-fall setup with positive y upward, a launch point, a top point, and a downward acceleration arrow.](../figures/03_kinematics_1d/free-fall-setup.svg)
+A: \(v=0\) at the instant of the turn, but \(a=-g\), not zero. The negative acceleration makes velocity change from positive before the top to negative after it.
+
+<!-- card-id: 8df25559-31a6-4a99-afbb-789d3fd42530 -->
+P: An object is dropped from rest \(19.6\ \mathrm{m}\) above the ground. Use \(+y\) upward, neglect air effects, and take \(g=9.8\ \mathrm{m/s^2}\). Find the elapsed time to reach the ground.
+S: **IDENTIFY:** This is near-Earth free fall with constant \(a=-9.8\ \mathrm{m/s^2}\), \(v_i=0\), and \(\Delta y=-19.6\ \mathrm{m}\).
+
+**PLAN:** Use \(\Delta y=v_i\Delta t+\tfrac12a(\Delta t)^2\).
+
+**EXECUTE:** \(-19.6=\tfrac12(-9.8)(\Delta t)^2\), so \((\Delta t)^2=4.00\ \mathrm{s^2}\) and \(\Delta t=2.00\ \mathrm{s}\).
+
+**EVALUATE:** Elapsed time is the positive root; substitution returns the stated downward displacement.
+
+<!-- card-id: 298ff856-4d16-4886-82ff-be747ab82985 -->
+P: An object is thrown upward with \(v_i=+19.6\ \mathrm{m/s}\). With \(+y\) upward, \(a=-9.8\ \mathrm{m/s^2}\), and negligible air effects, complete the plan \(v_f=v_i+a\Delta t\) to find the time to the top.
+S: **IDENTIFY:** At the top turning point, \(v_f=0\).
+
+**PLAN:** Substitute \(v_f=0\), \(v_i=+19.6\ \mathrm{m/s}\), and \(a=-9.8\ \mathrm{m/s^2}\).
+
+**EXECUTE:** \(0=19.6-9.8\Delta t\), so \(\Delta t=2.00\ \mathrm{s}\).
+
+**EVALUATE:** The negative acceleration changes velocity by \(-19.6\ \mathrm{m/s}\), exactly enough to reach zero.
+
+<!-- card-id: 9b4ee184-fbaa-430f-a8fe-b1d6bde3b016 -->
+P: An object is dropped from rest through \(\Delta y=-44.1\ \mathrm{m}\). Use \(+y\) upward, constant \(a=-9.8\ \mathrm{m/s^2}\), and negligible air effects. Independently find its velocity just before the endpoint.
+S: **IDENTIFY:** \(v_i=0\), \(a\), and \(\Delta y\) are known; time is not needed.
+
+**PLAN:** Use \(v_f^2=v_i^2+2a\Delta y\), then choose the sign from the motion direction.
+
+**EXECUTE:** \(v_f^2=2(-9.8)(-44.1)=864.36\ \mathrm{m^2/s^2}\), so \(|v_f|=29.4\ \mathrm{m/s}\). Downward motion gives \(v_f=-29.4\ \mathrm{m/s}\).
+
+**EVALUATE:** The square equation supplies a magnitude; the upward-positive coordinate convention supplies the negative sign.
+
+<!-- card-id: 9319b4d2-cfb7-45da-ba62-2bb6d4f4b78a -->
+Q: An object is thrown upward and follows the chapter's near-Earth free-fall model until it returns to its release height. Which qualitative graph family is consistent: position concave down with a smooth maximum, velocity a descending straight line through zero, and acceleration a horizontal line at \(-g\); or the same position graph with acceleration zero at the top?
+A: The first family is consistent. Constant negative acceleration makes velocity decrease linearly through zero and position remain concave down; acceleration does not vanish at the turning point.

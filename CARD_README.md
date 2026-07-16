@@ -20,19 +20,22 @@ chapter 2 and introduces elementary calculus where its physical meaning first
 matters. It does not assume physics vocabulary or later mechanics chapters as
 prerequisites for earlier ones.
 
-## Adopted Chapter 1–2 baseline
+## Adopted Chapter 1–3 baseline
 
-The current `01_foundations` and `02_vectors` chapters were adopted from the
-blind, isolated `mechanics-reproduced` run on 2026-07-16. Their stable card
+The current `01_foundations`, `02_vectors`, and `03_kinematics_1d` chapters
+were adopted from blind, isolated `mechanics-reproduced` runs on 2026-07-16.
+Their stable card
 identities, prerequisite scans, and TikZ-authored figure portfolios supersede
 the original pilot inventories recorded later in this file. The replacement
-decision and source inventory are recorded in
-`.flashcards/audits/01_02-replacement.md`.
+decisions and source inventories are recorded in
+`.flashcards/audits/01_02-replacement.md` and
+`.flashcards/audits/03-replacement.md`.
 
 | Chapter | Current inventory | Dependency boundary | Figure portfolio |
 |---|---|---|---|
 | `01_foundations` | 44 cards: 25 basic, 8 cloze, 11 problem | Assumes only arithmetic, algebra, ratios, integer powers of ten, decimal arithmetic, and ordinary geometry. It introduces models and evidence, quantity–value–unit grammar, SI mechanics units, prefixes and conversions, dimensions, scientific notation and scale, resolution, uncertainty, and significant figures. It must not assume vectors or any later mechanics vocabulary. | 4 TikZ/SVG pairs: model–evidence cycle, powers-of-ten scale, ruler resolution, and uncertainty/model comparison |
 | `02_vectors` | 30 cards: 20 basic, 0 cloze, 10 problem | Assumes Chapter 1 plus algebra, signed numbers, square roots, right-triangle trigonometry, and angles. It introduces all vector notation and geometry before use and deliberately excludes motion, force, work, torque, energy, momentum, and other later mechanics concepts. | 12 TikZ/SVG pairs covering arrow grammar, equality/opposites, scalar multiplication, components, decomposition, coordinate choice, addition, subtraction, dot-product sign/projection, and cross-product order/area |
+| `03_kinematics_1d` | 49 cards: 34 basic, 0 cloze, 15 problem | Assumes Chapters 1–2 and the declared algebra, trigonometry, and introductory-calculus tools. It establishes the physical meaning of each slope, derivative, signed area, and integral before use; derives and checks constant-acceleration models; and excludes forces, energy, momentum, drag laws, projectile motion, and other later mechanics concepts. | 11 TikZ/SVG pairs covering coordinate and time choices, distance/displacement, position-time interpretation, instantaneous-rate tangents, signed velocity and acceleration areas, graph translation, constant-velocity/acceleration models, and free-fall signs |
 
 Current first-learning order is:
 
@@ -40,6 +43,10 @@ Current first-learning order is:
 dimensions → scientific notation/scale → resolution/uncertainty → significant
 figures → scalar/vector and arrow grammar → components/decomposition → vector
 addition/subtraction → dot product/projection → cross product`.
+The next established sequence is `one-dimensional coordinates/time →
+displacement/distance → average and instantaneous rates → graph slope/area
+translations → constant-velocity and constant-acceleration models → bounded
+near-Earth free fall`.
 
 For the complete front-by-front dependency evidence, consult the adopted card
 files and their isolated audit records rather than the superseded ledgers below.

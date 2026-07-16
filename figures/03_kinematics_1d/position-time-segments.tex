@@ -1,0 +1,22 @@
+% flashcards-title: Piecewise position-time graph
+% flashcards-desc: Position rises from negative two metres at zero seconds to two metres at two seconds, stays at two metres until four seconds, then falls to negative one metre at six seconds.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=1.05cm,y=1.05cm]
+  \foreach \x in {0,2,4,6} \draw[mech guide] (\x,-2.5) -- (\x,2.7);
+  \foreach \y in {-2,-1,0,1,2} \draw[mech guide] (-0.25,\y) -- (6.35,\y);
+  \draw[mech axis,-{Stealth[length=3mm,width=2.2mm]}] (0,-2.5) -- (0,2.9) node[above] {\(x\) (\(\mathrm{m}\))};
+  \draw[mech axis,-{Stealth[length=3mm,width=2.2mm]}] (-0.25,0) -- (6.55,0) node[right] {\(t\) (\(\mathrm{s}\))};
+  \foreach \x in {0,2,4,6} {
+    \draw[mech tick] (\x,-0.1) -- (\x,0.1);
+    \node[below=2pt] at (\x,-0.1) {\(\x\)};
+  }
+  \foreach \y in {-2,-1,1,2} {
+    \draw[mech tick] (-0.1,\y) -- (0.1,\y);
+    \node[left=2pt] at (-0.1,\y) {\(\y\)};
+  }
+  \draw[mech primary] (0,-2) -- (2,2) -- (4,2) -- (6,-1);
+  \foreach \p in {(0,-2),(2,2),(4,2),(6,-1)} \fill[mechBlue] \p circle (3pt);
+\end{tikzpicture}
+\end{document}

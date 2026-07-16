@@ -1,0 +1,25 @@
+% flashcards-title: Signed area on an acceleration-time graph
+% flashcards-desc: Acceleration is positive at two metres per second squared for two seconds, then negative at one metre per second squared for three seconds; the regions use solid and dashed outlines.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=1.15cm,y=1.15cm]
+  \fill[mechPale] (0,0) rectangle (2,2);
+  \fill[mechOrange,opacity=0.16] (2,0) rectangle (5,-1);
+  \draw[mech primary] (0,2) -- (2,2);
+  \draw[mech primary] (0,0) -- (0,2);
+  \draw[mech secondary] (2,-1) -- (5,-1);
+  \draw[mech secondary] (2,0) -- (2,-1);
+  \draw[mech secondary] (5,-1) -- (5,0);
+  \draw[mech axis,-{Stealth[length=3mm,width=2.2mm]}] (0,-1.65) -- (0,2.8) node[above] {\(a\) (\(\mathrm{m/s^2}\))};
+  \draw[mech axis,-{Stealth[length=3mm,width=2.2mm]}] (-0.2,0) -- (5.65,0) node[right] {\(t\) (\(\mathrm{s}\))};
+  \foreach \x in {0,2,5} {
+    \draw[mech tick] (\x,-0.09) -- (\x,0.09);
+    \node[below=2pt] at (\x,-0.09) {\(\x\)};
+  }
+  \node[left=2pt] at (0,2) {\(+2\)};
+  \node[left=2pt] at (0,-1) {\(-1\)};
+  \node at (1,0.9) {solid \(+\)};
+  \node at (3.5,-0.55) {dashed \(-\)};
+\end{tikzpicture}
+\end{document}

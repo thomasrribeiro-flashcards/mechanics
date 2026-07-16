@@ -1,0 +1,24 @@
+% flashcards-title: Constant-velocity graph family
+% flashcards-desc: Position rises linearly, velocity is a horizontal positive line, and acceleration is a horizontal line at zero over the same time interval.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \begin{scope}[shift={(0,9)}]
+    \draw[mech axis,-{Stealth[length=2.6mm,width=2mm]}] (0,0) -- (5.2,0) node[right] {\(t\)};
+    \draw[mech axis,-{Stealth[length=2.6mm,width=2mm]}] (0,0) -- (0,3.8) node[above] {\(x\)};
+    \draw[mech primary] (0.4,0.7) -- (4.7,3.2);
+  \end{scope}
+  \begin{scope}[shift={(0,4.5)}]
+    \draw[mech axis,-{Stealth[length=2.6mm,width=2mm]}] (0,0) -- (5.2,0) node[right] {\(t\)};
+    \draw[mech axis,-{Stealth[length=2.6mm,width=2mm]}] (0,0) -- (0,3.8) node[above] {\(v\)};
+    \draw[mech primary] (0.4,2.4) -- (4.7,2.4);
+  \end{scope}
+  \begin{scope}
+    \draw[mech axis,-{Stealth[length=2.6mm,width=2mm]}] (0,0) -- (5.2,0) node[right] {\(t\)};
+    \draw[mech axis,-{Stealth[length=2.6mm,width=2mm]}] (0,-1.1) -- (0,3.2) node[above] {\(a\)};
+    \draw[mech primary] (0.4,0) -- (4.7,0);
+    \node[below=3pt] at (2.55,0) {\(a=0\)};
+  \end{scope}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,22 @@
+% flashcards-title: One-dimensional coordinate and time choices
+% flashcards-desc: A signed horizontal position axis has an object at negative two metres, an origin at zero, and a rightward positive direction; a small clock strip marks a separate time origin.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=1.05cm,y=1cm]
+  \draw[mech axis,-{Stealth[length=3mm,width=2.2mm]}] (-4.3,0) -- (4.6,0) node[right] {$+x$};
+  \foreach \x in {-4,-3,...,4} {
+    \draw[mech tick] (\x,-0.12) -- (\x,0.12);
+    \node[below=2pt] at (\x,-0.12) {\(\x\)};
+  }
+  \node[below=9mm] at (0,0) {position \(x\) (\(\mathrm{m}\))};
+  \fill[mechBlue] (-2,0) circle (4.5pt);
+  \node[above=4pt] at (-2,0) {object};
+  \node[above=4pt] at (0,0) {origin};
+  \draw[mech guide] (-3.2,-1.55) -- (3.2,-1.55);
+  \draw[mech tick] (-2.3,-1.68) -- (-2.3,-1.42);
+  \draw[mech tick] (1.8,-1.68) -- (1.8,-1.42);
+  \node[below=2pt] at (-2.3,-1.68) {time origin \(t=0\)};
+  \node[below=2pt] at (1.8,-1.68) {later clock reading};
+\end{tikzpicture}
+\end{document}

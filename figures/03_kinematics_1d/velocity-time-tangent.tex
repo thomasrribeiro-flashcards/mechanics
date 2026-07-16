@@ -1,0 +1,17 @@
+% flashcards-title: Tangent slope on a velocity-time graph
+% flashcards-desc: A curved velocity-time graph has a tangent line at a marked time, separating the graph value from its local slope.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=1.05cm,y=1.05cm]
+  \draw[mech axis,-{Stealth[length=3mm,width=2.2mm]}] (0,0) -- (6.4,0) node[right] {\(t\) (\(\mathrm{s}\))};
+  \draw[mech axis,-{Stealth[length=3mm,width=2.2mm]}] (0,-0.4) -- (0,4.7) node[above] {\(v\) (\(\mathrm{m/s}\))};
+  \draw[mech primary,domain=0.4:5.8,samples=80,smooth] plot (\x,{0.7+0.95*\x-0.075*\x*\x});
+  \coordinate (P) at (3,{0.7+0.95*3-0.075*9});
+  \draw[mech secondary] (0.9,{2.875-0.5*2.1}) -- (5.3,{2.875+0.5*2.3});
+  \draw[mech guide] (3,0) -- (P);
+  \fill[mechBlue] (P) circle (3.5pt);
+  \node[below=2pt] at (3,0) {\(t_*\)};
+  \node[rotate=26,above] at (4.45,3.55) {tangent};
+\end{tikzpicture}
+\end{document}
