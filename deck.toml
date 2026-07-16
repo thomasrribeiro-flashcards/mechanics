@@ -15,6 +15,11 @@ subject = "templates/guides/physics.md"
 [identity]
 policy = "preserve-id-for-same-retrieval-target"
 
+[figures]
+authoring_default = "tikz"
+delivery = "precompiled-svg"
+runtime_compilation = false
+
 [sources]
 require_authority = true
 require_license_record = true

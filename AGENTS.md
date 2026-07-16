@@ -17,3 +17,6 @@ pilot is explicitly approved.
 Preserve existing card IDs when improving the same retrieval target; use new
 IDs for materially new retrieval. Validate before handoff. Do not commit or
 push unless the user asks.
+
+Author every new technical figure in TikZ, reuse `figures/tikz-style.tex`, and
+commit its same-named generated SVG. Do not add runtime TikZ compilation.

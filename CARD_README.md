@@ -96,12 +96,12 @@ reconciled after the cold-start scan.
 | Cloze `C:` | Exactly useful compact recall for meter, second, and kilogram after explanation | 3 | One cloze per mechanics base unit; no formula clozes added |
 | Problem `P:/S:` | Conversion, dimensional, scale, and reporting transfer | 6 | Two conversion, two dimensional, one scale, and one reporting problem realize the plan |
 | Problem progression | Supported → faded/independent where repetition pays | 6 scheduled problems | Explicit givens and earlier scheduled answers support conversion, dimensions, scale, and reporting without relying on unscheduled prose |
-| Figure opportunities | Five included visual targets; four explicit omissions | 5 targets in 6 SVG assets | The uncertainty target needs a labeled teaching figure and an unlabeled retrieval front; no expected target is unexplained |
+| Figure opportunities | Five included visual targets; four explicit omissions | 5 targets in 6 TikZ-authored SVG assets | The uncertainty target needs a labeled teaching figure and an unlabeled retrieval front; no expected target is unexplained |
 
 Chapter 1 therefore contains 28 cards: 19 basic, 3 cloze, and 6 problem
-blocks. It references the five planned visual targets. The six original SVG
-assets reflect one retrieval/reference pair for the uncertainty target, not an added
-figure quota.
+blocks. It references the five planned visual targets. The six original
+TikZ-authored SVG assets reflect one retrieval/reference pair for the uncertainty
+target, not an added figure quota.
 
 ## Chapter 2 build ledger
 
@@ -183,8 +183,8 @@ cloze recall before its meaning is understood.
 | Determinant mnemonic | Omit | The explicit component formula is the authentic calculation scaffold and avoids turning determinant expansion into an unestablished prerequisite |
 
 Planned figure inventory: seven distinct retrieval targets in eight original
-SVG assets; vector addition uses separate setup and answer assets. This is a
-role inventory, not a quota.
+TikZ-authored SVG assets; vector addition uses separate setup and answer assets.
+This is a role inventory, not a quota.
 
 ### Chapter 2 inventory reconciliation
 
@@ -194,7 +194,7 @@ role inventory, not a quota.
 | Cloze C: | 0 | 0 | Exact compact recall was not a separate durable target; symbols and formulas are retrieved through meaning and use |
 | Problem P:/S: | 8 decomposition, reconstruction, operation, and product problems | 9 | Three component problems, two addition/subtraction problems, two dot-product problems, and two cross-product problems provide an analyzed-to-independent progression; the extra quadrant-II decomposition makes sign selection independently gradable |
 | Problem progression | Supported decomposition → independent quadrant case/reconstruction; visual operation bridge → independent component operations; definition-supported products → numerical/component transfer | 9 scheduled problems | F10 is the analyzed decomposition; F11–F12 fade support; F17/F19 execute sum/difference; F24–F25 and F32–F33 move from supplied formulas to transfer and checks |
-| Figure opportunities | 7 retrieval targets in 8 SVG assets | 7 targets in 8 original SVGs | Every included opportunity was realized; addition alone needs a setup/answer pair, and all planned omissions remain justified |
+| Figure opportunities | 7 retrieval targets in 8 SVG assets | 7 targets in 8 original TikZ-authored SVGs | Every included opportunity was realized; addition alone needs a setup/answer pair, and all planned omissions remain justified |
 
 Chapter 2 therefore contains 34 cards: 25 basic, zero cloze, and 9 problem
 blocks. It uses seven visual retrieval targets: vector equality, component
@@ -270,12 +270,13 @@ torsional motion involved aeroelastic flutter.
 
 ## Figures
 
-Use original SVGs for free-body diagrams, motion graphs, vector geometry,
-before/after states, energy accounting, orbits, oscillations, and model-choice
-comparisons. For construction-heavy diagrams, keep editable TikZ sources beside
-their same-named generated SVGs and reuse `figures/tikz-style.tex`. Compile with
-`flashcards deck render-figures .`; validation must reject stale output. The app
-must receive ordinary SVG and must never compile TikZ at review time.
+Author new technical figures in TikZ for free-body diagrams, motion graphs,
+vector geometry, before/after states, energy accounting, orbits, oscillations,
+and model-choice comparisons. Keep editable sources beside their same-named
+generated SVGs and reuse `figures/tikz-style.tex`. Compile with `flashcards deck
+render-figures .`; validation must reject stale output. The app must receive
+ordinary SVG and must never compile TikZ at review time. Record any exception
+whose authentic visual target requires another medium.
 
 Use the deck's black, white, gray, and gold palette, with a non-color cue for
 every distinction. Prefer consistent sans-serif labels, restrained line weights,
