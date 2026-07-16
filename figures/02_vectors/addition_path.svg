@@ -2,17 +2,17 @@
   <title id="title">Head-to-tail setup for vector addition</title>
   <desc id="desc">Solid arrow A points right and slightly up. Dashed arrow B begins at A's head and points farther right and up. No direct start-to-finish arrow is shown.</desc>
   <defs>
-    <marker id="arrow-gold" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#b8860b"/>
     </marker>
-    <marker id="arrow-black" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
+    <marker id="arrow-black" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#111"/>
     </marker>
   </defs>
   <rect width="380" height="250" fill="#fff"/>
   <circle cx="45" cy="195" r="6" fill="#111"/>
-  <line x1="45" y1="195" x2="200" y2="150" stroke="#b8860b" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow-gold)"/>
-  <line x1="200" y1="150" x2="330" y2="60" stroke="#111" stroke-width="6" stroke-dasharray="14 8" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+  <line x1="45" y1="195" x2="200" y2="150" stroke="#b8860b" stroke-width="7" stroke-linecap="butt" marker-end="url(#arrow-gold)"/>
+  <line x1="200" y1="150" x2="330" y2="60" stroke="#111" stroke-width="6" stroke-dasharray="14 8" stroke-linecap="butt" marker-end="url(#arrow-black)"/>
   <text x="113" y="194" font-family="sans-serif" font-size="23" font-weight="700" fill="#111">A</text>
   <text x="268" y="130" font-family="sans-serif" font-size="23" font-weight="700" fill="#111">B</text>
   <text x="25" y="225" font-family="sans-serif" font-size="17" fill="#555">start</text>

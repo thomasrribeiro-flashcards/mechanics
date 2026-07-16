@@ -2,20 +2,20 @@
   <title id="title">Projection used to interpret a dot product</title>
   <desc id="desc">Vector A points horizontally right. Vector B shares its tail and points up-right. A perpendicular dashed line drops from B's head to A, marking the signed parallel projection of B.</desc>
   <defs>
-    <marker id="arrow-gold" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#b8860b"/>
     </marker>
-    <marker id="arrow-black" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
+    <marker id="arrow-black" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#111"/>
     </marker>
   </defs>
   <rect width="380" height="250" fill="#fff"/>
   <circle cx="50" cy="190" r="6" fill="#111"/>
-  <line x1="50" y1="190" x2="330" y2="190" stroke="#111" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow-black)"/>
-  <line x1="50" y1="190" x2="245" y2="70" stroke="#b8860b" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow-gold)"/>
+  <line x1="50" y1="190" x2="330" y2="190" stroke="#111" stroke-width="6" stroke-linecap="butt" marker-end="url(#arrow-black)"/>
   <line x1="245" y1="70" x2="245" y2="190" stroke="#555" stroke-width="3" stroke-dasharray="9 7"/>
   <line x1="50" y1="190" x2="245" y2="190" stroke="#b8860b" stroke-width="10" opacity="0.45"/>
   <path d="M 245 174 L 229 174 L 229 190" fill="none" stroke="#111" stroke-width="3"/>
+  <line x1="50" y1="190" x2="245" y2="70" stroke="#b8860b" stroke-width="7" stroke-linecap="butt" marker-end="url(#arrow-gold)"/>
   <text x="312" y="222" font-family="sans-serif" font-size="22" font-weight="700" fill="#111">A</text>
   <text x="220" y="55" font-family="sans-serif" font-size="22" font-weight="700" fill="#111">B</text>
   <text x="133" y="181" font-family="sans-serif" font-size="20" font-weight="700" fill="#111">B∥</text>

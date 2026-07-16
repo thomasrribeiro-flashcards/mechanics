@@ -5,10 +5,10 @@
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#d4d4d4" stroke-width="1"/>
     </pattern>
-    <marker id="axis-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto">
+    <marker id="axis-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#111"/>
     </marker>
-    <marker id="vector-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
+    <marker id="vector-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#b8860b"/>
     </marker>
   </defs>
@@ -19,8 +19,8 @@
   <text x="304" y="248" font-family="sans-serif" font-size="20" fill="#111">+x</text>
   <text x="220" y="40" font-family="sans-serif" font-size="20" fill="#111">+y</text>
   <text x="216" y="245" font-family="sans-serif" font-size="17" fill="#111">O</text>
-  <line x1="210" y1="220" x2="90" y2="140" stroke="#b8860b" stroke-width="7" stroke-linecap="round" marker-end="url(#vector-arrow)"/>
   <line x1="90" y1="140" x2="90" y2="220" stroke="#555" stroke-width="3" stroke-dasharray="9 7"/>
   <line x1="90" y1="140" x2="210" y2="140" stroke="#555" stroke-width="3" stroke-dasharray="9 7"/>
+  <line x1="210" y1="220" x2="90" y2="140" stroke="#b8860b" stroke-width="7" stroke-linecap="butt" marker-end="url(#vector-arrow)"/>
   <text x="122" y="118" font-family="sans-serif" font-size="22" font-weight="700" fill="#111">A</text>
 </svg>

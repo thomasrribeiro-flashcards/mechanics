@@ -2,21 +2,22 @@
   <title id="title">Three arrows for comparing vector equality</title>
   <desc id="desc">Arrows P and Q have equal lengths and point up and right from different locations. Arrow R has the same length but points down and left.</desc>
   <defs>
-    <marker id="arrow-gold" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#b8860b"/>
     </marker>
-    <marker id="arrow-black" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
+    <marker id="arrow-black" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#111"/>
     </marker>
   </defs>
   <rect width="360" height="220" fill="#fff"/>
-  <line x1="40" y1="75" x2="120" y2="35" stroke="#b8860b" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow-gold)"/>
+  <line x1="40" y1="75" x2="120" y2="35" stroke="#b8860b" stroke-width="7" stroke-linecap="butt" marker-end="url(#arrow-gold)"/>
   <circle cx="40" cy="75" r="5" fill="#111"/>
   <text x="24" y="104" font-family="sans-serif" font-size="22" font-weight="700" fill="#111">P</text>
-  <line x1="40" y1="180" x2="120" y2="140" stroke="#b8860b" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow-gold)"/>
+  <line x1="40" y1="180" x2="120" y2="140" stroke="#b8860b" stroke-width="7" stroke-linecap="butt" marker-end="url(#arrow-gold)"/>
   <circle cx="40" cy="180" r="5" fill="#111"/>
   <text x="24" y="210" font-family="sans-serif" font-size="22" font-weight="700" fill="#111">Q</text>
-  <line x1="315" y1="75" x2="235" y2="115" stroke="#111" stroke-width="6" stroke-dasharray="13 8" stroke-linecap="round" marker-end="url(#arrow-black)"/>
+  <line x1="315" y1="75" x2="249" y2="108" stroke="#111" stroke-width="6" stroke-dasharray="13 8" stroke-linecap="butt"/>
+  <line x1="249" y1="108" x2="235" y2="115" stroke="#111" stroke-width="6" stroke-linecap="butt" marker-end="url(#arrow-black)"/>
   <circle cx="315" cy="75" r="5" fill="#111"/>
   <text x="323" y="82" font-family="sans-serif" font-size="22" font-weight="700" fill="#111">R</text>
 </svg>
