@@ -20,7 +20,35 @@ chapter 2 and introduces elementary calculus where its physical meaning first
 matters. It does not assume physics vocabulary or later mechanics chapters as
 prerequisites for earlier ones.
 
-## Chapter 1 pilot gate
+## Adopted Chapter 1–2 baseline
+
+The current `01_foundations` and `02_vectors` chapters were adopted from the
+blind, isolated `mechanics-reproduced` run on 2026-07-16. Their stable card
+identities, prerequisite scans, and TikZ-authored figure portfolios supersede
+the original pilot inventories recorded later in this file. The replacement
+decision and source inventory are recorded in
+`.flashcards/audits/01_02-replacement.md`.
+
+| Chapter | Current inventory | Dependency boundary | Figure portfolio |
+|---|---|---|---|
+| `01_foundations` | 44 cards: 25 basic, 8 cloze, 11 problem | Assumes only arithmetic, algebra, ratios, integer powers of ten, decimal arithmetic, and ordinary geometry. It introduces models and evidence, quantity–value–unit grammar, SI mechanics units, prefixes and conversions, dimensions, scientific notation and scale, resolution, uncertainty, and significant figures. It must not assume vectors or any later mechanics vocabulary. | 4 TikZ/SVG pairs: model–evidence cycle, powers-of-ten scale, ruler resolution, and uncertainty/model comparison |
+| `02_vectors` | 30 cards: 20 basic, 0 cloze, 10 problem | Assumes Chapter 1 plus algebra, signed numbers, square roots, right-triangle trigonometry, and angles. It introduces all vector notation and geometry before use and deliberately excludes motion, force, work, torque, energy, momentum, and other later mechanics concepts. | 12 TikZ/SVG pairs covering arrow grammar, equality/opposites, scalar multiplication, components, decomposition, coordinate choice, addition, subtraction, dot-product sign/projection, and cross-product order/area |
+
+Current first-learning order is:
+
+`models/evidence → quantity/value/unit → SI writing → prefixes/conversion →
+dimensions → scientific notation/scale → resolution/uncertainty → significant
+figures → scalar/vector and arrow grammar → components/decomposition → vector
+addition/subtraction → dot product/projection → cross product`.
+
+For the complete front-by-front dependency evidence, consult the adopted card
+files and their isolated audit records rather than the superseded ledgers below.
+
+## Superseded Chapter 1 pilot ledger (historical only)
+
+> This section describes the replaced 28-card pilot. It is retained only as
+> design history and must not be used as the inventory or dependency source for
+> the current chapter.
 
 `01_foundations` is the novice-first pilot. Until a human approves its completed
 cold-start audit, no later chapter may be authored or revised.
@@ -103,7 +131,11 @@ blocks. It references the five planned visual targets. The six original
 TikZ-authored SVG assets reflect one retrieval/reference pair for the uncertainty
 target, not an added figure quota.
 
-## Chapter 2 build ledger
+## Superseded Chapter 2 build ledger (historical only)
+
+> This section describes the replaced 34-card vector chapter. It is retained
+> only as design history and must not be used as the inventory or dependency
+> source for the current chapter.
 
 `02_vectors` is a novice-first bridge from concrete geometric arrows to the
 vector operations later mechanics chapters may use. It assumes only chapter
