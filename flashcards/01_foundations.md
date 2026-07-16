@@ -1,293 +1,257 @@
 +++
 order = 1
 subject = "physics"
-tags = ["mechanics", "physics", "measurement", "units", "dimensional-analysis"]
+tags = ["mechanics", "physics", "foundations", "measurement"]
 +++
 
 # Foundations: models, measurement, and scale
 
-This pilot assumes algebra and trigonometry but no physics vocabulary. The app
-schedules only the `Q:/A:`, `C:`, and `P:/S:` blocks below, so the first
-scheduled front in each learning sequence includes the minimum teaching bridge
-needed for a cold start. The surrounding lesson prose remains a readable
-reference and authoring record; later fronts never depend on the learner having
-seen it.
+<!-- card-id: 32988205-5a53-4e4a-a91e-cd91453369dc -->
+Q: A **physical model** is a deliberately simplified representation of a real situation, made for a stated purpose. What makes such a simplification useful rather than arbitrary?
+A: It keeps the features needed to explain or predict the chosen aspect of the situation. A useful model states its purpose and can produce predictions that observations can test.
 
-## Lesson 1 — Physics connects models with evidence
+<!-- card-id: 91d32530-c893-45f1-8884-93d931477b41 -->
+Q: A model keeps some features of a real situation and omits others. A **prediction** is what the model says should be observed under stated conditions. What should you ask before trusting one of its predictions?
+A: Ask whether its assumptions and omitted features are reasonable for this situation and purpose. A model can be useful within one range of conditions and inadequate outside it.
 
-A **system under study** is the part of the world we choose to describe. A
-**physical model** is a deliberately simplified description of that system. A
-useful model states relationships clearly enough to make a **prediction**: a
-result that observations or measurements can check.
+<!-- card-id: c58ff7ae-c7de-42f2-aa25-d8fbca0e6e16 -->
+Q: A **prediction** is what a model says should be observed under stated conditions; **evidence** is an observation or measurement used for comparison.
 
-Evidence does not enter at the end of a rigid, one-way “scientific method.” The
-work is iterative. A prediction guides a measurement; comparison with the
-measurement can retain the model for further use, reveal a faulty measurement
-or assumption, or motivate a revised model and another test. Agreement raises
-confidence only within the tested conditions; it does not prove that the model
-will work in every situation.
+![A model leads to a prediction, while observation or measurement provides evidence; both feed a comparison.](../figures/01_foundations/model-evidence-cycle.svg)
 
-![A loop linking a model, prediction, measurement, and comparison, with the comparison returning to the model](../figures/01_foundations/model_evidence_loop.svg)
+If prediction and evidence repeatedly disagree after obvious measurement problems are checked, what should be reconsidered?
+A: Reconsider the model's assumptions, its range of applicability, or the model itself. Evidence can support a model for tested conditions, but agreement does not prove that it is the only possible model.
 
-<!-- card-id: a690d74f-c012-4c62-ae07-aa3f84877e0a -->
-Q: A physical model is a deliberately simplified description of a chosen system, and a prediction is a result that observations or measurements can check. Given those meanings, what makes a physical model useful rather than just a story?
-A: It states relationships clearly enough to make predictions that observations or measurements can check. Its usefulness is bounded by the situations in which those checks support it.
+<!-- card-id: 7dfe3ed8-9583-40b9-8fb0-a317dd85c028 -->
+Q: A **physical quantity** is a property that can be compared by magnitude. A **quantity value** expresses that magnitude as a number times a unit. In “the length is \(2.4\ \mathrm{m}\),” identify the quantity, numerical value, and unit.
+A: Quantity: length. Numerical value: \(2.4\). Unit: metre, symbol \(\mathrm{m}\). The quantity value is \(2.4\ \mathrm{m}\).
 
-<!-- card-id: 2c130f1c-7de5-4d91-bbdc-b77a83ee237a -->
-Q: ![A loop linking a model, prediction, measurement, and comparison, with the comparison returning to the model](../figures/01_foundations/model_evidence_loop.svg)
+<!-- card-id: c3c7c120-8400-4ab5-9c85-acc6c721b666 -->
+Q: The International System of Units (SI) supplies standard references. The three SI base-unit mappings used in this chapter are length–metre (\(\mathrm{m}\)), mass–kilogram (\(\mathrm{kg}\)), and time–second (\(\mathrm{s}\)). Why is the bare statement “the length is 2.4” incomplete?
+A: It gives a numerical value without a unit, so the magnitude is not fixed. For example, \(2.4\ \mathrm{m}\) and \(2.4\ \mathrm{cm}\) are different quantity values.
 
-In this loop, what does the return from “compare” to “model” mean when a careful measurement disagrees with a prediction?
-A: Recheck the measurement and assumptions, then revise or replace the model if the disagreement remains and test again. Disagreement is information about the model's limits or setup, not permission to change the data.
+<!-- card-id: f9ed80c5-4916-4dfd-8eae-5307cea02711 -->
+C: In SI, the base unit of length is [the metre (\(\mathrm{m}\))].
 
-<!-- card-id: 06358250-f5d7-45d5-9176-f66e451b7e6a -->
-Q: A model's prediction agrees with one careful measurement. What conclusion is justified—and what conclusion is not?
-A: The result supports using the model under the tested conditions. It does not prove that the model is exact or universally valid; other models may make the same tested prediction, and new conditions can expose limits.
+<!-- card-id: 9e501db1-252a-4b2b-9ad0-4ab5597aee17 -->
+C: In SI, the base unit of mass is [the kilogram (\(\mathrm{kg}\))].
 
-## Lesson 2 — A measurement is a comparison
+<!-- card-id: c6d05828-2d10-4616-83f7-ab1e9cb3fd2e -->
+C: In SI, the base unit of time is [the second (\(\mathrm{s}\))].
 
-A **physical quantity** is a measurable property, such as the length of a
-tabletop. A **unit** is an agreed reference quantity of the same kind. To
-measure the length is to compare it with a length unit. The reported **quantity
-value** has two inseparable parts:
+<!-- card-id: 14af6aec-9a1e-4ebc-b12a-23f04af2c0a9 -->
+Q: A quantity value is a product of a number and a unit, so SI writing places a space between them. Rewrite `12cm` correctly.
+A: \(12\ \mathrm{cm}\). The prefix and unit symbol stay attached to each other, but the numerical value is separated from the unit symbol by a space.
 
-\[
-\text{quantity value}=\text{numerical value}\times\text{unit}.
-\]
+<!-- card-id: 64c176ac-c061-4e1d-aeec-c519a7068294 -->
+Q: Diagnose `5 kgs` as an SI quantity value.
+A: Write \(5\ \mathrm{kg}\). Unit symbols are mathematical symbols: they do not take a plural `s` or a period, and their capitalization is fixed.
 
-For example, in \(25\ \mathrm{cm}\), \(25\) is the numerical value and
-\(\mathrm{cm}\) is the unit symbol. The number alone is incomplete. Changing
-units can change the numerical value without changing the physical quantity.
+<!-- card-id: a52675ca-c8fd-4cf2-a618-79c8ce1fd474 -->
+Q: For a rectangle, area is defined as length times length. If both lengths are measured in metres, what unit expresses the area?
+A: Square metres, \(\mathrm{m^2}\), because \(\mathrm{m}\times\mathrm{m}=\mathrm{m^2}\).
 
-![One bar aligned with two scales, one reading 25 centimeters and the other 0.25 meter](../figures/01_foundations/same_length_two_units.svg)
+<!-- card-id: df2362d5-5aa8-4b29-be0b-1d5dcf313ea7 -->
+Q: An SI prefix is an exact power-of-ten factor attached directly to a unit symbol: \(\mathrm{k}=10^3\), \(\mathrm{c}=10^{-2}\), \(\mathrm{m}=10^{-3}\), \(\mathrm{\mu}=10^{-6}\), and \(\mathrm{n}=10^{-9}\). Using that grammar, what does \(1\ \mathrm{mm}\) mean in metres?
+A: \(1\ \mathrm{mm}=1\times10^{-3}\ \mathrm{m}\). Here the first `m` is the prefix symbol milli and the second is the unit symbol metre; attachment and context distinguish their roles.
 
-The **International System of Units (SI)** supplies shared reference units and
-writing conventions. A **base unit** is one of SI's independently specified
-units. A **derived unit** is formed by multiplying or dividing units. Mechanics
-will repeatedly use the SI base units meter (m) for length, kilogram (kg) for
-mass, and second (s) for time. For example, rectangle area is length times
-length, so its SI unit is \(\mathrm{m^2}\).
+<!-- card-id: 0b73abb8-bf10-4e60-9d75-c1c9f2962f0a -->
+C: The SI prefix kilo, symbol \(\mathrm{k}\), multiplies a unit by [\(10^3\)].
 
-At this stage, **mass** means the quantity that a balance compares between
-objects; later chapters will develop its role in physical models. “Kilogram” is
-the historical name of the SI base unit of mass, so learn \(\mathrm{kg}\) as
-the base-unit symbol as a whole even though the name contains “kilo.”
+<!-- card-id: caf46752-32e3-454c-b1d7-d21e42a7c0bc -->
+C: The SI prefix centi, symbol \(\mathrm{c}\), multiplies a unit by [\(10^{-2}\)].
 
-In SI writing, leave a space between a number and a unit symbol
-(\(25\ \mathrm{cm}\), not \(25\mathrm{cm}\)); do not pluralize a symbol
-(\(4\ \mathrm{kg}\), not \(4\ \mathrm{kgs}\)).
+<!-- card-id: 5df85f93-c803-4ac6-a8bb-e58049fa1296 -->
+C: The SI prefix milli, symbol \(\mathrm{m}\), multiplies a unit by [\(10^{-3}\)].
 
-<!-- card-id: 04c3b227-e83a-49bf-9f3d-d3a24fd84efb -->
-Q: A measurement reports a quantity value as a numerical value times an agreed reference called a unit. In SI mechanics, examples include meter (m) for length, second (s) for time, and kilogram (kg) for mass. What information does the unit supply that the numerical value alone does not?
-A: The unit names the agreed reference used for comparison. Without it, a number such as 25 does not say what kind or size of quantity was measured.
+<!-- card-id: c05436b7-d047-4d59-bd64-3847c8f07a37 -->
+C: The SI prefix micro, symbol \(\mathrm{\mu}\), multiplies a unit by [\(10^{-6}\)].
 
-<!-- card-id: b1ad52fa-a210-4322-b926-8656cc4d6cd7 -->
-Q: ![One bar aligned with two scales, one reading 25 centimeters and the other 0.25 meter](../figures/01_foundations/same_length_two_units.svg)
+<!-- card-id: e9820e3c-b757-4f70-b322-952b9d57b52b -->
+C: The SI prefix nano, symbol \(\mathrm{n}\), multiplies a unit by [\(10^{-9}\)].
 
-Why can the same bar have numerical values 25 and 0.25 without changing its physical length?
-A: The unit changed: \(25\ \mathrm{cm}=0.25\ \mathrm{m}\). A larger unit requires fewer copies to describe the same quantity, so the number changes while the length does not.
+<!-- card-id: 1dcffc18-a1ee-44f9-9b57-45c1993fb9f2 -->
+P: A **conversion factor** is a ratio equal to one, written so the old unit cancels. Convert \(2.5\ \mathrm{m}\) to centimetres using \(1\ \mathrm{m}=100\ \mathrm{cm}\).
+S: **IDENTIFY:** This is a unit conversion; the physical quantity must not change.
 
-<!-- card-id: 59a25f74-cc2c-4268-bf56-02749c208eb0 -->
-C: In SI, the base unit for length is the [meter (m)].
+**PLAN:** Multiply by the form of one that places metres in the denominator: \(100\ \mathrm{cm}/1\ \mathrm{m}\).
 
-<!-- card-id: 062d9073-888b-458e-b20e-fa5d7a054dfc -->
-C: In SI, the base unit for time is the [second (s)].
+**EXECUTE:** \(2.5\ \mathrm{m}\left(\frac{100\ \mathrm{cm}}{1\ \mathrm{m}}\right)=250\ \mathrm{cm}\).
 
-<!-- card-id: e2f0c0c2-4428-489a-9fb2-120c855a0542 -->
-C: In SI, the base unit for mass is the [kilogram (kg)].
+**EVALUATE:** Metres cancel, centimetres remain, and the numerical value grows because centimetres are smaller units.
 
-<!-- card-id: f7634bc0-25ae-4d28-a771-bdd7e984e2c4 -->
-Q: A rectangle's two side lengths are both measured in meters. Why is its area unit \(\mathrm{m^2}\), not \(\mathrm{m}\)?
-A: Area is the product of two lengths, so its unit is \(\mathrm{m}\times\mathrm{m}=\mathrm{m^2}\). The exponent records the two length factors.
+<!-- card-id: fb3f0a53-fab1-468a-9c77-84056a985e1c -->
+P: Complete the conversion: \(3.6\ \mathrm{cm}\left(\frac{1\ \mathrm{m}}{\_\_\_\ \mathrm{cm}}\right)=\ ?\ \mathrm{m}\).
+S: **IDENTIFY:** Convert centimetres to metres without changing the length.
 
-<!-- card-id: a351bf58-a90e-48b4-b2c4-3ebf500749f0 -->
-Q: SI writing leaves a space between a number and its unit symbol and does not pluralize the symbol. Using those conventions, how should “a measured length of twenty-five centimeters” be written?
-A: \(25\ \mathrm{cm}\). Put a space between the number and unit symbol, and do not add a plural “s” to the symbol.
+**PLAN:** Use \(1\ \mathrm{m}=100\ \mathrm{cm}\), with centimetres in the denominator.
 
-## Lesson 3 — Prefixes and conversion factors
+**EXECUTE:** The blank is \(100\), and \(3.6\ \mathrm{cm}\left(\frac{1\ \mathrm{m}}{100\ \mathrm{cm}}\right)=0.036\ \mathrm{m}\).
 
-An SI **prefix** scales a unit by a power of ten:
+**EVALUATE:** The old unit cancels; the numerical value becomes smaller in the larger unit.
 
-| Prefix | Symbol | Factor |
-|---|---:|---:|
-| kilo | k | \(10^3\) |
-| centi | c | \(10^{-2}\) |
-| milli | m | \(10^{-3}\) |
+<!-- card-id: 4008367f-a665-413d-9b5a-4593fe42c159 -->
+P: Convert \(0.035\ \mathrm{m}\) to millimetres. Choose and show a conversion factor.
+S: **IDENTIFY:** Convert metres to millimetres.
 
-The prefix symbol attaches directly to the unit symbol: \(\mathrm{km}\),
-\(\mathrm{cm}\), and \(\mathrm{mm}\). A standalone \(\mathrm{m}\) means
-meter; the first \(\mathrm{m}\) in \(\mathrm{mm}\) is the prefix milli.
+**PLAN:** Since \(1\ \mathrm{m}=1000\ \mathrm{mm}\), use \(1000\ \mathrm{mm}/1\ \mathrm{m}\).
 
-A **conversion factor** is a ratio of equal quantity values, so its value is
-one. From \(1\ \mathrm{m}=100\ \mathrm{cm}\), both
-\(1\ \mathrm{m}/100\ \mathrm{cm}\) and its reciprocal equal one. Choose the
-orientation that cancels the old unit.
+**EXECUTE:** \(0.035\ \mathrm{m}\left(\frac{1000\ \mathrm{mm}}{1\ \mathrm{m}}\right)=35\ \mathrm{mm}\).
 
-Analyzed example: convert \(250\ \mathrm{cm}\) to meters.
+**EVALUATE:** The units cancel correctly, and a smaller unit gives a larger numerical value.
 
-- **IDENTIFY:** The physical length stays fixed; only its unit changes.
-- **PLAN:** Multiply by the factor with centimeters in the denominator.
-- **EXECUTE:** \(250\ \mathrm{cm}\,(1\ \mathrm{m}/100\ \mathrm{cm})=2.50\ \mathrm{m}\).
-- **EVALUATE:** Centimeters cancel. Because a meter is larger than a centimeter, the numerical value should decrease; \(2.50<250\), as expected.
+<!-- card-id: 51509268-4837-48a3-a4a7-56af48297190 -->
+Q: Why is \(1\ \mathrm{cm^2}=10^{-4}\ \mathrm{m^2}\), not \(10^{-2}\ \mathrm{m^2}\)?
+A: The prefix is part of the unit being squared: \(1\ \mathrm{cm^2}=(10^{-2}\ \mathrm{m})^2=10^{-4}\ \mathrm{m^2}\).
 
-This Identify–Plan–Execute–Evaluate structure is abbreviated **IPEE**. Its final
-step is a genuine check, not merely a claim that the arithmetic is correct.
+<!-- card-id: 3747aef4-3967-410e-8f50-84a780bac17b -->
+Q: A **dimension** identifies the kind of quantity independently of the chosen unit. In mechanics, the base-dimension symbols are \(L\) for length, \(M\) for mass, and \(T\) for time. What stays the same when one length is written as \(2.4\ \mathrm{m}\) or \(240\ \mathrm{cm}\), and what changes?
+A: Its dimension—length—stays the same; its unit and numerical value change. Unit conversion changes representation, not the physical quantity or its dimension.
 
-<!-- card-id: f09a9c12-c887-44b2-b533-40898de14e05 -->
-Q: A conversion factor is a ratio of equal quantity values, such as \(1\ \mathrm{m}/100\ \mathrm{cm}\), so its value is one. When converting a quantity to a new unit, how do you choose which way to write that factor?
-A: Orient the factor so the old unit cancels and the desired unit remains. The factor equals one, so it changes the representation, not the physical quantity.
+<!-- card-id: f6108ff6-1fc7-4f3d-b1bb-1bb4fe5b9d71 -->
+Q: In dimensional notation, \([q]\) means “the dimension of quantity \(q\).” A valid quantity equation has the same dimensions on both sides, and quantities can be added or subtracted only when their dimensions match. What do the base-dimension symbols \(L\), \(M\), and \(T\) mean in mechanics?
+A: \(L\) means length, \(M\) mass, and \(T\) time.
 
-<!-- card-id: 0157c655-706a-4c70-9a2b-2dc2df8989f6 -->
-P: A path is \(3.6\ \mathrm{km}\) long. Convert this length to meters using \(1\ \mathrm{km}=1000\ \mathrm{m}\), and include a check.
-S: **IDENTIFY:** This is a unit conversion of one fixed length.
+<!-- card-id: 0a3abc08-d6a1-4982-9f7e-90f498fd60e8 -->
+Q: What dimensional condition must every valid quantity equation satisfy?
+A: Both sides of the equation must have the same dimensions, and terms that are added or subtracted must share a dimension. This is **dimensional consistency**.
 
-**PLAN:** Use the conversion factor with kilometers in the denominator.
+<!-- card-id: 582ec8eb-06ff-4a0f-a006-9e76a91aa7eb -->
+P: A rectangle has side lengths \(\ell\) and \(w\), so \([\ell]=[w]=L\), while its area has \([A]=L^2\). Which candidate is dimensionally consistent: \(A=\ell+w\) or \(A=\ell w\)?
+S: **IDENTIFY:** Compare the dimensions of each right-hand side with \([A]=L^2\).
 
-**EXECUTE:** \(3.6\ \mathrm{km}\,(1000\ \mathrm{m}/1\ \mathrm{km})=3.6\times10^3\ \mathrm{m}\).
+**PLAN:** Addition preserves the shared dimension; multiplication multiplies dimensions.
 
-**EVALUATE:** Kilometers cancel, leaving meters. A meter is smaller than a kilometer, so the numerical value should increase; \(3600>3.6\).
+**EXECUTE:** \([\ell+w]=L\), so \(A=\ell+w\) is inconsistent. \([\ell w]=L\cdot L=L^2\), so \(A=\ell w\) is consistent.
 
-<!-- card-id: 38c77cf8-229d-4cf9-bfc1-784777cdacc3 -->
-P: Convert \(48\ \mathrm{mm}\) to meters using \(1\ \mathrm{m}=1000\ \mathrm{mm}\). Show the unit cancellation and check whether the numerical value should increase or decrease.
-S: \(48\ \mathrm{mm}\,(1\ \mathrm{m}/1000\ \mathrm{mm})=0.048\ \mathrm{m}\). Millimeters cancel; because meters are the larger unit, a value below one meter is sensible.
+**EVALUATE:** The surviving candidate also matches the defining geometry of rectangular area.
 
-## Lesson 4 — Dimensions check equation structure
+<!-- card-id: 28c99e3d-7ecf-42ac-bd41-3cfb2ce16b02 -->
+Q: Both \(A=\ell w\) and \(A=2\ell w\) are dimensionally consistent for an area. What does this show about dimensional analysis?
+A: Dimensional consistency is necessary but not sufficient for physical correctness. It cannot determine a dimensionless numerical factor or verify a model's assumptions.
 
-A **dimension** identifies the kind of quantity without choosing a unit. In
-mechanics, the base-dimension symbols are \(L\) for length, \(M\) for mass, and
-\(T\) for time. A length has dimension \(L\) whether it is reported in meters,
-centimeters, or another length unit. Area has dimension \(L^2\).
+<!-- card-id: 909a90e6-fc54-459a-bab5-4ec7ea4f5aec -->
+Q: In normalized scientific notation, a nonzero number is \(a\times10^n\) with \(1\le |a|<10\) and integer \(n\). For \(4.2\times10^{-5}\), identify the coefficient and exponent and state what the negative exponent means.
+A: The coefficient is \(4.2\) and the exponent is \(-5\). The factor \(10^{-5}\) means moving five powers of ten below one, so the value is \(0.000042\).
 
-Dimensions combine through the same multiplication and division as quantities.
-If \(r=d/t\), where \(d\) is a length and \(t\) is a time interval, then
-\([r]=L/T=LT^{-1}\). Square brackets here mean “the dimension of the
-enclosed quantity.”
+<!-- card-id: 5b85c0f3-c166-40ea-bfae-362aeddf7aab -->
+P: Write \(0.000073\) in normalized scientific notation.
+S: **IDENTIFY:** Move the decimal so the coefficient lies from 1 up to, but not including, 10.
 
-An equation is **dimensionally consistent** only if quantities being added or
-equated have the same dimensions. This is a powerful error check, but only a
-necessary one: a dimensionally consistent equation can still have a wrong
-number, sign, or model.
+**PLAN:** Moving the decimal five places right must be balanced by \(10^{-5}\).
 
-<!-- card-id: 63f24a70-ba97-49d8-ab82-eb3169908b13 -->
-Q: A dimension names the kind of quantity without choosing a measurement standard: length has dimension \(L\) whether measured in meters or centimeters. Given that description, what is the difference between a dimension and a unit?
-A: The dimension names the quantity's kind, such as length \(L\); the unit names the chosen comparison standard, such as meter or centimeter. Units can change while the dimension stays the same.
+**EXECUTE:** \(0.000073=7.3\times10^{-5}\).
 
-<!-- card-id: 9b2cdf42-7277-4922-9fa3-cf0f2a7d900c -->
-Q: A dimensional-consistency check requires quantities that are added or set equal to have the same dimension. Can a length and a time pass that check if they are added? Why or why not?
-A: No. Length has dimension (L), while time has dimension (T); changing units cannot make those unlike dimensions addable.
+**EVALUATE:** Expanding \(7.3\times10^{-5}\) moves the decimal five places left and recovers the original value.
 
-<!-- card-id: af2d3be5-415a-48f4-85bf-72be6ea02924 -->
-P: A proposed rectangle formula is \(A=\ell+w\), where \(A\) is area and \(\ell\) and \(w\) are lengths. Use dimensions to decide whether the formula can be correct.
-S: **IDENTIFY:** This is a dimensional-consistency check.
+<!-- card-id: 7640b39a-1029-489f-a71c-a2704aca20c8 -->
+Q: On this powers-of-ten scale, adjacent labeled ticks differ by one in the exponent. One such exponent step is called one **order of magnitude**.
 
-**PLAN:** Compare both sides using \([A]=L^2\) and \([\ell]=[w]=L\).
+![A powers-of-ten axis from ten to the minus six through ten to the zero, with A at ten to the minus five and B at ten to the minus two.](../figures/01_foundations/powers-of-ten-scale.svg)
 
-**EXECUTE:** The left side has dimension \(L^2\); the right side \(\ell+w\) has dimension \(L\). They do not match.
+What multiplicative change does one equal step to the right represent?
+A: A factor of \(10\). Equal distances on this scale represent equal **ratios**, not equal ordinary differences.
 
-**EVALUATE:** The formula cannot be correct. A valid area formula must produce two factors of length, such as \(\ell w\).
+<!-- card-id: 9198e62d-9ff4-4fd8-b30e-09b5a4e2e859 -->
+P: In the scale below, point A is at \(10^{-5}\) and point B is at \(10^{-2}\). How many orders of magnitude separate them, and what is the ratio \(B/A\)?
 
-<!-- card-id: f62bbcda-a10c-4591-9f99-aa0076027970 -->
-P: A quantity is defined by \(r=d/t\), where \(d\) is measured in meters and \(t\) in seconds. Give the SI unit and dimension of \(r\).
-S: Dividing the units gives \(\mathrm{m/s}\); dividing the dimensions gives \(L/T=LT^{-1}\). The unit and dimension show the same quotient structure at different levels.
+![A powers-of-ten axis from ten to the minus six through ten to the zero, with A at ten to the minus five and B at ten to the minus two.](../figures/01_foundations/powers-of-ten-scale.svg)
+S: **IDENTIFY:** Compare powers of ten by subtracting exponents.
 
-<!-- card-id: f64f6c7a-0910-43c7-8793-061afc15c311 -->
-Q: Why does dimensional consistency not prove that a proposed physical equation is correct?
-A: Dimensions can rule out mismatched quantity kinds, but they cannot determine every numerical factor, sign, assumption, or model choice. Passing the check is necessary, not sufficient.
+**PLAN:** Compute \((-2)-(-5)\), then form \(10\) to that power.
 
-## Lesson 5 — Scientific notation makes scale visible
+**EXECUTE:** The separation is \(3\) orders of magnitude, and \(B/A=10^3=1000\).
 
-Scientific notation writes a nonzero number as \(a\times10^n\), where
-\(1\le |a|<10\) and \(n\) is an integer. Moving the decimal point left raises
-the exponent; moving it right lowers the exponent. For example,
-\(4200=4.2\times10^3\) and \(0.0042=4.2\times10^{-3}\).
+**EVALUATE:** The figure shows three equal rightward steps, each multiplying by \(10\).
 
-In this pilot, powers of ten provide a scale for comparison. A difference of
-one exponent is a factor of 10; a difference of \(k\) exponents is a factor of
-\(10^k\). Later estimation work can introduce the convention being used when
-it asks for an “order of magnitude.”
+<!-- card-id: 1fb9d75a-efe9-43d1-a9d4-719120841dda -->
+Q: Instrument **resolution** is the smallest change in the measured quantity that causes a perceptible change in the instrument's indication—its displayed or readable value. What is the resolution of this ruler?
 
-![A powers-of-ten scale from ten to the minus three through ten to the third, with P at ten to the minus two and Q at ten to the first](../figures/01_foundations/power_of_ten_scale.svg)
+![A ruler from zero to four centimetres with ten equal subdivisions per centimetre and a strip ending at mark X.](../figures/01_foundations/ruler-resolution.svg)
+A: \(0.1\ \mathrm{cm}\), equivalently \(1\ \mathrm{mm}\), because adjacent smallest tick marks are separated by that amount.
 
-<!-- card-id: 592595ee-f3af-4f38-9b11-f8e0d335ae24 -->
-Q: Normalized scientific notation writes a nonzero number as \(a\times10^n\). What two conditions must the coefficient \(a\) and exponent \(n\) satisfy?
-A: The exponent \(n\) is an integer, and the coefficient satisfies \(1\le |a|<10\).
+<!-- card-id: bb0a7ffb-01c8-4546-8183-a28c1f2b640a -->
+Q: **Measurement uncertainty** characterizes the spread of quantity values reasonably attributable to what was measured, based on the available information. Why can a measured value alone be incomplete when the uncertainty is not negligible?
+A: The value alone hides how tightly the result is known. Reporting uncertainty communicates the relevant spread; it does not mean the measurement was a mistake.
 
-<!-- card-id: 0d9f2d8d-203a-4d7d-b8c0-829d6f928258 -->
-Q: Write \(0.0042\) in normalized scientific notation.
-A: \(4.2\times10^{-3}\). The decimal moves three places right to make 4.2, so the exponent is \(-3\).
+<!-- card-id: 57cb429b-2c14-473f-b591-d853407c082c -->
+Q: What is the decisive difference between instrument resolution and measurement uncertainty?
+A: Resolution concerns the smallest change the instrument can visibly distinguish. Uncertainty concerns the measurement result and may include resolution plus calibration, reading, method, environment, and other information, so it is not automatically equal to one division.
 
-<!-- card-id: 2fdc606b-5cf5-4d52-9263-7221c63885b7 -->
-P: ![A powers-of-ten scale from ten to the minus three through ten to the third, with P at ten to the minus two and Q at ten to the first](../figures/01_foundations/power_of_ten_scale.svg)
+<!-- card-id: cd8b160a-2783-41db-a71a-c2c28a36c95a -->
+Q: For this chapter's elementary problems, an explicit result \(x=(10.0\pm0.2)\ \mathrm{cm}\) is declared to represent the interval from \(10.0-0.2\) to \(10.0+0.2\). The value and uncertainty use the same unit and align at the same decimal place. What interval is stated?
+A: \(9.8\ \mathrm{cm}\) to \(10.2\ \mathrm{cm}\).
 
-How many times larger is scale Q than scale P? Use their exponent difference rather than counting ordinary tick spacing.
-S: Q is at \(10^1\) and P is at \(10^{-2}\). Their exponent difference is \(1-(-2)=3\), so Q is \(10^3=1000\) times larger than P.
+<!-- card-id: 874d09bb-8841-4490-baeb-fc99f2e01655 -->
+P: A measured length is reported as \((10.0\pm0.2)\ \mathrm{cm}\); for this problem, treat it as the interval \(9.8\) to \(10.2\ \mathrm{cm}\). A prediction is **compatible** when it lies inside that interval. Model A predicts \(10.1\ \mathrm{cm}\); model B predicts \(10.5\ \mathrm{cm}\). Which prediction is compatible?
 
-## Lesson 6 — Report what the measurement can support
+![A reported interval from 9.8 to 10.2 centimetres, with triangular prediction A at 10.1 and square prediction B at 10.5.](../figures/01_foundations/uncertainty-model-comparison.svg)
+S: **IDENTIFY:** Compare each prediction with the declared measurement interval.
 
-A measuring **instrument** provides a scale or display. Its **resolution** is
-the smallest change in the displayed or marked value that can be distinguished.
-On a marked scale, inspect the difference between adjacent smallest marks.
+**PLAN:** A prediction is compatible here exactly when its value lies from \(9.8\) through \(10.2\ \mathrm{cm}\).
 
-![A scale from zero to five centimeters with evenly spaced unlabeled minor marks](../figures/01_foundations/marked_scale.svg)
+**EXECUTE:** \(10.1\ \mathrm{cm}\) lies inside, so A is compatible. \(10.5\ \mathrm{cm}\) lies outside, so B is not.
 
-A measured value is a best estimate, not an exact copy of nature. A complete
-measurement result pairs that estimate with a **measurement uncertainty** that
-describes the spread of values reasonably attributable to the measured
-quantity under the stated procedure. Instrument resolution can contribute to
-uncertainty, but variation among repeated readings, alignment, an imperfect
-instrument scale, and the chosen method can make the total uncertainty larger.
+**EVALUATE:** This comparison supports A over B for this test; it does not prove A uniquely correct in every condition.
 
-The notation \(12.4\pm0.1\ \mathrm{cm}\) gives a best estimate of
-\(12.4\ \mathrm{cm}\) and a symmetric uncertainty interval from
-\(12.3\ \mathrm{cm}\) to \(12.5\ \mathrm{cm}\). The \(\pm\) value is not a
-known mistake to subtract; it communicates limited knowledge.
+<!-- card-id: d4632ee3-71a4-4357-b38b-cadacbab2e40 -->
+Q: **Significant figures** are the digits retained to communicate the precision of a reported numerical value. For later counting: leading zeros are placeholders; zeros between significant digits are significant; trailing zeros written after a decimal point are significant; and ambiguous trailing zeros in an integer should be clarified with scientific notation. What do significant figures communicate, and what do they not replace?
+A: They communicate which digits are being reported as meaningful at the chosen precision. They do not replace an explicit uncertainty statement or describe every source of measurement uncertainty.
 
-![A number line with an estimate at 12.4 centimeters and uncertainty endpoints at 12.3 and 12.5 centimeters](../figures/01_foundations/uncertainty_interval.svg)
+<!-- card-id: ddb9bbee-1ee3-41d7-925a-ebf3fdf4fcfa -->
+Q: In \(0.0042\), why are the zeros before \(4\) not significant figures?
+A: They only locate the decimal point; they are placeholders. The value has two significant figures: \(4\) and \(2\).
 
-**Significant figures** are the digits retained to communicate numerical
-precision—how finely the written number distinguishes nearby values. Leading
-zeros only locate the decimal point, so \(0.04\) has one
-significant figure. Written trailing zeros after a decimal can communicate
-additional precision, so \(0.0400\) has three. Significant figures are a compact
-convention, not a replacement for an explicit uncertainty.
+<!-- card-id: 823c53de-2de1-4a94-a34b-c6022beafb27 -->
+Q: How many significant figures are in \(4.02\), and why?
+A: Three. A zero between nonzero significant digits is significant.
 
-Defined conversions and counted integers are exact; they do not impose a new
-measurement uncertainty. When an uncertainty has been rounded according to the
-chosen reporting convention, round the best estimate to the same decimal place.
-For example, \(12.347\ \mathrm{cm}\) with uncertainty
-\(0.2\ \mathrm{cm}\) is reported as \(12.3\pm0.2\ \mathrm{cm}\).
+<!-- card-id: 24eec063-3901-4be5-abdc-30083bbb70a0 -->
+Q: The writing \(1500\ \mathrm{m}\) does not show whether one or both trailing zeros are significant. How can you state unambiguously that the value has two significant figures?
+A: Write \(1.5\times10^3\ \mathrm{m}\). Scientific notation makes the retained significant digits explicit.
 
-<!-- card-id: 82278597-b23a-41f8-ab7a-2425a034feb7 -->
-Q: An instrument's resolution is the smallest change in its displayed or marked value that can be distinguished. On a marked scale, inspect the difference between adjacent smallest marks.
+<!-- card-id: 8dc28628-1924-4c58-b738-8cefb6f0d239 -->
+P: How many significant figures are in \(0.004050\ \mathrm{m}\)?
+S: **IDENTIFY:** Separate placeholder zeros from zeros that lie within or after the reported digits.
 
-![A scale from zero to five centimeters with evenly spaced unlabeled minor marks](../figures/01_foundations/marked_scale.svg)
+**PLAN:** Ignore leading placeholders; count from the first nonzero digit through the final reported decimal zero.
 
-What is the resolution of this marked scale, expressed in centimeters?
-A: \(0.1\ \mathrm{cm}\). Each one-centimeter interval is divided into ten equal smallest intervals.
+**EXECUTE:** The significant digits are \(4,0,5,0\), so there are \(4\) significant figures.
 
-<!-- card-id: ccade793-ab41-48ad-ac3a-8cba6c05af87 -->
-Q: In \(x\pm u\), \(x\) is the best estimate and \(u\) gives a symmetric interval extending \(u\) to either side.
+**EVALUATE:** Scientific notation gives \(4.050\times10^{-3}\ \mathrm{m}\), which displays the same four digits clearly.
 
-![An unlabeled symmetric interval with a distinct center marker and two bracket endpoints](../figures/01_foundations/uncertainty_interval_front.svg)
+<!-- card-id: 71b4e2c0-28dd-441d-9832-11e087f8515f -->
+Q: Exact defined conversion factors carry no measurement uncertainty and do not limit reported precision. For \(2.30\ \mathrm{cm}=0.0230\ \mathrm{m}\), how many significant figures should the converted value retain?
+A: Three. An exact conversion factor changes the unit and numerical representation but does not reduce the measurement's reported precision.
 
-Translate \(12.4\pm0.1\ \mathrm{cm}\) into a best estimate and interval.
-A: The best estimate is \(12.4\ \mathrm{cm}\), with a symmetric interval from \(12.3\ \mathrm{cm}\) to \(12.5\ \mathrm{cm}\).
+<!-- card-id: 6e1f43bd-8233-4c61-9f7f-8b890eeb822f -->
+P: For elementary significant-figure reporting, a product is rounded to the fewest significant figures among the measured inputs, with rounding done once at the end. A rectangle measures \(2.4\ \mathrm{cm}\) by \(3.15\ \mathrm{cm}\). Report its area.
+S: **IDENTIFY:** Area is a product, and the inputs have two and three significant figures.
 
-<!-- card-id: 3fe0f766-a70f-48ef-8c9f-1b601d0170d0 -->
-Q: Why is an instrument's resolution not automatically the total uncertainty of a measurement result?
-A: Resolution describes the smallest distinguishable scale or display change. Variation among repeated readings, alignment, an imperfect instrument scale, or the chosen method can make total uncertainty larger.
+**PLAN:** Multiply using guard digits, then round the final result to two significant figures.
 
-<!-- card-id: e4701dd9-9cc3-485d-9a10-0889b83be19f -->
-Q: In measurement reporting, leading zeros only locate the decimal point, while written trailing zeros after a decimal can communicate retained precision. What precision difference is communicated by writing \(0.0400\ \mathrm{m}\) instead of \(0.04\ \mathrm{m}\)?
-A: \(0.0400\ \mathrm{m}\) has three significant figures, while \(0.04\ \mathrm{m}\) has one. The two trailing zeros after the decimal communicate retained precision; the leading zeros do not.
+**EXECUTE:** \(A=(2.4)(3.15)\ \mathrm{cm^2}=7.56\ \mathrm{cm^2}\), which rounds to \(7.6\ \mathrm{cm^2}\).
 
-<!-- card-id: b7797989-5c1e-4783-9e34-ce79bcd53bce -->
-Q: Why does the exact definition \(1\ \mathrm{m}=100\ \mathrm{cm}\) not limit the significant figures of a converted measurement?
-A: The defined conversion factor is exact; it adds no measurement uncertainty. The precision remains limited by the measured input, not by the numbers 1 or 100 in the definition.
+**EVALUATE:** The dimension is \(L^2\), the unit is \(\mathrm{cm^2}\), and the answer has the required two significant figures.
 
-<!-- card-id: 6eb791ac-a16b-4ff2-b628-6c4aa81d6b21 -->
-P: A measurement analysis gives a best estimate of \(7.836\ \mathrm{cm}\) and a rounded uncertainty of \(0.05\ \mathrm{cm}\). Report the result with matching decimal places.
-S: \(7.84\pm0.05\ \mathrm{cm}\). The uncertainty reaches the hundredths place, so the best estimate is rounded to the hundredths place as well.
+<!-- card-id: 0ac523bc-6891-4972-bde4-dd48b814c616 -->
+P: For elementary significant-figure reporting, a sum is rounded to the least precise decimal place among the measured inputs. Two strips measured end-to-end have lengths \(12.11\ \mathrm{cm}\) and \(0.3\ \mathrm{cm}\). Report their combined length.
+S: **IDENTIFY:** This is addition; \(0.3\ \mathrm{cm}\) is reported only to the tenths place.
 
-<!-- card-id: 3caad80e-66f7-43ff-8eea-8c172a6f4974 -->
-Q: A proposed equation adds a quantity measured in meters to one measured in seconds. Which chapter-1 tool directly diagnoses the problem: unit conversion or dimensional analysis?
-A: Dimensional analysis. Conversion can change meters to another length unit or seconds to another time unit, but it cannot make unlike dimensions addable.
+**PLAN:** Add with guard digits, then round the result to tenths.
+
+**EXECUTE:** \(12.11\ \mathrm{cm}+0.3\ \mathrm{cm}=12.41\ \mathrm{cm}\), reported as \(12.4\ \mathrm{cm}\).
+
+**EVALUATE:** The unit remains centimetres, and the final decimal place matches the least precise input place.
+
+<!-- card-id: 622c89f0-9450-4bd9-b283-927d274ba105 -->
+P: The strip ends at X on the ruler below. Read to the nearest marked division. For this problem only, use half of one smallest division as the instrument-only uncertainty. Report the result in centimetres with value and uncertainty aligned to the same decimal place, then convert both exactly to metres.
+
+![A ruler from zero to four centimetres with ten equal subdivisions per centimetre and a strip ending at X at 3.4 centimetres.](../figures/01_foundations/ruler-resolution.svg)
+S: **IDENTIFY:** The smallest division is \(0.1\ \mathrm{cm}\), the endpoint is \(3.4\ \mathrm{cm}\), and the declared uncertainty rule gives half a division.
+
+**PLAN:** Use \(u=0.05\ \mathrm{cm}\), align the value to hundredths, then multiply both value and uncertainty by the exact factor \(1\ \mathrm{m}/100\ \mathrm{cm}\).
+
+**EXECUTE:** \(x=(3.40\pm0.05)\ \mathrm{cm}=(0.0340\pm0.0005)\ \mathrm{m}\).
+
+**EVALUATE:** Units cancel in the conversion, the physical interval is unchanged, and the explicit uncertainty is more informative than significant figures alone.

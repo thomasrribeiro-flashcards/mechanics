@@ -1,0 +1,14 @@
+% flashcards-title: Cross-product order and normal direction
+% flashcards-desc: Vector a points right and vector b points up; an ordered turn and out-of-page and into-page candidates support a right-hand-rule choice.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[mech primary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (0,0) -- (3.4,0) node[right] {$\vec a$};
+  \draw[mech secondary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (0,0) -- (0,3.2) node[above] {$\vec b$};
+  \draw[mechInk,-{Stealth[length=2.5mm,width=1.9mm]},line width=1pt] (1.15,0) arc[start angle=0,end angle=90,radius=1.15];
+  \node[mech box,minimum height=11mm] at (4.9,2.4) {$\odot$ out of page};
+  \node[mech box,minimum height=11mm] at (4.9,0.8) {$\otimes$ into page};
+  \node[below left] at (0,0) {ordered turn};
+\end{tikzpicture}
+\end{document}

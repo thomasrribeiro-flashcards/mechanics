@@ -1,0 +1,16 @@
+% flashcards-title: Parallelogram spanned by two vectors
+% flashcards-desc: Vectors a and b with included angle theta form adjacent sides of a shaded parallelogram.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=0.9cm,y=0.9cm]
+  \coordinate (O) at (0,0); \coordinate (A) at (5,0); \coordinate (B) at (2,3); \coordinate (C) at (7,3);
+  \fill[mechPale] (O) -- (A) -- (C) -- (B) -- cycle;
+  \draw[mech guide] (A) -- (C) -- (B);
+  \draw[mech primary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (O) -- (A) node[midway,below] {$\vec a$};
+  \draw[mech secondary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (O) -- (B) node[midway,above left] {$\vec b$};
+  \draw[mechInk,line width=1pt] (1.15,0) arc[start angle=0,end angle=56.3,radius=1.15];
+  \node at (1.45,0.55) {$\theta$};
+  \node at (4.1,1.55) {parallelogram};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,12 @@
+% flashcards-title: Equal and opposite free vectors
+% flashcards-desc: Vectors a and b share magnitude and direction at different locations; vector c has equal length and opposite direction.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[mech primary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (0,2.4) -- (3,3.4) node[midway,above] {$\vec a$};
+  \draw[mech primary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (1,0.9) -- (4,1.9) node[midway,above] {$\vec b$};
+  \draw[mech secondary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (4.2,0.2) -- (1.2,-0.8) node[midway,below] {$\vec c$};
+  \node[align=center,anchor=west] at (5,1.25) {same scale\\different locations};
+\end{tikzpicture}
+\end{document}

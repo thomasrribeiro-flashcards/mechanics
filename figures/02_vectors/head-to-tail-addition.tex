@@ -1,0 +1,13 @@
+% flashcards-title: Head-to-tail vector addition
+% flashcards-desc: Vector a runs from O to M and vector b continues from M to N.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \coordinate (O) at (0,0); \coordinate (M) at (3,1); \coordinate (N) at (5,3);
+  \draw[mech primary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (O) -- (M) node[midway,below right] {$\vec a$};
+  \draw[mech secondary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (M) -- (N) node[midway,below right] {$\vec b$};
+  \fill[mechInk] (O) circle (2pt) (M) circle (2pt) (N) circle (2pt);
+  \node[below left] at (O) {$O$}; \node[below] at (M) {$M$}; \node[above right] at (N) {$N$};
+\end{tikzpicture}
+\end{document}

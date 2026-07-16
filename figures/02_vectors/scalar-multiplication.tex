@@ -1,0 +1,12 @@
+% flashcards-title: Scalar multiplication of a vector
+% flashcards-desc: Arrows labeled a, two a, and minus a compare scaling and direction reversal.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[mech primary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (0,2.4) -- (2.4,2.4) node[midway,above] {$\vec a$};
+  \draw[mech primary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (0,1.1) -- (4.8,1.1) node[midway,above] {$2\vec a$};
+  \draw[mech secondary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (2.4,-0.2) -- (0,-0.2) node[midway,below] {$-\vec a$};
+  \fill[mechInk] (0,2.4) circle (1.8pt) (0,1.1) circle (1.8pt) (2.4,-0.2) circle (1.8pt);
+\end{tikzpicture}
+\end{document}

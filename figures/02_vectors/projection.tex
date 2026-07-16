@@ -1,0 +1,14 @@
+% flashcards-title: Projection onto a direction
+% flashcards-desc: A five-centimetre vector makes sixty degrees with the b-hat direction and drops a perpendicular projection guide.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=0.85cm,y=0.85cm]
+  \draw[mech axis,-{Stealth[length=2.8mm,width=2.1mm]}] (0,0) -- (7,0) node[right] {$\hat b$ direction};
+  \draw[mech primary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (0,0) -- (2.5,4.33) node[midway,above left] {$|\vec a|=5\ \mathrm{cm}$};
+  \draw[mech guide] (2.5,4.33) -- (2.5,0);
+  \draw[mechInk,line width=1pt] (1.1,0) arc[start angle=0,end angle=60,radius=1.1];
+  \node at (1.55,0.55) {$60^\circ$};
+  \draw[mechInk,line width=0.9pt] (2.5,0.35) -- (2.15,0.35) -- (2.15,0);
+\end{tikzpicture}
+\end{document}

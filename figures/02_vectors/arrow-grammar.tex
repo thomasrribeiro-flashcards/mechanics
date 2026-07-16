@@ -1,0 +1,16 @@
+% flashcards-title: Vector arrow grammar
+% flashcards-desc: A directed arrow labeled a, with its tail, head, and length identified.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \coordinate (T) at (0,0);
+  \coordinate (H) at (5,2);
+  \draw[mech primary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (T) -- (H);
+  \fill[mechInk] (T) circle (2.2pt);
+  \node[below left] at (T) {tail};
+  \node[above right] at (H) {head};
+  \node[above left] at (2.55,1.25) {$\vec a$};
+  \draw[mech guide,<->] (0,-0.55) -- node[fill=white,inner sep=2pt] {arrow length} (5,-0.55);
+\end{tikzpicture}
+\end{document}

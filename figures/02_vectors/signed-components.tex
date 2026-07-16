@@ -1,0 +1,15 @@
+% flashcards-title: Signed Cartesian components
+% flashcards-desc: A vector from the origin to negative three, positive two has dashed projections to the x and y axes.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=0.9cm,y=0.9cm]
+  \draw[mech axis,-{Stealth[length=2.8mm,width=2.1mm]}] (-4,0) -- (2,0) node[right] {$+x$};
+  \draw[mech axis,-{Stealth[length=2.8mm,width=2.1mm]}] (0,-1) -- (0,3.4) node[above] {$+y$};
+  \draw[mech guide] (-3,0) -- (-3,2) -- (0,2);
+  \draw[mech primary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (0,0) -- (-3,2) node[midway,above right] {$\vec a$};
+  \fill[mechInk] (-3,2) circle (2pt);
+  \node[above left] at (-3,2) {$(-3,2)$};
+  \node[below right] at (0,0) {$O$};
+\end{tikzpicture}
+\end{document}

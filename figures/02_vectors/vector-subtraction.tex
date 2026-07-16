@@ -1,0 +1,14 @@
+% flashcards-title: Vector subtraction construction
+% flashcards-desc: Vector a is followed head-to-tail by minus b, while the original b direction is indicated separately.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \coordinate (O) at (0,0); \coordinate (A) at (3.5,1); \coordinate (B) at (1.4,2.6); \coordinate (E) at (2.1,-1.6);
+  \draw[mech guide] (O) -- (B);
+  \draw[mech primary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (O) -- (A) node[midway,below] {$\vec a$};
+  \draw[mech secondary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (A) -- (E) node[midway,right] {$-\vec b$};
+  \node[above left] at (B) {$\vec b$ direction$\nearrow$};
+  \fill[mechInk] (O) circle (2pt) (A) circle (2pt) (E) circle (2pt);
+\end{tikzpicture}
+\end{document}

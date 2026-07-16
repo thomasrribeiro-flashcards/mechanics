@@ -1,0 +1,16 @@
+% flashcards-title: Model, prediction, and evidence comparison
+% flashcards-desc: A simplified model leads to a conditional prediction. Observation or measurement provides evidence. Prediction and evidence both enter a comparison.
+\documentclass[border=6pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[node distance=16mm and 22mm]
+  \node[mech box, fill=mechPale, minimum width=42mm] (model) {simplified\\model};
+  \node[mech box, right=of model, minimum width=42mm] (prediction) {conditional\\prediction};
+  \node[mech box, below=of model, minimum width=42mm] (evidence) {observation or\\measurement};
+  \node[diamond, draw=mechInk, line width=1.2pt, aspect=2,
+    align=center, right=of evidence, fill=white, inner sep=2.5mm] (compare) {compare};
+  \draw[mech arrow] (model) -- node[above, font=\sffamily\normalsize] {derive} (prediction);
+  \draw[mech arrow] (prediction) -- (compare);
+  \draw[mech arrow] (evidence) -- (compare);
+\end{tikzpicture}
+\end{document}

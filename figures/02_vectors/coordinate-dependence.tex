@@ -1,0 +1,14 @@
+% flashcards-title: One vector in two coordinate systems
+% flashcards-desc: One fixed arrow is overlaid by a solid x-y frame and a rotated dashed x-prime-y-prime frame.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=0.9cm,y=0.9cm]
+  \draw[mech axis,-{Stealth[length=2.7mm,width=2mm]}] (-1,0) -- (5,0) node[right] {$x$};
+  \draw[mech axis,-{Stealth[length=2.7mm,width=2mm]}] (0,-1) -- (0,4.2) node[above] {$y$};
+  \draw[mech secondary,-{Stealth[length=2.7mm,width=2mm]},line cap=butt] (-0.7,-0.7) -- (3.6,3.6) node[above right] {$x'$};
+  \draw[mech secondary,-{Stealth[length=2.7mm,width=2mm]},line cap=butt] (0.7,-0.7) -- (-2.6,2.6) node[above left] {$y'$};
+  \draw[mech primary,-{Stealth[length=3.2mm,width=2.4mm]},line cap=butt] (0,0) -- (4,2.4) node[midway,above] {$\vec a$};
+  \node[below left] at (0,0) {$O$};
+\end{tikzpicture}
+\end{document}

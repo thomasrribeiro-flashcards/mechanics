@@ -1,0 +1,14 @@
+% flashcards-title: Dot-product sign by included angle
+% flashcards-desc: Three labeled vector pairs have respectively acute, right, and obtuse included angles.
+\documentclass[border=7pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=0.85cm,y=0.85cm]
+  \foreach \x/\ang/\lab in {0/45/A,5/90/B,10/135/C}{
+    \draw[mech arrow] (\x,0) -- ++(2.2,0);
+    \draw[mech primary,-{Stealth[length=3mm,width=2.2mm]},line cap=butt] (\x,0) -- ++(\ang:2.2);
+    \draw[mechInk,line width=0.9pt] (\x+0.75,0) arc[start angle=0,end angle=\ang,radius=0.75];
+    \node[below] at (\x+1.1,-0.45) {case \lab};
+  }
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,21 @@
+% flashcards-title: Powers-of-ten scale
+% flashcards-desc: A horizontal axis has equally spaced ticks from ten to the minus six through ten to the zero. Circular point A is at ten to the minus five; square point B is at ten to the minus two.
+\documentclass[border=6pt]{standalone}
+\input{figures/tikz-style-reproduced.sty}
+\begin{document}
+\begin{tikzpicture}[x=1.65cm,y=1cm]
+  \draw[mech axis] (-0.25,0) -- (6.25,0);
+  \foreach \x/\e in {0/-6,1/-5,2/-4,3/-3,4/-2,5/-1,6/0}{
+    \draw[mech tick] (\x,-0.13) -- (\x,0.13);
+    \node[below=3mm, font=\sffamily\normalsize] at (\x,0) {$10^{\e}$};
+  }
+  \draw[mech primary] (1,0.18) -- (1,0.9);
+  \node[draw=mechBlue, fill=white, circle, line width=1.8pt,
+    minimum size=8mm, inner sep=0pt] at (1,1.15) {A};
+  \draw[mech secondary] (4,0.18) -- (4,0.9);
+  \node[draw=mechOrange, fill=white, rectangle, line width=1.8pt,
+    minimum size=8mm, inner sep=0pt] at (4,1.15) {B};
+  \node[above=7mm, font=\sffamily\normalsize] at (3,1.15)
+    {equal spacing in the exponent};
+\end{tikzpicture}
+\end{document}
