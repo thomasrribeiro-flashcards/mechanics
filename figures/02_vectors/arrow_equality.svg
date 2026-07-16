@@ -2,10 +2,10 @@
   <title id="title">Three arrows for comparing vector equality</title>
   <desc id="desc">Arrows P and Q have equal lengths and point up and right from different locations. Arrow R has the same length but points down and left.</desc>
   <defs>
-    <marker id="arrow-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#b8860b"/>
     </marker>
-    <marker id="arrow-black" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+    <marker id="arrow-black" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#111"/>
     </marker>
   </defs>

@@ -2,10 +2,10 @@
   <title id="title">Projection used to interpret a dot product</title>
   <desc id="desc">Vector A points horizontally right. Vector B shares its tail and points up-right. A perpendicular dashed line drops from B's head to A, marking the signed parallel projection of B.</desc>
   <defs>
-    <marker id="arrow-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#b8860b"/>
     </marker>
-    <marker id="arrow-black" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+    <marker id="arrow-black" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#111"/>
     </marker>
   </defs>
