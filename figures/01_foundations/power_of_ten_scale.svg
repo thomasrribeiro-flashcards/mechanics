@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Power-of-ten scale</title>
+  <desc id="desc">A horizontal logarithmic scale has equal exponent steps from ten to the minus three to ten to the third. A striped marker P is at ten to the minus two and a gold marker Q is at ten to the first.</desc>
+  <style>
+    .axis{stroke:#171717;stroke-width:5}.tick{stroke:#171717;stroke-width:3}.label{font:700 20px system-ui,sans-serif;fill:#171717;text-anchor:middle}
+    .name{font:800 28px system-ui,sans-serif;fill:#171717;text-anchor:middle}.hint{font:600 17px system-ui,sans-serif;fill:#4a4a4a;text-anchor:middle}
+  </style>
+  <defs><pattern id="stripe" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="10" fill="#777"/><rect x="5" width="5" height="10" fill="#fff"/></pattern></defs>
+  <rect width="720" height="360" rx="24" fill="#fff"/>
+  <text class="hint" x="360" y="52">each step multiplies by 10</text>
+  <line class="axis" x1="75" y1="190" x2="645" y2="190"/>
+  <g>
+    <line class="tick" x1="75" y1="170" x2="75" y2="210"/><text class="label" x="75" y="246">10⁻³</text>
+    <line class="tick" x1="170" y1="170" x2="170" y2="210"/><text class="label" x="170" y="246">10⁻²</text>
+    <line class="tick" x1="265" y1="170" x2="265" y2="210"/><text class="label" x="265" y="246">10⁻¹</text>
+    <line class="tick" x1="360" y1="170" x2="360" y2="210"/><text class="label" x="360" y="246">10⁰</text>
+    <line class="tick" x1="455" y1="170" x2="455" y2="210"/><text class="label" x="455" y="246">10¹</text>
+    <line class="tick" x1="550" y1="170" x2="550" y2="210"/><text class="label" x="550" y="246">10²</text>
+    <line class="tick" x1="645" y1="170" x2="645" y2="210"/><text class="label" x="645" y="246">10³</text>
+  </g>
+  <circle cx="170" cy="190" r="25" fill="url(#stripe)" stroke="#171717" stroke-width="4"/><text class="name" x="170" y="130">P</text>
+  <circle cx="455" cy="190" r="25" fill="#f5c542" stroke="#171717" stroke-width="4"/><text class="name" x="455" y="130">Q</text>
+</svg>

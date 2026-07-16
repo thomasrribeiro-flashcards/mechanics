@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Marked centimeter scale</title>
+  <desc id="desc">A high-contrast scale runs from zero to five centimeters, with evenly spaced unlabeled minor marks and a longer dashed midpoint mark between each numbered value.</desc>
+  <style>
+    .base{fill:#fff;stroke:#171717;stroke-width:4}.major{stroke:#171717;stroke-width:4}.minor{stroke:#555;stroke-width:2}.half{stroke:#8a6500;stroke-width:3;stroke-dasharray:4 2}
+    .label{font:700 22px system-ui,sans-serif;fill:#171717;text-anchor:middle}.caption{font:600 18px system-ui,sans-serif;fill:#4a4a4a;text-anchor:middle}
+  </style>
+  <rect width="720" height="360" rx="24" fill="#fff"/>
+  <text class="caption" x="360" y="65">inspect the smallest marked interval</text>
+  <rect class="base" x="70" y="120" width="580" height="105" rx="8"/>
+  <path class="minor" d="M81.6 120v35 M93.2 120v35 M104.8 120v35 M116.4 120v35 M139.6 120v35 M151.2 120v35 M162.8 120v35 M174.4 120v35
+    M197.6 120v35 M209.2 120v35 M220.8 120v35 M232.4 120v35 M255.6 120v35 M267.2 120v35 M278.8 120v35 M290.4 120v35
+    M313.6 120v35 M325.2 120v35 M336.8 120v35 M348.4 120v35 M371.6 120v35 M383.2 120v35 M394.8 120v35 M406.4 120v35
+    M429.6 120v35 M441.2 120v35 M452.8 120v35 M464.4 120v35 M487.6 120v35 M499.2 120v35 M510.8 120v35 M522.4 120v35
+    M545.6 120v35 M557.2 120v35 M568.8 120v35 M580.4 120v35 M603.6 120v35 M615.2 120v35 M626.8 120v35 M638.4 120v35"/>
+  <path class="half" d="M128 120v52 M244 120v52 M360 120v52 M476 120v52 M592 120v52"/>
+  <path class="major" d="M70 120v70 M186 120v70 M302 120v70 M418 120v70 M534 120v70 M650 120v70"/>
+  <text class="label" x="70" y="275">0</text><text class="label" x="186" y="275">1</text><text class="label" x="302" y="275">2</text><text class="label" x="418" y="275">3</text><text class="label" x="534" y="275">4</text><text class="label" x="650" y="275">5 cm</text>
+</svg>

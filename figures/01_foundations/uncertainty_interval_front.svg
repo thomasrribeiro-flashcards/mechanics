@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Unlabeled symmetric interval</title>
+  <desc id="desc">A high-contrast number-line segment has two bracket endpoints and a distinct dotted gold marker exactly at its center. No numerical endpoint labels are shown.</desc>
+  <defs><pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#8a6500"/></pattern></defs>
+  <style>.caption{font:600 20px system-ui,sans-serif;fill:#4a4a4a;text-anchor:middle}</style>
+  <rect width="720" height="360" rx="24" fill="#fff"/>
+  <text class="caption" x="360" y="72">translate the notation into this structure</text>
+  <line x1="80" y1="190" x2="640" y2="190" stroke="#171717" stroke-width="4"/>
+  <line x1="205" y1="190" x2="515" y2="190" stroke="#8a6500" stroke-width="14"/>
+  <line x1="205" y1="150" x2="205" y2="230" stroke="#171717" stroke-width="5"/>
+  <line x1="515" y1="150" x2="515" y2="230" stroke="#171717" stroke-width="5"/>
+  <circle cx="360" cy="190" r="25" fill="#f5c542" stroke="#171717" stroke-width="5"/>
+  <circle cx="360" cy="190" r="12" fill="url(#dots)"/>
+  <text class="caption" x="205" y="286">lower endpoint</text><text class="caption" x="360" y="132">center</text><text class="caption" x="515" y="286">upper endpoint</text>
+</svg>

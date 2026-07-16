@@ -4,209 +4,290 @@ subject = "physics"
 tags = ["mechanics", "physics", "measurement", "units", "dimensional-analysis"]
 +++
 
-# Classical Mechanics — Foundations
+# Foundations: models, measurement, and scale
 
-## 1.1 Why Classical Mechanics
+This pilot assumes algebra and trigonometry but no physics vocabulary. The app
+schedules only the `Q:/A:`, `C:`, and `P:/S:` blocks below, so the first
+scheduled front in each learning sequence includes the minimum teaching bridge
+needed for a cold start. The surrounding lesson prose remains a readable
+reference and authoring record; later fronts never depend on the learner having
+seen it.
 
-<!-- card-id: card-b511f64f-6dd1-4d74-a1e8-4a993c05fe14 -->
-<!-- card-alias: 0601affc31ed9aca469b310eb85296fbcb011e54557fb6d5d7756a6154b2f7c9 -->
-Q: What does "classical" mean in "classical mechanics"?
-A: Non-quantum and non-relativistic. It describes the motion of everyday macroscopic objects at speeds much less than the speed of light ($v \ll c$).
+## Lesson 1 — Physics connects models with evidence
 
-<!-- card-id: card-9cf87a2f-abb4-4e78-9aed-827f1949dffb -->
-<!-- card-alias: 3e0d1a37eb1bbde5a4481bfdded1a07c246a0a16225cd77b83bbd56f71f0bab5 -->
-Q: Why is classical mechanics studied before quantum or relativistic mechanics?
-A: It is built on Galileo's experimental foundation and Newton's laws, which accurately describe everyday phenomena. It provides the conceptual framework that quantum and relativistic theories extend or correct.
+A **system under study** is the part of the world we choose to describe. A
+**physical model** is a deliberately simplified description of that system. A
+useful model states relationships clearly enough to make a **prediction**: a
+result that observations or measurements can check.
 
-<!-- card-id: card-050b8c7a-821f-4bd3-99c9-cbe499bc45f0 -->
-<!-- card-alias: 87582702a67056df1c97555c9ecbe52a2a77f7b5956491fb10a1e7d7c61d0f94 -->
-Q: What is the practical validity range of classical mechanics?
-A: Objects that are macroscopic (not atomic-scale) and moving at speeds much less than the speed of light. Outside this range — very small scales or very high speeds — quantum or relativistic corrections are required.
+Evidence does not enter at the end of a rigid, one-way “scientific method.” The
+work is iterative. A prediction guides a measurement; comparison with the
+measurement can retain the model for further use, reveal a faulty measurement
+or assumption, or motivate a revised model and another test. Agreement raises
+confidence only within the tested conditions; it does not prove that the model
+will work in every situation.
 
-<!-- card-id: card-6113bee8-a53a-4262-9884-54832b7a0211 -->
-<!-- card-alias: 72482cdc408924a5263470321d729fb57d5213de674bec6f7ee2f200e3acb5a6 -->
-C: Classical mechanics is organized around [Newton's laws] as its central framework.
+![A loop linking a model, prediction, measurement, and comparison, with the comparison returning to the model](../figures/01_foundations/model_evidence_loop.svg)
 
-## 1.2 The Scientific Method
+<!-- card-id: a690d74f-c012-4c62-ae07-aa3f84877e0a -->
+Q: A physical model is a deliberately simplified description of a chosen system, and a prediction is a result that observations or measurements can check. Given those meanings, what makes a physical model useful rather than just a story?
+A: It states relationships clearly enough to make predictions that observations or measurements can check. Its usefulness is bounded by the situations in which those checks support it.
 
-<!-- card-id: card-dee8d2e4-a84f-4747-99e2-67413d04c310 -->
-<!-- card-alias: 3df9b6248b9fc14c2b235de34700f2e0ec566e7ad5157b46e9b6e37091bc8c59 -->
-Q: Why is falsifiability essential in physics?
-A: A claim that cannot in principle be disproved by experiment provides no predictive power and is outside the domain of science. Falsifiability ensures theories can be tested and potentially overturned by evidence.
+<!-- card-id: 2c130f1c-7de5-4d91-bbdc-b77a83ee237a -->
+Q: ![A loop linking a model, prediction, measurement, and comparison, with the comparison returning to the model](../figures/01_foundations/model_evidence_loop.svg)
 
-<!-- card-id: card-6e602272-eb12-4408-a20c-b16942d25889 -->
-<!-- card-alias: 25591c025da4852b8d6bdd301f27d575d7c3b5b88b0339760dd837b3c45b5e1e -->
-C: A scientific hypothesis must lead to [testable predictions] that evidence could support or contradict.
+In this loop, what does the return from “compare” to “model” mean when a careful measurement disagrees with a prediction?
+A: Recheck the measurement and assumptions, then revise or replace the model if the disagreement remains and test again. Disagreement is information about the model's limits or setup, not permission to change the data.
 
-<!-- card-id: card-b42f4ee9-5496-4fb4-b0c8-6fb6f1fa6715 -->
-<!-- card-alias: b9ee1153dce2454995a8cf5a8966d3590e16b4c63dd9af4694301a797f08c4ab -->
-Q: What distinguishes a "theory" in physics from a guess?
-A: A physical theory is a well-tested model that has survived repeated experimental scrutiny and makes quantitative predictions. In everyday language "theory" implies uncertainty; in physics it implies established, validated explanation.
+<!-- card-id: 06358250-f5d7-45d5-9176-f66e451b7e6a -->
+Q: A model's prediction agrees with one careful measurement. What conclusion is justified—and what conclusion is not?
+A: The result supports using the model under the tested conditions. It does not prove that the model is exact or universally valid; other models may make the same tested prediction, and new conditions can expose limits.
 
-<!-- card-id: card-c2526464-dcd0-4fc3-948a-034f739900cd -->
-<!-- card-alias: 5ad2ca1d839dac5a64b64b1ab7d76a56c8a68ffe04d58dc8db1b6fe962922ca9 -->
-Q: What is a hypothesis in physics?
-A: A testable initial conjecture, not yet validated by experiment.
+## Lesson 2 — A measurement is a comparison
 
-<!-- card-id: card-e3a4c00e-0de2-4417-91e7-bf7d59e12430 -->
-<!-- card-alias: 13f99fd16e201009f1627c4e390295e7b7d5ee40f8cd3d811b7612c0d2cf9de3 -->
-Q: What distinguishes a physical law from a theory?
-A: A law concisely describes an observed regularity (often mathematical) but doesn't explain why; a theory provides the explanatory framework.
+A **physical quantity** is a measurable property, such as the length of a
+tabletop. A **unit** is an agreed reference quantity of the same kind. To
+measure the length is to compare it with a length unit. The reported **quantity
+value** has two inseparable parts:
 
-## 1.3 SI Units and Base Quantities
+\[
+\text{quantity value}=\text{numerical value}\times\text{unit}.
+\]
 
-<!-- card-id: card-74e18507-7772-4028-9909-9c48f3a83a97 -->
-<!-- card-alias: c10b44fbfa3048d3378cd91d6249499e16c64ce5f67ac7b615c164a35eb4cfff -->
-Q: Why does physics use a standardized unit system?
-A: Standardization ensures measurements are reproducible and comparable worldwide. Without agreed units, numerical results cannot be shared or verified across laboratories.
+For example, in \(25\ \mathrm{cm}\), \(25\) is the numerical value and
+\(\mathrm{cm}\) is the unit symbol. The number alone is incomplete. Changing
+units can change the numerical value without changing the physical quantity.
 
-<!-- card-id: card-c5895427-77bd-49f3-8238-a3b09e1d600d -->
-<!-- card-alias: 219373226fd13ca582985b524263f51d0331495bdcb2687cf1b11b8ade731152 -->
-C: The SI system has [7] base quantities from which all other units are derived.
+![One bar aligned with two scales, one reading 25 centimeters and the other 0.25 meter](../figures/01_foundations/same_length_two_units.svg)
 
-<!-- card-id: card-4ce5513d-367f-4037-a3f7-5d24ee600e49 -->
-<!-- card-alias: 6622d4e20f69ebd07288eaaf3502683a2459975f6355f296d05f609d92163c01 -->
-C: The SI unit of mass is the [kilogram (kg)].
+The **International System of Units (SI)** supplies shared reference units and
+writing conventions. A **base unit** is one of SI's independently specified
+units. A **derived unit** is formed by multiplying or dividing units. Mechanics
+will repeatedly use the SI base units meter (m) for length, kilogram (kg) for
+mass, and second (s) for time. For example, rectangle area is length times
+length, so its SI unit is \(\mathrm{m^2}\).
 
-<!-- card-id: card-d190cd2a-75f5-4a8f-90b1-6c38116f843b -->
-<!-- card-alias: e3f7c4126aa75e09953b99df958755c413e4d9ecae05f2af0e7ff63e7569ea80 -->
-C: The SI unit of length is the [meter (m)].
+At this stage, **mass** means the quantity that a balance compares between
+objects; later chapters will develop its role in physical models. “Kilogram” is
+the historical name of the SI base unit of mass, so learn \(\mathrm{kg}\) as
+the base-unit symbol as a whole even though the name contains “kilo.”
 
-<!-- card-id: card-c30ed22a-1cf1-438d-b8e8-ac795a4e5118 -->
-<!-- card-alias: c0c57dbe66793e5b9f7115992902922053ab5c56c51a31fe8c9a6e3f66b803a7 -->
-C: The SI unit of time is the [second (s)].
+In SI writing, leave a space between a number and a unit symbol
+(\(25\ \mathrm{cm}\), not \(25\mathrm{cm}\)); do not pluralize a symbol
+(\(4\ \mathrm{kg}\), not \(4\ \mathrm{kgs}\)).
 
-<!-- card-id: card-3e91ba4f-67b3-4799-bf20-045f5c19315b -->
-<!-- card-alias: 0420e35e36d7baa90eac03399e525883f339635b4b81ed44e8d1afd3856a7047 -->
-Q: Name the seven SI base quantities and their units.
-A: Mass (kg), length (m), time (s), electric current (A), thermodynamic temperature (K), amount of substance (mol), luminous intensity (cd).
+<!-- card-id: 04c3b227-e83a-49bf-9f3d-d3a24fd84efb -->
+Q: A measurement reports a quantity value as a numerical value times an agreed reference called a unit. In SI mechanics, examples include meter (m) for length, second (s) for time, and kilogram (kg) for mass. What information does the unit supply that the numerical value alone does not?
+A: The unit names the agreed reference used for comparison. Without it, a number such as 25 does not say what kind or size of quantity was measured.
 
-<!-- card-id: card-d4880c75-09df-4a58-82fe-1a7d697007dc -->
-<!-- card-alias: e9d2e89554d4d90ec52f8c6529e29642d7c04306f7e4e2df8ef6b1195358aaae -->
-Q: What are derived units in SI?
-A: Units formed by combining base units through multiplication or division. For example, velocity has units m/s, force has units kg·m/s² (called the Newton, N).
+<!-- card-id: b1ad52fa-a210-4322-b926-8656cc4d6cd7 -->
+Q: ![One bar aligned with two scales, one reading 25 centimeters and the other 0.25 meter](../figures/01_foundations/same_length_two_units.svg)
 
-## 1.4 Dimensional Analysis
+Why can the same bar have numerical values 25 and 0.25 without changing its physical length?
+A: The unit changed: \(25\ \mathrm{cm}=0.25\ \mathrm{m}\). A larger unit requires fewer copies to describe the same quantity, so the number changes while the length does not.
 
-<!-- card-id: card-08e2abc5-21eb-4968-a235-0c1a0d442b47 -->
-<!-- card-alias: 1de31ef192ae808873b5efeca4a88279321359b45bc4f98b4b8f0358dd43a73d -->
-Q: Why must every valid physical equation be dimensionally consistent?
-A: Because you cannot add or equate quantities of different physical kinds — adding a length to a time is meaningless. Dimensional consistency is a necessary (though not sufficient) condition for a correct equation.
+<!-- card-id: 59a25f74-cc2c-4268-bf56-02749c208eb0 -->
+C: In SI, the base unit for length is the [meter (m)].
 
-<!-- card-id: card-b4c83975-851c-4cb2-a7c0-97a8907d8439 -->
-<!-- card-alias: 325688944ea8f60eca713f5de72595104441befc6fa52148ec6a498f12d833a2 -->
-C: The notation $\lbrack v \rbrack = \text{L/T}$ means the [dimension] of velocity is length divided by time.
+<!-- card-id: 062d9073-888b-458e-b20e-fa5d7a054dfc -->
+C: In SI, the base unit for time is the [second (s)].
 
-<!-- card-id: card-bf6d9187-c673-48b5-ad21-438d535a2b55 -->
-<!-- card-alias: 3d8dc4419d1326be9691603424e73dce9134efa6bc62d00b55d43e4f9c8d20ea -->
-Q: How do you check whether a proposed equation is dimensionally consistent?
-A: Replace every quantity with its dimensions (L, M, T, etc.) and verify that the dimensions on the left-hand side equal those on the right-hand side.
+<!-- card-id: e2f0c0c2-4428-489a-9fb2-120c855a0542 -->
+C: In SI, the base unit for mass is the [kilogram (kg)].
 
-<!-- card-id: card-57cec2a1-8a76-4c52-a435-2a0bd6bfa0ed -->
-<!-- card-alias: 5eb89a32286b9efd8a1f9762f1bb7988178f6a9a5f23d8e54109e7f3b82020fe -->
-Q: How can dimensional analysis be used to derive a relationship (without full physics)?
-A: By identifying which physical quantities are relevant and requiring the combination to have the correct dimensions, you can determine the form of the equation up to a dimensionless constant. Example: distance must combine speed and time as $d \sim v \cdot t$ because $[\text{L}] = [\text{L/T}]\cdot[\text{T}]$.
+<!-- card-id: f7634bc0-25ae-4d28-a771-bdd7e984e2c4 -->
+Q: A rectangle's two side lengths are both measured in meters. Why is its area unit \(\mathrm{m^2}\), not \(\mathrm{m}\)?
+A: Area is the product of two lengths, so its unit is \(\mathrm{m}\times\mathrm{m}=\mathrm{m^2}\). The exponent records the two length factors.
 
-<!-- card-id: card-ddc71c10-bda4-451f-bac9-e98902ca8de8 -->
-<!-- card-alias: 27e2deadf6f445a0c2a69a38173746c4732a31c79bf4d480fff8bea607b944a0 -->
-C: Dimensional analysis can check equations and [derive relationships] between physical quantities up to a dimensionless constant.
+<!-- card-id: a351bf58-a90e-48b4-b2c4-3ebf500749f0 -->
+Q: SI writing leaves a space between a number and its unit symbol and does not pluralize the symbol. Using those conventions, how should “a measured length of twenty-five centimeters” be written?
+A: \(25\ \mathrm{cm}\). Put a space between the number and unit symbol, and do not add a plural “s” to the symbol.
 
-## 1.5 Order-of-Magnitude Estimation
+## Lesson 3 — Prefixes and conversion factors
 
-<!-- card-id: card-1a076df2-fb2f-4efb-971d-6fc8e5fa5e95 -->
-<!-- card-alias: 3f0a15d5ae6f1cf4bbfe1ed9233321224b970c94d3b2de22a8bb9522c9ef0bef -->
-Q: Why estimate before calculating exactly?
-A: An order-of-magnitude estimate reveals the scale of the answer, catches setup errors early, and builds physical intuition. An exact answer that is orders of magnitude off likely indicates a conceptual mistake.
+An SI **prefix** scales a unit by a power of ten:
 
-<!-- card-id: card-f7869e3c-35b9-4ca4-b867-b5d91f3912ec -->
-<!-- card-alias: a0fd0b8a397d05f159f633868aec911fbd4efbff916c9ca9caed7969a9fda737 -->
-Q: What is the Fermi estimation technique?
-A: Break a complex quantity into simpler sub-quantities you can estimate individually (each to one significant figure or nearest power of 10), then multiply or divide them. The product gives an order-of-magnitude answer.
+| Prefix | Symbol | Factor |
+|---|---:|---:|
+| kilo | k | \(10^3\) |
+| centi | c | \(10^{-2}\) |
+| milli | m | \(10^{-3}\) |
 
-<!-- card-id: card-e0dd5a54-e210-49f6-9137-9f1b80df3ef3 -->
-<!-- card-alias: ea7fc7496cc5ee5b03d49135e9d179db9ddfa1891b11a55074389304a8a967f5 -->
-C: In Fermi estimation, quantities are expressed as [powers of 10] and combined to give an order-of-magnitude result.
+The prefix symbol attaches directly to the unit symbol: \(\mathrm{km}\),
+\(\mathrm{cm}\), and \(\mathrm{mm}\). A standalone \(\mathrm{m}\) means
+meter; the first \(\mathrm{m}\) in \(\mathrm{mm}\) is the prefix milli.
 
-<!-- card-id: card-035506db-a4cb-43eb-83ac-a7f5c616e15d -->
-<!-- card-alias: d5db44458ec5efbac75279ece3da344944661c5be92eccad6b0570496e42718a -->
-Q: What are the steps in an order-of-magnitude estimate?
-A: Identify the controlling quantities, estimate each to one significant digit or a nearby power of ten, combine them, then check whether the scale and units are plausible.
+A **conversion factor** is a ratio of equal quantity values, so its value is
+one. From \(1\ \mathrm{m}=100\ \mathrm{cm}\), both
+\(1\ \mathrm{m}/100\ \mathrm{cm}\) and its reciprocal equal one. Choose the
+orientation that cancels the old unit.
 
-<!-- card-id: card-0164a7ce-c85f-4345-93e3-318306625784 -->
-Q: Point $M$ marks $6\times10^2$ on the logarithmic scale. To the nearest power of ten, what is its order of magnitude, and why?
+Analyzed example: convert \(250\ \mathrm{cm}\) to meters.
 
-![Logarithmic scale from ten squared to ten cubed with point M at six times ten squared](../figures/01_foundations/order-of-magnitude-scale.svg)
+- **IDENTIFY:** The physical length stays fixed; only its unit changes.
+- **PLAN:** Multiply by the factor with centimeters in the denominator.
+- **EXECUTE:** \(250\ \mathrm{cm}\,(1\ \mathrm{m}/100\ \mathrm{cm})=2.50\ \mathrm{m}\).
+- **EVALUATE:** Centimeters cancel. Because a meter is larger than a centimeter, the numerical value should decrease; \(2.50<250\), as expected.
 
-A: Its order of magnitude is $10^3$. On a logarithmic scale, the boundary between $10^2$ and $10^3$ is their geometric mean, $\sqrt{10^2\cdot10^3}\approx3.16\times10^2$, and $6\times10^2$ lies above it.
+This Identify–Plan–Execute–Evaluate structure is abbreviated **IPEE**. Its final
+step is a genuine check, not merely a claim that the arithmetic is correct.
 
-## 1.6 Significant Figures
+<!-- card-id: f09a9c12-c887-44b2-b533-40898de14e05 -->
+Q: A conversion factor is a ratio of equal quantity values, such as \(1\ \mathrm{m}/100\ \mathrm{cm}\), so its value is one. When converting a quantity to a new unit, how do you choose which way to write that factor?
+A: Orient the factor so the old unit cancels and the desired unit remains. The factor equals one, so it changes the representation, not the physical quantity.
 
-<!-- card-id: card-b47c52df-f589-4763-923e-66e959c1b3a0 -->
-<!-- card-alias: ec0816c53a1529b3553c2ee21d2c2566ffe47c1c424774592d84527c57f2d894 -->
-Q: What do significant figures represent?
-A: The precision of a measurement. Reporting more significant figures than the measurement device can resolve is misleading; reporting fewer discards real information.
+<!-- card-id: 0157c655-706a-4c70-9a2b-2dc2df8989f6 -->
+P: A path is \(3.6\ \mathrm{km}\) long. Convert this length to meters using \(1\ \mathrm{km}=1000\ \mathrm{m}\), and include a check.
+S: **IDENTIFY:** This is a unit conversion of one fixed length.
 
-<!-- card-id: card-e3a5d2cd-fc98-4f29-8b7a-8b12f1fb02eb -->
-Q: The ruler's smallest marked division is $0.1\,\text{cm}$. Read the yellow object's endpoint with appropriate precision. Which digit is estimated?
+**PLAN:** Use the conversion factor with kilometers in the denominator.
 
-![Ruler marked every tenth of a centimeter with a yellow endpoint between 3.4 and 3.5 centimeters](../figures/01_foundations/measurement-precision.svg)
+**EXECUTE:** \(3.6\ \mathrm{km}\,(1000\ \mathrm{m}/1\ \mathrm{km})=3.6\times10^3\ \mathrm{m}\).
 
-A: The reading is approximately $3.46\,\text{cm}$; the hundredths digit, $6$, is estimated between the $3.4$ and $3.5\,\text{cm}$ marks. The tenths digit is fixed by the scale, while one additional digit is reported by interpolation.
+**EVALUATE:** Kilometers cancel, leaving meters. A meter is smaller than a kilometer, so the numerical value should increase; \(3600>3.6\).
 
-<!-- card-id: card-a1c54f77-666e-4b6b-a4bc-4b2fc2c6957c -->
-<!-- card-alias: fff6cd3f15e3c995e6b02700d839cb309e6351f0bbaf928f1d91c870eeb46b3e -->
-Q: What is the rule for significant figures in addition and subtraction?
-A: The result should have the same number of decimal places as the measurement with the fewest decimal places.
+<!-- card-id: 38c77cf8-229d-4cf9-bfc1-784777cdacc3 -->
+P: Convert \(48\ \mathrm{mm}\) to meters using \(1\ \mathrm{m}=1000\ \mathrm{mm}\). Show the unit cancellation and check whether the numerical value should increase or decrease.
+S: \(48\ \mathrm{mm}\,(1\ \mathrm{m}/1000\ \mathrm{mm})=0.048\ \mathrm{m}\). Millimeters cancel; because meters are the larger unit, a value below one meter is sensible.
 
-<!-- card-id: card-b77e8d27-d6b7-427b-a853-4e341d1513e4 -->
-<!-- card-alias: 6e64730806713e116c70bb1ebe274594e9ebc35dfa6f3e789b0d82e44d1f1850 -->
-Q: What is the rule for significant figures in multiplication and division?
-A: The result should have the same number of significant figures as the measurement with the fewest significant figures.
+## Lesson 4 — Dimensions check equation structure
 
-<!-- card-id: card-3b816f0d-fd49-4a1b-805e-bcafdb796580 -->
-<!-- card-alias: 8c6a8b6ea2c75e7f4f785f22c29e8f140194dc2bc4a0029de7ac005945734367 -->
-C: In multiplication and division, the result keeps as many significant figures as the measurement with the [fewest] significant figures.
+A **dimension** identifies the kind of quantity without choosing a unit. In
+mechanics, the base-dimension symbols are \(L\) for length, \(M\) for mass, and
+\(T\) for time. A length has dimension \(L\) whether it is reported in meters,
+centimeters, or another length unit. Area has dimension \(L^2\).
 
-<!-- card-id: card-5d4e9ce4-b03c-4e83-b58c-1e41589df309 -->
-<!-- card-alias: 4037ec1ac0bcb74127bdc436d3b1265938a977bd28ba4e79edb89060789d2387 -->
-C: In addition and subtraction, the result is rounded to the [least number of decimal places] among all measurements.
+Dimensions combine through the same multiplication and division as quantities.
+If \(r=d/t\), where \(d\) is a length and \(t\) is a time interval, then
+\([r]=L/T=LT^{-1}\). Square brackets here mean “the dimension of the
+enclosed quantity.”
 
-<!-- card-id: card-0a2b5a53-3d3c-46d2-a03b-1df08e478711 -->
-<!-- card-alias: 97ee4084ad338d40d463cc03e2ace58cde86d05dc042abe9832e9a6862340204 -->
-Q: Why must precision in a final answer be justified by the measurements?
-A: Writing extra digits implies a precision that was never measured, which is misleading. Physical results can only be as precise as the least precise input.
+An equation is **dimensionally consistent** only if quantities being added or
+equated have the same dimensions. This is a powerful error check, but only a
+necessary one: a dimensionally consistent equation can still have a wrong
+number, sign, or model.
 
-## 1.7 Worked Example — Dimensional Analysis of Free Fall
+<!-- card-id: 63f24a70-ba97-49d8-ab82-eb3169908b13 -->
+Q: A dimension names the kind of quantity without choosing a measurement standard: length has dimension \(L\) whether measured in meters or centimeters. Given that description, what is the difference between a dimension and a unit?
+A: The dimension names the quantity's kind, such as length \(L\); the unit names the chosen comparison standard, such as meter or centimeter. Units can change while the dimension stays the same.
 
-<!-- card-id: card-73a91d37-cf6c-49d7-9818-887028440e4d -->
-<!-- card-alias: 96a7affa20ed2b2bccde51543a4204cc351c7f90d938443e92692f06c4e2b363 -->
-P: A stone is released from rest at height $h$ above the ground. Without using the kinematic equations, use dimensional analysis alone to determine how the time of fall $t$ depends on $h$ and the gravitational acceleration $g$, up to a dimensionless constant.
+<!-- card-id: 9b2cdf42-7277-4922-9fa3-cf0f2a7d900c -->
+Q: A dimensional-consistency check requires quantities that are added or set equal to have the same dimension. Can a length and a time pass that check if they are added? Why or why not?
+A: No. Length has dimension (L), while time has dimension (T); changing units cannot make those unlike dimensions addable.
 
-![Stone released from rest at height h above level ground with gravitational acceleration g downward](../figures/01_foundations/free-fall-dimensional-setup.svg)
+<!-- card-id: af2d3be5-415a-48f4-85bf-72be6ea02924 -->
+P: A proposed rectangle formula is \(A=\ell+w\), where \(A\) is area and \(\ell\) and \(w\) are lengths. Use dimensions to decide whether the formula can be correct.
+S: **IDENTIFY:** This is a dimensional-consistency check.
 
-S:
-**IDENTIFY**: We want $t$ as a function of $h$ (dimension L) and $g$ (dimension L/T²). Assume a power-law form $t = C\,h^a g^b$, where $C$ is a dimensionless constant and $a$, $b$ are unknown exponents.
+**PLAN:** Compare both sides using \([A]=L^2\) and \([\ell]=[w]=L\).
 
-**PLAN**:
-- Write the dimensional equation: $[t] = [h]^a[g]^b$.
-- Expand and collect powers of each base dimension (L and T).
-- Match the powers on both sides and solve for $a$ and $b$.
+**EXECUTE:** The left side has dimension \(L^2\); the right side \(\ell+w\) has dimension \(L\). They do not match.
 
-**EXECUTE**:
+**EVALUATE:** The formula cannot be correct. A valid area formula must produce two factors of length, such as \(\ell w\).
 
-Dimensions: $[t] = T$, $[h] = L$, $[g] = L/T^2 = LT^{-2}$.
+<!-- card-id: f62bbcda-a10c-4591-9f99-aa0076027970 -->
+P: A quantity is defined by \(r=d/t\), where \(d\) is measured in meters and \(t\) in seconds. Give the SI unit and dimension of \(r\).
+S: Dividing the units gives \(\mathrm{m/s}\); dividing the dimensions gives \(L/T=LT^{-1}\). The unit and dimension show the same quotient structure at different levels.
 
-$$T = L^a(LT^{-2})^b = L^{a+b}\,T^{-2b}$$
+<!-- card-id: f64f6c7a-0910-43c7-8793-061afc15c311 -->
+Q: Why does dimensional consistency not prove that a proposed physical equation is correct?
+A: Dimensions can rule out mismatched quantity kinds, but they cannot determine every numerical factor, sign, assumption, or model choice. Passing the check is necessary, not sufficient.
 
-Matching powers of each base dimension:
-- Powers of $L$: $a + b = 0$
-- Powers of $T$: $-2b = 1 \implies b = -\tfrac{1}{2}$
+## Lesson 5 — Scientific notation makes scale visible
 
-Substitute back: $a = -b = +\tfrac{1}{2}$.
+Scientific notation writes a nonzero number as \(a\times10^n\), where
+\(1\le |a|<10\) and \(n\) is an integer. Moving the decimal point left raises
+the exponent; moving it right lowers the exponent. For example,
+\(4200=4.2\times10^3\) and \(0.0042=4.2\times10^{-3}\).
 
-Therefore $t \sim h^{1/2}g^{-1/2} = \sqrt{h/g}$.
+In this pilot, powers of ten provide a scale for comparison. A difference of
+one exponent is a factor of 10; a difference of \(k\) exponents is a factor of
+\(10^k\). Later estimation work can introduce the convention being used when
+it asks for an “order of magnitude.”
 
-**EVALUATE**:
-- The exact kinematic result is $t = \sqrt{2h/g}$, so the dimensionless constant is $C = \sqrt{2} \approx 1.41$ — of order unity as expected ✓
-- Dimensional analysis cannot pin down $C$, only the functional form. This is the generic limitation of the method.
-- Sanity check: doubling $h$ multiplies $t$ by $\sqrt{2}$, not by 2 — consistent with intuition that falling twice as far takes less than twice as long because the object speeds up ✓
+![A powers-of-ten scale from ten to the minus three through ten to the third, with P at ten to the minus two and Q at ten to the first](../figures/01_foundations/power_of_ten_scale.svg)
+
+<!-- card-id: 592595ee-f3af-4f38-9b11-f8e0d335ae24 -->
+Q: Normalized scientific notation writes a nonzero number as \(a\times10^n\). What two conditions must the coefficient \(a\) and exponent \(n\) satisfy?
+A: The exponent \(n\) is an integer, and the coefficient satisfies \(1\le |a|<10\).
+
+<!-- card-id: 0d9f2d8d-203a-4d7d-b8c0-829d6f928258 -->
+Q: Write \(0.0042\) in normalized scientific notation.
+A: \(4.2\times10^{-3}\). The decimal moves three places right to make 4.2, so the exponent is \(-3\).
+
+<!-- card-id: 2fdc606b-5cf5-4d52-9263-7221c63885b7 -->
+P: ![A powers-of-ten scale from ten to the minus three through ten to the third, with P at ten to the minus two and Q at ten to the first](../figures/01_foundations/power_of_ten_scale.svg)
+
+How many times larger is scale Q than scale P? Use their exponent difference rather than counting ordinary tick spacing.
+S: Q is at \(10^1\) and P is at \(10^{-2}\). Their exponent difference is \(1-(-2)=3\), so Q is \(10^3=1000\) times larger than P.
+
+## Lesson 6 — Report what the measurement can support
+
+A measuring **instrument** provides a scale or display. Its **resolution** is
+the smallest change in the displayed or marked value that can be distinguished.
+On a marked scale, inspect the difference between adjacent smallest marks.
+
+![A scale from zero to five centimeters with evenly spaced unlabeled minor marks](../figures/01_foundations/marked_scale.svg)
+
+A measured value is a best estimate, not an exact copy of nature. A complete
+measurement result pairs that estimate with a **measurement uncertainty** that
+describes the spread of values reasonably attributable to the measured
+quantity under the stated procedure. Instrument resolution can contribute to
+uncertainty, but variation among repeated readings, alignment, an imperfect
+instrument scale, and the chosen method can make the total uncertainty larger.
+
+The notation \(12.4\pm0.1\ \mathrm{cm}\) gives a best estimate of
+\(12.4\ \mathrm{cm}\) and a symmetric uncertainty interval from
+\(12.3\ \mathrm{cm}\) to \(12.5\ \mathrm{cm}\). The \(\pm\) value is not a
+known mistake to subtract; it communicates limited knowledge.
+
+![A number line with an estimate at 12.4 centimeters and uncertainty endpoints at 12.3 and 12.5 centimeters](../figures/01_foundations/uncertainty_interval.svg)
+
+**Significant figures** are the digits retained to communicate numerical
+precision—how finely the written number distinguishes nearby values. Leading
+zeros only locate the decimal point, so \(0.04\) has one
+significant figure. Written trailing zeros after a decimal can communicate
+additional precision, so \(0.0400\) has three. Significant figures are a compact
+convention, not a replacement for an explicit uncertainty.
+
+Defined conversions and counted integers are exact; they do not impose a new
+measurement uncertainty. When an uncertainty has been rounded according to the
+chosen reporting convention, round the best estimate to the same decimal place.
+For example, \(12.347\ \mathrm{cm}\) with uncertainty
+\(0.2\ \mathrm{cm}\) is reported as \(12.3\pm0.2\ \mathrm{cm}\).
+
+<!-- card-id: 82278597-b23a-41f8-ab7a-2425a034feb7 -->
+Q: An instrument's resolution is the smallest change in its displayed or marked value that can be distinguished. On a marked scale, inspect the difference between adjacent smallest marks.
+
+![A scale from zero to five centimeters with evenly spaced unlabeled minor marks](../figures/01_foundations/marked_scale.svg)
+
+What is the resolution of this marked scale, expressed in centimeters?
+A: \(0.1\ \mathrm{cm}\). Each one-centimeter interval is divided into ten equal smallest intervals.
+
+<!-- card-id: ccade793-ab41-48ad-ac3a-8cba6c05af87 -->
+Q: In \(x\pm u\), \(x\) is the best estimate and \(u\) gives a symmetric interval extending \(u\) to either side.
+
+![An unlabeled symmetric interval with a distinct center marker and two bracket endpoints](../figures/01_foundations/uncertainty_interval_front.svg)
+
+Translate \(12.4\pm0.1\ \mathrm{cm}\) into a best estimate and interval.
+A: The best estimate is \(12.4\ \mathrm{cm}\), with a symmetric interval from \(12.3\ \mathrm{cm}\) to \(12.5\ \mathrm{cm}\).
+
+<!-- card-id: 3fe0f766-a70f-48ef-8c9f-1b601d0170d0 -->
+Q: Why is an instrument's resolution not automatically the total uncertainty of a measurement result?
+A: Resolution describes the smallest distinguishable scale or display change. Variation among repeated readings, alignment, an imperfect instrument scale, or the chosen method can make total uncertainty larger.
+
+<!-- card-id: e4701dd9-9cc3-485d-9a10-0889b83be19f -->
+Q: In measurement reporting, leading zeros only locate the decimal point, while written trailing zeros after a decimal can communicate retained precision. What precision difference is communicated by writing \(0.0400\ \mathrm{m}\) instead of \(0.04\ \mathrm{m}\)?
+A: \(0.0400\ \mathrm{m}\) has three significant figures, while \(0.04\ \mathrm{m}\) has one. The two trailing zeros after the decimal communicate retained precision; the leading zeros do not.
+
+<!-- card-id: b7797989-5c1e-4783-9e34-ce79bcd53bce -->
+Q: Why does the exact definition \(1\ \mathrm{m}=100\ \mathrm{cm}\) not limit the significant figures of a converted measurement?
+A: The defined conversion factor is exact; it adds no measurement uncertainty. The precision remains limited by the measured input, not by the numbers 1 or 100 in the definition.
+
+<!-- card-id: 6eb791ac-a16b-4ff2-b628-6c4aa81d6b21 -->
+P: A measurement analysis gives a best estimate of \(7.836\ \mathrm{cm}\) and a rounded uncertainty of \(0.05\ \mathrm{cm}\). Report the result with matching decimal places.
+S: \(7.84\pm0.05\ \mathrm{cm}\). The uncertainty reaches the hundredths place, so the best estimate is rounded to the hundredths place as well.
+
+<!-- card-id: 3caad80e-66f7-43ff-8eea-8c172a6f4974 -->
+Q: A proposed equation adds a quantity measured in meters to one measured in seconds. Which chapter-1 tool directly diagnoses the problem: unit conversion or dimensional analysis?
+A: Dimensional analysis. Conversion can change meters to another length unit or seconds to another time unit, but it cannot make unlike dimensions addable.

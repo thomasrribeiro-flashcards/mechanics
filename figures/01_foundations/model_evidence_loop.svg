@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Model and evidence loop</title>
+  <desc id="desc">Four high-contrast nodes labeled Model, Prediction, Measurement, and Compare form a clockwise loop. Solid and dashed paths provide cues independent of color.</desc>
+  <defs>
+    <style>
+      .node{fill:#fff;stroke:#171717;stroke-width:3}.accent{fill:#f5c542;stroke:#171717;stroke-width:3}
+      .label{font:700 22px system-ui,sans-serif;fill:#171717;text-anchor:middle}.small{font:600 16px system-ui,sans-serif;fill:#4a4a4a;text-anchor:middle}
+      .flow{fill:none;stroke:#171717;stroke-width:4}.return{fill:none;stroke:#8a6500;stroke-width:5;stroke-dasharray:10 7}
+    </style>
+  </defs>
+  <rect width="720" height="360" rx="24" fill="#fff"/>
+  <rect class="accent" x="55" y="55" width="180" height="76" rx="16"/>
+  <text class="label" x="145" y="101">Model</text>
+  <rect class="node" x="485" y="55" width="180" height="76" rx="16"/>
+  <text class="label" x="575" y="101">Prediction</text>
+  <rect class="node" x="485" y="235" width="180" height="76" rx="16"/>
+  <text class="label" x="575" y="281">Measurement</text>
+  <rect class="node" x="55" y="235" width="180" height="76" rx="16"/>
+  <text class="label" x="145" y="281">Compare</text>
+  <path class="flow" d="M235 93 H470"/>
+  <path d="M470 93 L452 82 L452 104 Z" fill="#171717"/>
+  <path class="flow" d="M575 131 V220"/>
+  <path d="M575 220 L564 202 L586 202 Z" fill="#171717"/>
+  <path class="flow" d="M485 273 H250"/>
+  <path d="M250 273 L268 262 L268 284 Z" fill="#171717"/>
+  <path class="return" d="M145 235 V146"/>
+  <path d="M145 146 L134 164 L156 164 Z" fill="#8a6500" stroke="#171717" stroke-width="1"/>
+  <text class="small" x="360" y="82">derive a checkable result</text>
+  <text class="small" x="360" y="299">evidence</text>
+</svg>

@@ -11,7 +11,7 @@ mechanics problems on paper.
 
 - Subject: `physics`
 - Level: introductory, calculus-aware classical mechanics
-- Prerequisites: algebra, trigonometry, and calculus concepts as introduced
+- Prerequisites: algebra and trigonometry; no physics vocabulary is assumed
 - Mastery enables: model selection, representation translation, qualitative
   prediction, and representative mechanics problem solving
 - Excludes: continuum mechanics, fluids, relativity, quantum mechanics, and
@@ -21,7 +21,7 @@ mechanics problems on paper.
 
 | File | Topic |
 |------|-------|
-| 01_foundations | Scientific method, SI units, dimensional analysis, sig figs |
+| 01_foundations | Models and evidence; measurement; SI units; conversions; dimensions; scale and uncertainty |
 | 02_vectors | Scalars/vectors, components, addition, dot product, cross product |
 | 03_kinematics_1d | Position/velocity/acceleration, kinematic equations, free fall |
 | 04_kinematics_2d | Projectile motion, circular motion, relative motion |
@@ -38,8 +38,12 @@ mechanics problems on paper.
 
 | Source | Role | Terms / AI constraint | Accessed |
 |---|---|---|---|
-| Learner's mechanics notes | Primary curriculum and wording input | Private learner-authored material; do not redistribute without permission | 2026-07-14 |
-| [OpenStax University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/preface) | Human-readable scope and claim cross-check only | CC BY-NC-SA 4.0; current pages prohibit ingestion into generative-AI systems without permission, so do not feed the text to an agent | 2026-07-14 |
+| [BIPM, *The International System of Units (SI Brochure)*, 9th ed., updated 2026](https://www.bipm.org/en/publications/si-brochure/) | Normative verification of SI structure, quantity values, unit symbols, prefixes, and writing conventions | CC BY 4.0; reuse and adaptation permitted with attribution; no BIPM endorsement implied | 2026-07-15 |
+| [NIST, “SI Units”](https://www.nist.gov/pml/owm/metric-si/si-units) | Plain-language verification of quantity, unit, numerical value, base units, prefixes, and SI communication | NIST site information is public information unless marked otherwise; credit requested | 2026-07-15 |
+| [NIST SP 811, chapter 7](https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-7-rules-and-style-conventions-expressing-values) | Verification of quantity-value notation and dimensional structure; the current BIPM brochure controls if the older guide conflicts with revised SI | NIST site information is public information unless marked otherwise; credit requested | 2026-07-15 |
+| [NIST TN 1297, section 7](https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-7-reporting-uncertainty) | Claim check that a measurement result should be reported with its uncertainty and enough context to interpret it | NIST technical publication; generally public domain in the United States, with source credit requested | 2026-07-15 |
+| [NASA Earth Science Research and Analysis Program](https://science.nasa.gov/earth-science/programs/research-analysis/) | Curricular framing for observations informing models and quantitative tests of hypotheses; no Earth-science facts imported | NASA public information may be distributed and copied unless otherwise marked; credit requested | 2026-07-15 |
+| [BIPM copyright terms](https://www.bipm.org/en/copyright), [NIST copyright and disclaimers](https://www.nist.gov/copyrights-disclaimers), and [NASA disclaimer](https://www.nasa.gov/organizations/disclaimer/) | Terms verification for the sources above | Source-specific terms as summarized in the rows above | 2026-07-15 |
 
 Add authoritative sources actually used in later audits, including their role,
 license or terms, and access date. Do not list a source merely because it is

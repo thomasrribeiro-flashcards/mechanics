@@ -15,9 +15,93 @@ should be able to:
 4. solve representative problems without copying surface patterns;
 5. detect impossible results, hidden assumptions, and common misconceptions.
 
-The deck assumes algebra, trigonometry, vectors after chapter 2, and elementary
-calculus where the chapter introduces its physical meaning. It does not assume
-later mechanics chapters as prerequisites for earlier ones.
+The deck assumes algebra and trigonometry. It assumes vectors only after
+chapter 2 and introduces elementary calculus where its physical meaning first
+matters. It does not assume physics vocabulary or later mechanics chapters as
+prerequisites for earlier ones.
+
+## Chapter 1 pilot gate
+
+`01_foundations` is the novice-first pilot. Until a human approves its completed
+cold-start audit, no later chapter may be authored or revised.
+
+### Allowed inbound knowledge
+
+| Inbound knowledge | Source of confirmation | Boundary |
+|---|---|---|
+| Arithmetic, fractions, ratios, powers, and algebraic rearrangement | Learner contract | No physics meaning may be attached without explanation |
+| Scientific notation at the level of powers of ten | Learner contract's algebra prerequisite, refreshed on the first scheduled scientific-notation front | No order-of-magnitude convention is assumed |
+| Plane geometry, including rectangle area | Learner contract's algebra and trigonometry prerequisites | No vector or coordinate convention is assumed |
+| Reading ordinary tables and left-to-right process arrows | General literacy | Every technical axis, scale, and symbol is still introduced |
+
+Everything else—including “model,” “quantity,” “measurement,” SI, unit
+symbols, prefixes, dimensions, resolution, uncertainty, and significant
+figures—is new.
+
+### Concept-dependency ledger (planned before authoring, reconciled after scan)
+
+| New dependency | First explanation or analyzed example | First supported retrieval | Later faded or independent use | Status |
+|---|---|---|---|---|
+| Physical model; prediction; observation; evidence | Teaching definition embedded in F01; F02 supplies the model–evidence loop | F01–F02 | F03 diagnoses overclaiming from agreement | resolved |
+| Physical quantity; measurement; unit; numerical value; quantity value | Teaching definition and mechanics unit examples embedded in F04 | F04 | F05 translates the same length across units | resolved |
+| SI mechanics unit symbols m, kg, s; derived area unit; symbol writing | F04 establishes the symbols; F09 and F10 include their needed bridges | F06–F10 | Later chapter use | resolved |
+| Prefixes and conversion factors | Relations are explicit givens; teaching definition embedded in F11 | F11 | F12–F13 perform conversions | resolved |
+| Dimension; L/T notation; dimensional consistency | Teaching definitions embedded in F14 and F15 | F14–F15 | F16–F18 and mixed F28 | resolved |
+| Scientific notation and powers-of-ten scale | Teaching definition embedded in F19; algebra prerequisite refreshed through F20 | F19–F20 | F21 compares scales | resolved |
+| Resolution | Teaching definition and figure grammar embedded in F22 | F22 | F24 contrasts resolution with uncertainty | resolved |
+| Best estimate; uncertainty interval; `±` notation | Teaching definition and unlabeled interval embedded in F23 | F23 | F24 and F27 | resolved |
+| Significant figures; leading/trailing zeros; exact conversions | Teaching distinction embedded in F25 | F25 | F26–F27 | resolved |
+
+Rejected early examples: free fall, speed or velocity, force, energy, momentum,
+vectors, graphs of motion, and physical constants. Each would borrow vocabulary
+or representations from later chapters without adding value to the chapter 1
+target.
+
+### Chapter design ledger (planned before authoring)
+
+| Retrieval family | Planned forms | Problem progression | Authentic representations |
+|---|---|---|---|
+| Models, predictions, and evidence | Bounded `Q:/A:` interpretation and diagnosis | No calculation; supported interpretation followed by misconception diagnosis | Cyclic process diagram and plain-language scenario |
+| Quantity–number–unit grammar and SI | `Q:/A:` translation plus compact `C:` recall for m, kg, and s | Identification before use | Symbolic quantity value, unit table, same length in two units |
+| Prefixes and conversions | `Q:/A:` method choice and `P:/S:` transfer | Analyzed example → completion choice → independent conversion | Powers-of-ten table, conversion-factor algebra |
+| Dimensions | `Q:/A:` meaning/limit and `P:/S:` discrimination | Analyzed rectangle example → equation check → independent derived-unit construction | Symbolic equations and base-dimension notation |
+| Scientific notation and scale | `Q:/A:` translation and short `P:/S:` comparison | Refresher → exponent-step inference → independent scale comparison | Power-of-ten scale |
+| Resolution, uncertainty, and significant figures | `Q:/A:` interpretation/contrast and `P:/S:` reporting | Instrument reading → interval translation → independent reporting decision | Marked measuring scale, uncertainty number line, `±` notation |
+
+Planned inventory: basic cards are the default for interpretation and
+diagnosis; three clozes are justified for exact m/kg/s recall after explanation;
+problems are reserved for conversion, dimensional, scale, and reporting
+decisions. Exact counts will follow the smallest sufficient set and will be
+reconciled after the cold-start scan.
+
+### Figure-opportunity ledger (planned before authoring)
+
+| Opportunity | Decision | Retrieval role or omission reason |
+|---|---|---|
+| Model → prediction → measurement → comparison loop | Include | Trace how evidence can retain or revise a model on F02 |
+| Same physical length expressed in centimeters and meters | Include | Separate invariant quantity from unit-dependent numerical value |
+| Complete seven-base-unit SI network | Omit | It adds five unused quantities and invites glossary memorization; chapter 1 retrieves only m, kg, and s |
+| Prefix/power-of-ten ladder | Include | Count exponent steps and infer multiplicative scale without a later physics context |
+| Conversion-factor cancellation | Omit | The authentic representation is the written algebra; a decorative arrow diagram adds no new decision |
+| Dimensional-consistency balance | Omit | Symbolic equations are the authentic representation and are clearer at phone width |
+| Marked measuring scale | Include | Read the smallest marked increment from an instrument-like display |
+| Uncertainty interval on a number line | Include | Translate `estimate ± uncertainty` into endpoints; use the unlabeled retrieval asset on the scheduled front without leaking endpoints |
+| Accuracy-versus-precision target plots | Omit | Accuracy, trueness, and repeatability are outside this pilot's minimum dependency path |
+
+### Chapter 1 inventory reconciliation
+
+| Inventory | Planned | Actual | Reconciliation |
+|---|---|---:|---|
+| Basic `Q:/A:` | Default for interpretation, discrimination, and diagnosis; no quota | 19 | Every basic card carries one bounded decision; no planned family is missing |
+| Cloze `C:` | Exactly useful compact recall for meter, second, and kilogram after explanation | 3 | One cloze per mechanics base unit; no formula clozes added |
+| Problem `P:/S:` | Conversion, dimensional, scale, and reporting transfer | 6 | Two conversion, two dimensional, one scale, and one reporting problem realize the plan |
+| Problem progression | Supported → faded/independent where repetition pays | 6 scheduled problems | Explicit givens and earlier scheduled answers support conversion, dimensions, scale, and reporting without relying on unscheduled prose |
+| Figure opportunities | Five included visual targets; four explicit omissions | 5 targets in 6 SVG assets | The uncertainty target needs a labeled teaching figure and an unlabeled retrieval front; no expected target is unexplained |
+
+Chapter 1 therefore contains 28 cards: 19 basic, 3 cloze, and 6 problem
+blocks. It references the five planned visual targets. The six original SVG
+assets reflect one retrieval/reference pair for the uncertainty target, not an added
+figure quota.
 
 ## Chapter progression
 
