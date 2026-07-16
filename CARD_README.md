@@ -272,8 +272,16 @@ torsional motion involved aeroelastic flutter.
 
 Use original SVGs for free-body diagrams, motion graphs, vector geometry,
 before/after states, energy accounting, orbits, oscillations, and model-choice
-comparisons. Use the deck's black, white, gray, and gold palette, with a
-non-color cue for every distinction.
+comparisons. For construction-heavy diagrams, keep editable TikZ sources beside
+their same-named generated SVGs and reuse `figures/tikz-style.tex`. Compile with
+`flashcards deck render-figures .`; validation must reject stale output. The app
+must receive ordinary SVG and must never compile TikZ at review time.
+
+Use the deck's black, white, gray, and gold palette, with a non-color cue for
+every distinction. Prefer consistent sans-serif labels, restrained line weights,
+muted guides, and proportional `Stealth` arrowheads. Inspect every rendered
+asset at phone width for clipping, excess whitespace, ambiguous endpoints, and
+visual hierarchy.
 
 Put setup geometry and givens on the front. Put the requested force, path,
 component, label, or construction on the back. Preserve a card ID when a figure
