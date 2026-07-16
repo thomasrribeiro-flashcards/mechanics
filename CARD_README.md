@@ -103,6 +103,105 @@ blocks. It references the five planned visual targets. The six original SVG
 assets reflect one retrieval/reference pair for the uncertainty target, not an added
 figure quota.
 
+## Chapter 2 build ledger
+
+`02_vectors` is a novice-first bridge from concrete geometric arrows to the
+vector operations later mechanics chapters may use. It assumes only chapter
+1's scheduled cards and the declared algebra and trigonometry prerequisites.
+Later mechanics quantities are deliberately unavailable as examples.
+
+### Allowed inbound knowledge at the chapter boundary
+
+| Inbound knowledge | Source of confirmation | Boundary |
+|---|---|---|
+| Arithmetic, algebraic rearrangement, square roots, and signed numbers | Learner contract | No vector notation or component rule is assumed |
+| Plane geometry, right triangles, the Pythagorean theorem, and sine/cosine/tangent | Learner contract's algebra and trigonometry prerequisites | No coordinate-axis, direction-angle, or quadrant convention is assumed |
+| Physical quantity, numerical value, unit, SI writing, and dimension | Scheduled chapter 1 cards F04–F18 | No physical quantity is assumed to be scalar or vector until chapter 2 establishes the distinction |
+| Powers of ten, measurement resolution, and uncertainty | Scheduled chapter 1 cards F19–F28 | Available for checks but not required by the core vector path |
+| Reading ordinary arrows and tables | General literacy | Arrow tail/head grammar, vector equality, page-normal symbols, and every mathematical arrow convention are new |
+
+Everything else is unseen. In particular, no later mechanics quantity, law,
+graph, or diagram may support a chapter-2 front.
+
+### Concept-dependency ledger (planned before authoring)
+
+| New dependency | First explanation or analyzed example | First supported retrieval | Later faded or independent use | Status |
+|---|---|---|---|---|
+| Geometric arrow tail/head; magnitude and direction; vector equality | F01 scheduled front defines the arrow grammar | F01–F02 | F05–F06 and all later diagrams | resolved |
+| Scalar versus vector; vector and magnitude notation; opposite vector | F03–F05 scheduled fronts supply concrete definitions before symbolic use | F03–F05 | F06 and later operation cards | resolved |
+| Multiplication of a vector by a scalar | F06 states the magnitude and direction effects | F06 | Subtraction and later algebra | resolved |
+| Cartesian origin and perpendicular x/y axes; signed scalar components; quadrants | F07 scheduled front defines axes, projections, and signs with a grid | F07–F08 | F09–F21 | resolved |
+| Unit vectors \(\hat{\mathbf i}\), \(\hat{\mathbf j}\); component form | F09 defines unit vector and component notation | F09 | F10–F21 and vector products | resolved |
+| Direction angle measured counterclockwise from +x; component trigonometry | F10 analyzed problem states the convention and method | F10 | F11–F13 | resolved |
+| Magnitude and direction reconstructed from components; quadrant check | F12 gives the first full reconstruction with a genuine check | F12 | Later vector interpretation | resolved |
+| Coordinate dependence of components versus invariance of the geometric vector | F13 supplies the rotated-axis contrast | F13 | Later coordinate choices | resolved |
+| Component units and dimensions | F14 bridges chapter-1 unit/dimension knowledge | F14 | All numerical vector problems | resolved |
+| Tail-to-head addition; resultant; componentwise addition | F15 front teaches the graphical construction; F16 states the analytical rule | F15–F16 | F17 and later vector sums | resolved |
+| Vector subtraction as addition of the opposite | F18 defines the operation | F18 | F19 and later differences | resolved |
+| Dot product, angle between tail-to-tail vectors, scalar output, projection, and commutativity | F21 front gives the definition; F22–F23 establish boundary and projection meaning | F21–F23 | F24–F26 | resolved |
+| Three-dimensional z-axis; \(\hat{\mathbf k}\); out-of-page dot and into-page cross | F27 front defines the right-handed page convention; F27–F28 answers establish k and both page symbols | F27–F28 | F29–F33 | resolved |
+| Cross product, perpendicular direction, right-hand rule, magnitude, order reversal, and parallelogram area | F27 defines direction and output; F28–F31 retrieve order and magnitude structure | F27–F31 | F32–F33 | resolved |
+| Three-dimensional component form and cross-product component calculation | F33 supplies the formula as an execution scaffold | F33 | Later mechanics chapters | resolved |
+| Dot-product versus cross-product discrimination | Dot product is established by F26 and cross product by F32; F34 asks for the decisive output/geometry distinction | F34 | Later model selection | resolved |
+
+Rejected scaffolds include motion quantities, forces, work, torque, energy,
+momentum, polar coordinates, and later-mechanics diagrams. Abstract directed
+lengths and grid arrows test the same vector decisions without borrowing future
+knowledge.
+
+### Chapter design ledger (planned before authoring)
+
+| Retrieval family | Planned forms | Problem progression | Authentic representations |
+|---|---|---|---|
+| Arrow grammar and scalar/vector distinction | Bounded `Q:/A:` interpretation and discrimination | Concrete equal-arrow comparison before notation | Geometric arrows, written quantity values, vector/magnitude notation |
+| Components and coordinate conventions | `Q:/A:` diagram reading plus `P:/S:` execution | Supported grid reading → analyzed trigonometric decomposition → independent quadrant case → reconstruction | Cartesian grid, dashed projections, component pairs, unit-vector form, right triangles |
+| Addition, subtraction, and scalar multiplication | `Q:/A:` construction/method cards and `P:/S:` component transfer | Visual construction → component rule → independent sum → independent difference | Tail-to-head diagram, component equations, translated arrows |
+| Dot product | `Q:/A:` meaning, sign, projection, and order; `P:/S:` calculation | Definition-supported qualitative sign → projection interpretation → component calculation → angle recovery | Tail-to-tail angle, signed projection, component expression |
+| Cross product | `Q:/A:` direction, order, limiting cases, area, and product discrimination; `P:/S:` magnitude and components | Right-hand direction → order reversal → geometric magnitude/area → numerical magnitude → scaffolded component execution | Page-normal symbols, right-handed axes, parallelogram area, three-component notation |
+
+Planned inventory: 26 basic `Q:/A:` cards, zero clozes, and 8 `P:/S:` cards
+(34 total). Basic cards carry the bounded geometric and representational
+decisions; problems carry decomposition, reconstruction, addition/subtraction,
+dot-product, and cross-product transfer. No compact target benefits from exact
+cloze recall before its meaning is understood.
+
+### Figure-opportunity ledger (planned before authoring)
+
+| Opportunity | Decision | Retrieval role or omission reason |
+|---|---|---|
+| Equal arrows translated to different locations | Include | Decide equality from magnitude and direction rather than page position |
+| Scalar/vector decorative comparison | Omit | The scheduled verbal contrast is clearer; a picture would not add a spatial decision |
+| Cartesian components on a grid | Include | Translate one arrow into signed horizontal and vertical components |
+| Quadrant sign pattern | Include | Infer component signs from arrow direction without formula substitution |
+| Unit-circle or polar-coordinate diagram | Omit | Polar coordinates are outside the requested chapter boundary; the direction-angle convention needs only Cartesian axes and right-triangle trigonometry |
+| Tail-to-head vector addition | Include as front/back pair | Construct the resultant without leaking it on the front, then compare with the completed construction |
+| Parallelogram addition | Omit | Tail-to-head geometry and component addition already test the same sum; a second construction adds review cost without a new decision |
+| Dot-product projection | Include | Connect the algebraic product to signed alignment along one vector |
+| Cross-product page-normal direction | Include | Choose out of versus into the page from vector order using redundant dot/cross page symbols |
+| Cross-product parallelogram area | Include | Translate \(AB\sin\phi\) into a geometric area rather than memorize an isolated formula |
+| General perspective drawing of two arbitrary 3-D vectors | Omit | Perspective ambiguity is unnecessary; right-handed axes and page-normal cues establish the required direction convention more reliably at phone width |
+| Determinant mnemonic | Omit | The explicit component formula is the authentic calculation scaffold and avoids turning determinant expansion into an unestablished prerequisite |
+
+Planned figure inventory: seven distinct retrieval targets in eight original
+SVG assets; vector addition uses separate setup and answer assets. This is a
+role inventory, not a quota.
+
+### Chapter 2 inventory reconciliation
+
+| Inventory | Planned | Actual | Reconciliation |
+|---|---|---:|---|
+| Basic Q:/A: | 26 bounded interpretation, representation, and discrimination cards | 25 | The quadrant-II component target became an execution problem after cold-start review; no retrieval family was dropped |
+| Cloze C: | 0 | 0 | Exact compact recall was not a separate durable target; symbols and formulas are retrieved through meaning and use |
+| Problem P:/S: | 8 decomposition, reconstruction, operation, and product problems | 9 | Three component problems, two addition/subtraction problems, two dot-product problems, and two cross-product problems provide an analyzed-to-independent progression; the extra quadrant-II decomposition makes sign selection independently gradable |
+| Problem progression | Supported decomposition → independent quadrant case/reconstruction; visual operation bridge → independent component operations; definition-supported products → numerical/component transfer | 9 scheduled problems | F10 is the analyzed decomposition; F11–F12 fade support; F17/F19 execute sum/difference; F24–F25 and F32–F33 move from supplied formulas to transfer and checks |
+| Figure opportunities | 7 retrieval targets in 8 SVG assets | 7 targets in 8 original SVGs | Every included opportunity was realized; addition alone needs a setup/answer pair, and all planned omissions remain justified |
+
+Chapter 2 therefore contains 34 cards: 25 basic, zero cloze, and 9 problem
+blocks. It uses seven visual retrieval targets: vector equality, component
+reading, quadrant signs, tail-to-head addition, dot projection, cross direction,
+and cross area. The source register, design ledger, and cold-start audit account
+for every actual and intentionally omitted representation.
+
 ## Chapter progression
 
 Within a new problem family, use this progression when it adds value:

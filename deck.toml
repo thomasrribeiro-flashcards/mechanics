@@ -2,7 +2,7 @@ schema_version = 1
 subject = "physics"
 deck = "mechanics"
 level = "introductory-calculus-aware"
-status = "pilot-built"
+status = "pilot-approved"
 pilot_chapter = 1
 created = "2026-07-15"
 

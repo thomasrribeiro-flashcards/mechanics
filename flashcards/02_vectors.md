@@ -4,200 +4,280 @@ subject = "physics"
 tags = ["mechanics", "physics", "vectors", "math", "dot-product", "cross-product"]
 +++
 
-# Classical Mechanics — Vectors
+# Vectors: arrows, components, and products
 
-## 2.1 Scalars vs Vectors
+This chapter begins with geometric arrows. It assumes only the scheduled
+chapter-1 cards plus algebra, plane geometry, and trigonometry. The prose is a
+reference; every prerequisite needed during scheduled review is introduced on
+a `Q:/A:` or `P:/S:` front before later cards use it.
 
-<!-- card-id: card-e0ef7690-10ac-4adb-83ae-5d2391578370 -->
-<!-- card-alias: 35a96f894cd86884619822567b253314a15f940c139411a644decebec6f79aaf -->
-Q: Why do physicists distinguish scalars from vectors?
-A: Many physical quantities (force, velocity, displacement) have a direction that affects how they combine. Treating them as pure numbers would give wrong results; the direction must be tracked explicitly.
+## Lesson 1 — An arrow can encode size and direction
 
-<!-- card-id: card-ff55ef18-6470-4d45-be5f-78c9ad29a1fb -->
-<!-- card-alias: ada868ea9d52b95c7c29231ef6fdc705701e1b8317b057e6e5ad1cd6abb6e8bd -->
-Q: What is a scalar quantity?
-A: A quantity fully described by a magnitude alone, with no direction. Examples: mass, temperature, speed, energy.
+A geometric arrow has a **tail** where it begins and a **head** marked by the
+arrowhead. Its length represents a nonnegative **magnitude**, and the arrowhead
+represents its direction. Moving an arrow without rotating or stretching it
+does not change the vector it represents.
 
-<!-- card-id: card-e1fa128a-2367-4063-9ff4-db2222c66a78 -->
-<!-- card-alias: f190b63b914b26977d948f835bd97726dd1f67e6cef4f7c784f9128f94865be8 -->
-Q: What is a vector quantity?
-A: A quantity that has both magnitude and direction. Examples: velocity, force, displacement, acceleration.
+<!-- card-id: 2c581265-26a2-4f41-84f2-154c557d9105 -->
+Q: A geometric vector is represented by an arrow: its length encodes magnitude, and its arrowhead encodes direction. What must match for two arrows to represent the same vector?
+A: They must have the same magnitude and the same direction. Their locations on the page do not have to match.
 
-<!-- card-id: card-eee2e854-57c6-43f1-a80d-a51662be501c -->
-<!-- card-alias: 38d0fdacca3e6cc561bce62222dc91dbab56c68748b700b3e92b03bf3850ff12 -->
-<!-- card-alias: 87f6541e5c09b7bc2208f900eb415ad381a842a53ecf0bd81a4ae813307b3d91 -->
-C: A scalar has [magnitude only], while a vector has both magnitude and [direction].
+<!-- card-id: 7e9e7b45-cec0-400e-9949-853af87923bc -->
+Q: ![Three arrows labeled P, Q, and R; P and Q have equal lengths and point up-right from different locations, while R has the same length and points down-left](../figures/02_vectors/arrow_equality.svg)
 
-<!-- card-id: card-898310c2-b3b4-4a18-a543-78b5c96a6b48 -->
-<!-- card-alias: f4efd1ffd2dd6764eb5fe94dc7970689692db419882a9e0858b89de0bbdfda80 -->
-Q: What is the parallelogram rule for vector addition?
-A: Place the two vectors tail-to-tail. The diagonal of the parallelogram formed by the two vectors is their vector sum.
+Which labeled arrow represents the same vector as P, and what visual evidence decides it?
+A: Q. It has the same length and direction as P; R has the same length but the opposite direction.
 
-<!-- card-id: card-5ee5f22e-74f5-43b3-aa96-8cc69b470ae5 -->
-<!-- card-alias: b87c4427e444611d051ad71d150141101ab7c8133bd87d0e6af08b703406c86e -->
-C: An arrow such as $\vec{v}$ denotes a vector; a hat such as $\hat{v}$ specifically denotes a [unit vector] of magnitude 1.
+A **scalar** is fully specified by a numerical value and any unit it carries.
+A **vector** also requires a direction. This distinction concerns what
+information defines the quantity; it does not mean that every number must be
+positive.
 
-## 2.2 Cartesian Components
+<!-- card-id: 522ff6f7-d850-49a7-8d00-9dd9ec6a7b05 -->
+Q: A scalar is fully specified by a numerical value and any unit, while a vector also requires a direction. Which is vector information: “a length of \(5\ \mathrm{m}\)” or “an arrow of magnitude \(5\ \mathrm{m}\) pointing east”?
+A: The arrow of magnitude \(5\ \mathrm{m}\) pointing east is vector information because both magnitude and direction are specified. The length \(5\ \mathrm{m}\) alone is scalar information.
 
-<!-- card-id: card-89312aed-11c7-4efb-b6f4-d4c22a9f21df -->
-<!-- card-alias: b87dd9e61e7dab3a71385526799bb8ad9fb8077fa57b9c2ac45d6ccd1d74a6ee -->
-Q: Why decompose a vector into Cartesian components?
-A: Component form replaces geometric constructions with algebra, making calculations systematic and exact regardless of the angle.
+Vector symbols are printed here with an arrow, such as \(\vec A\). The symbol
+without the arrow, \(A\), denotes the magnitude; equivalently,
+\(A=|\vec A|\).
 
-<!-- card-id: card-ba617fc6-aa5d-47fd-98bb-d4e5ff44bee4 -->
-<!-- card-alias: 74ca3576b1e9b31074dbadf318243a8c28e06ae562bee1c80cefc715409dd630 -->
-C: A vector in 3D is written $\vec{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}$, where $\hat{i}, \hat{j}, \hat{k}$ are [unit vectors] along the $x$, $y$, and $z$ axes.
+<!-- card-id: 9880553d-2c01-49b1-bd1f-a711ff619f60 -->
+Q: The notation \(\vec A\) denotes a vector, while \(A=|\vec A|\) denotes its magnitude. Why can \(A\) not be negative?
+A: Magnitude is the arrow's length, so \(A\ge 0\).
 
-<!-- card-id: card-0e967b74-10bd-4b54-bb47-357a14b38287 -->
-<!-- card-alias: b8fb76d8abb4c670f48988ca57fdce36fae5c17b7d3716d281358ede7bdfce38 -->
-C: For a vector at angle $\theta$ from the $x$-axis, the $x$-component is $A_x = [A\cos\theta]$, where $A$ is the magnitude.
+<!-- card-id: 2bd5b2b2-fcd6-4b5b-858b-cfc932829e19 -->
+Q: The opposite vector \(-\vec A\) is made by reversing \(\vec A\)'s arrow without changing its length. How do its magnitude and direction compare with those of \(\vec A\)?
+A: It has the same magnitude as \(\vec A\) and the opposite direction. Thus \(|-\vec A|=|\vec A|\).
 
-<!-- card-id: card-01e8e51f-847e-4a2a-a9be-94b2dea0014f -->
-<!-- card-alias: d5ba2057158cfb0c8ff0c06b8e5a7f5c2193d7aee399bf25f7f97bb38f1eafe1 -->
-C: For a vector at angle $\theta$ from the $x$-axis, the $y$-component is $A_y = [A\sin\theta]$, where $A$ is the magnitude.
+<!-- card-id: ce6aeeff-3115-46c6-bfec-23aeebb4d77c -->
+Q: Multiplying a vector by a number scales its magnitude by the number's absolute value; a negative number also reverses direction. How does \(-2\vec A\) compare with \(\vec A\)?
+A: It has twice the magnitude and points in the opposite direction.
 
-<!-- card-id: card-8e4dc242-fd8c-4b25-b0ed-20e72d10a4a1 -->
-<!-- card-alias: 6bcc7a7bcfba3411b352103a587a75d101121dd165e93129524b7c06171866e4 -->
-C: The magnitude of a 2D vector with components $A_x$ and $A_y$ is $A = [\sqrt{A_x^2 + A_y^2}]$.
+## Lesson 2 — Components describe an arrow relative to chosen axes
 
-<!-- card-id: card-43659df5-dc31-47c5-94d0-e66d2957189a -->
-<!-- card-alias: b007c1dd8af61dc3b7e207a31cbbc14256cba96591c11546f638481dbfebea5b -->
-Q: How do you find the angle $\theta$ a 2D vector makes with the positive $x$-axis without losing quadrant information?
-A: Use $\theta = \operatorname{atan2}(A_y,A_x)$. A one-argument $\arctan(A_y/A_x)$ is ambiguous by $180°$ and fails when $A_x=0$.
+A two-dimensional Cartesian coordinate system has a chosen **origin** and two
+perpendicular axes. Here +x points right and +y points up. The signed scalar
+components \(A_x\) and \(A_y\) say how much of \(\vec A\) lies along those
+axis directions.
 
-## 2.3 Vector Addition
+<!-- card-id: 39907800-42f3-4d37-800a-b12c3f709ecf -->
+Q: In the Cartesian grid below, +x is right and +y is up. A vector's signed scalar components count its horizontal and vertical changes from tail to head.
 
-<!-- card-id: card-5ce77934-0f43-4f5b-9735-cf4a5f9daa9d -->
-<!-- card-alias: cee4414eea076e5ad609b22c843c06848ae34a3f7d892635ad7ab8b3d29381c9 -->
-Q: Why is the component method more reliable than the graphical (tip-to-tail) method for vector addition?
-A: Graphical methods depend on accurate drawing and measurement, introducing geometric errors. Component addition is exact arithmetic.
+![Vector A runs four grid units right and three grid units up from the origin; dashed lines project its head to the axes](../figures/02_vectors/components_grid.svg)
 
-<!-- card-id: card-e0cd2f83-d0b7-46de-999a-11dfc47a0ae5 -->
-<!-- card-alias: 8fa264e9a383b8150668a1ee6659d20baae322d658c8cd6acbf5e86fabda73a3 -->
-Q: How do you add two vectors $\vec{A}$ and $\vec{B}$ using components?
-A: Add corresponding components: $\vec{A} + \vec{B} = (A_x + B_x)\hat{i} + (A_y + B_y)\hat{j} + (A_z + B_z)\hat{k}$.
+What are \(A_x\) and \(A_y\)?
+A: \(A_x=+4\) grid units and \(A_y=+3\) grid units. Both are positive because the arrow runs right and up.
 
-<!-- card-id: card-0f5c2074-1c6d-48e3-9e91-a6a5741d1df9 -->
-<!-- card-alias: 6a89265b931d3968f25b351711f2b1eea3cb15660e218eb09d31b60d5889d5d1 -->
-Q: What is the tip-to-tail (triangle) method for vector addition?
-A: Place the tail of $\vec{B}$ at the tip of $\vec{A}$. The vector from the tail of $\vec{A}$ to the tip of $\vec{B}$ is $\vec{A} + \vec{B}$.
+<!-- card-id: 9684151a-da32-48bd-b1b7-d651586147da -->
+Q: The x- and y-axes divide the plane into four quadrants, numbered counterclockwise starting with quadrant I in the upper right. This arrow is in quadrant II, the upper-left region.
 
-<!-- card-id: card-551e837a-dd55-466a-bd73-528615538835 -->
-<!-- card-alias: 2fe24e2b031e981379f69c3741b7db4df904935590f45783a207e2e82f44d3e9 -->
-C: Vector subtraction is defined as adding the [negative] of the second vector: $\vec{A} - \vec{B} = \vec{A} + (-\vec{B})$.
+![A vector starts at the origin and points into the upper-left region, three grid units left and two grid units up](../figures/02_vectors/quadrant_signs.svg)
 
-## 2.4 Scalar (Dot) Product
+With +x right and +y up, what are the signs of this vector's x- and y-components?
+A: The x-component is negative and the y-component is positive. The arrow goes left (\(-x\)) and up (\(+y\)).
 
-<!-- card-id: card-8b2a6257-bc02-42da-90eb-45b13280c902 -->
-<!-- card-alias: 4c886919c10e776c8ac315adca3ebe3d8cec4a3ec492e3c41e9d4d25f7079122 -->
-Q: Before defining the dot product: predict what kind of operation extracts "how much of $\vec{A}$ points along $\vec{B}$"?
-A: A scalar-valued projection; for perpendicular vectors it should be zero, for parallel it should be $|\vec{A}||\vec{B}|$. That's the dot product.
+A **unit vector** has magnitude 1 and supplies direction without changing the
+component's size. We use \(\hat{\mathbf i}\) along +x and
+\(\hat{\mathbf j}\) along +y, so
+\[
+\vec A=A_x\hat{\mathbf i}+A_y\hat{\mathbf j}.
+\]
 
-<!-- card-id: card-12d12111-e5cd-490e-bb7c-89bd3c18f99b -->
-<!-- card-alias: 29a79fc44fc7a6ac7763996c1b1303a51b78da4a91fa8ead91f71448ff739acb -->
-Q: Why is the dot product useful in physics?
-A: It extracts the component of one vector along another. Work is $W = \vec{F}\cdot\vec{d}$, capturing only the force component in the direction of motion.
+<!-- card-id: 63c72303-bdee-41be-ad2b-ddc9458ee50f -->
+Q: The unit vectors \(\hat{\mathbf i}\) and \(\hat{\mathbf j}\) have magnitude 1 and point along +x and +y. Write a vector with scalar components \(A_x=-2\) and \(A_y=5\) in unit-vector form.
+A: \(\vec A=-2\hat{\mathbf i}+5\hat{\mathbf j}\). The coefficients give the signed amounts along the two axis directions.
 
-<!-- card-id: card-3a616f8e-67b7-4c45-85ce-fd0df8e6ecda -->
-<!-- card-alias: 888047b58ce8fa6dc595d12a47f250f5d5fe8f074dc0cd599bfb401fb13b5642 -->
-C: The dot product $\vec{A}\cdot\vec{B} = AB\cos\theta$, where $A$ and $B$ are the magnitudes, and $\theta$ is [the angle between the two vectors].
+A **direction angle** \(\theta\) will mean the angle measured counterclockwise
+from +x to the vector, with \(0^\circ\le\theta<360^\circ\). Right-triangle
+trigonometry gives
+\[
+A_x=A\cos\theta,\qquad A_y=A\sin\theta.
+\]
 
-<!-- card-id: card-31799e71-05f8-4171-ad49-13a43bc84ca1 -->
-<!-- card-alias: 2aec8a8f5ee65ace14ab2e0f9d7e4af1541a9149d7614de49d3eb986505a3d95 -->
-C: In component form, $\vec{A}\cdot\vec{B} = [A_xB_x + A_yB_y + A_zB_z]$.
+<!-- card-id: 8d237cf6-f47b-486e-8a24-ed2386a3b23d -->
+P: For a vector of magnitude \(A\) at a direction angle \(\theta\) measured counterclockwise from +x, right-triangle trigonometry gives \(A_x=A\cos\theta\) and \(A_y=A\sin\theta\). A vector has magnitude \(10\) grid units and \(\theta=30^\circ\). Find its components and check their signs and magnitude.
+S: **IDENTIFY:** This is vector decomposition using a direction angle measured from +x.
 
-<!-- card-id: card-fd81b8b6-8a1b-444b-acd1-1a82c5cbd9b0 -->
-<!-- card-alias: 2493e550b73462ddc77197074f4a6753420be9fb1ec813a32dd463426f7b41b4 -->
-Q: What is the result type of a dot product?
-A: A scalar (a pure number, not a vector).
+**PLAN:** Use \(A_x=A\cos\theta\) and \(A_y=A\sin\theta\).
 
-<!-- card-id: card-c0cc43d3-49ab-41e7-8480-696aca5137e2 -->
-<!-- card-alias: 983c6a0d5a19fa69b226b387906e8b6df0b0d87432f67eca2274e231ad22c7ba -->
-Q: When is the dot product of two vectors zero?
-A: When the two vectors are perpendicular ($\theta = 90°$), so $\cos 90° = 0$.
+**EXECUTE:** \(A_x=10\cos30^\circ=5\sqrt3\) and \(A_y=10\sin30^\circ=5\), in grid units.
 
-<!-- card-id: card-e505715c-5dc2-4c55-a96d-b4145b8ec6ab -->
-<!-- card-alias: 769e39f62fdacba4e0423eaff44e51d2de176a48e0a89622eea2b858900563be -->
-C: The dot product is [commutative]: $\vec{A}\cdot\vec{B} = \vec{B}\cdot\vec{A}$.
+**EVALUATE:** Both components are positive because the arrow is in quadrant I. Also \(\sqrt{(5\sqrt3)^2+5^2}=10\), recovering the given magnitude.
 
-<!-- card-id: card-115e1151-8d8e-42f1-b544-ed0786160d17 -->
-<!-- card-alias: 40c3e26f854ec4b23e27bdda0c9a0857bd2d3add285734d2aa32d9eaef75d64a -->
-C: $\vec{A}\cdot\vec{A} = [A^2]$, where $A$ is the magnitude of $\vec{A}$.
+<!-- card-id: 18ef7bbf-78a9-42b8-ac2f-ecb760c25ead -->
+P: A vector has magnitude \(8\) grid units and direction angle \(120^\circ\), measured counterclockwise from +x. Find its components and use the quadrant to check their signs.
+S: \(A_x=8\cos120^\circ=-4\) and \(A_y=8\sin120^\circ=4\sqrt3\), in grid units. An angle of \(120^\circ\) lies in quadrant II, so negative x and positive y are the required signs.
 
-## 2.5 Vector (Cross) Product
+From components, the Pythagorean theorem gives
+\(A=\sqrt{A_x^2+A_y^2}\). An inverse tangent supplies a reference angle, but
+the component signs must choose the correct quadrant.
 
-<!-- card-id: card-008dc15e-1ad5-4dde-ac5b-9d3b323e2574 -->
-<!-- card-alias: 9986f707b0fd9e245e0b3669ca5b937a837573a677d597080e5f10f0ee91f081 -->
-Q: Why is the cross product useful in physics?
-A: It produces a vector perpendicular to both inputs, capturing rotational or torsional effects. Torque is $\vec{\tau} = \vec{r}\times\vec{F}$, where $\vec{r}$ is the position vector and $\vec{F}$ is the force.
+<!-- card-id: 64ad7ad7-c9ab-408c-8085-8db8af9568c4 -->
+P: From components, use the Pythagorean theorem for magnitude and inverse tangent for a reference angle; the component signs select the quadrant. A vector has \(A_x=-6\) and \(A_y=8\) grid units. Find its magnitude and direction angle measured counterclockwise from +x.
+S: **IDENTIFY:** Reconstruct a vector from its Cartesian components.
 
-<!-- card-id: card-5cb31c1d-8057-40f6-928f-297d35b0b377 -->
-<!-- card-alias: fa7e73a609211d0f18733ad6d58081ebe1fffdf985a9d1044553d27a5e4cd76e -->
-C: The magnitude of the cross product is $|\vec{A}\times\vec{B}| = [AB\sin\theta]$, where $A$ and $B$ are magnitudes and $\theta$ is the angle between the vectors.
+**PLAN:** Use \(A=\sqrt{A_x^2+A_y^2}\), then find the reference angle from \(\tan^{-1}(|A_y/A_x|)\) and place it in the quadrant fixed by the signs.
 
-<!-- card-id: card-12ab25d1-d351-4b4f-abb3-018db5ee398d -->
-<!-- card-alias: 2bbc6dc467d503619d0c392f76dac78294b14c0a6e7f95ab5fc4d5df78f39695 -->
-Q: What is the direction of $\vec{A}\times\vec{B}$?
-A: Perpendicular to both $\vec{A}$ and $\vec{B}$, determined by the right-hand rule: curl the fingers of the right hand from $\vec{A}$ toward $\vec{B}$; the thumb points in the direction of the cross product.
+**EXECUTE:** \(A=\sqrt{(-6)^2+8^2}=10\) grid units. The reference angle is \(\tan^{-1}(8/6)\approx53.1^\circ\). Negative x and positive y place the vector in quadrant II, so \(\theta=180^\circ-53.1^\circ=126.9^\circ\).
 
-<!-- card-id: card-876e60a9-c7e4-42d0-a3b3-af3c42f1c4f7 -->
-<!-- card-alias: 0000a7fd82425c488ad4a01947dc53f6d5041823a253b1b65c194a205f95761b -->
-C: The cross product is [anticommutative]: $\vec{A}\times\vec{B} = -(\vec{B}\times\vec{A})$.
+**EVALUATE:** \(126.9^\circ\) points left and up, matching the component signs; substituting the angle recovers components approximately \((-6,8)\).
 
-<!-- card-id: card-3f078105-133b-406b-ab0b-5d0b2e4d90f0 -->
-<!-- card-alias: 56a17b9fb96bad66a2a9c76e2166f6bc161f6352d39552d7d5a3143efcad07f0 -->
-Q: When is the cross product of two vectors zero?
-A: When the vectors are parallel (or anti-parallel), so $\theta = 0°$ or $180°$ and $\sin\theta = 0$.
+<!-- card-id: b499087a-b030-4d39-9f92-5d4b6e6c34b8 -->
+Q: The same geometric arrow is described using one set of x/y axes and then using axes rotated on the page. What can change, and what must remain unchanged?
+A: Its scalar components and direction angle can change because they are measured relative to the axes. The geometric vector—its magnitude and actual direction—remains unchanged.
 
-<!-- card-id: card-3c2b5cb6-2598-43ce-a03c-5574e9047935 -->
-<!-- card-alias: f567a9c70bcd85926d125f14fbd8725c2e1ec3068b567c9de577fcd16d91a6a6 -->
-Q: How is the cross product computed using the determinant formula?
-A: $$\vec{A}\times\vec{B} = \begin{vmatrix}\hat{i} & \hat{j} & \hat{k} \\ A_x & A_y & A_z \\ B_x & B_y & B_z\end{vmatrix} = (A_yB_z - A_zB_y)\hat{i} - (A_xB_z - A_zB_x)\hat{j} + (A_xB_y - A_yB_x)\hat{k}$$
+<!-- card-id: 62ac7ea9-9e87-4645-8049-56ad2a1887d2 -->
+Q: A vector quantity is measured in meters and written \(\vec A=A_x\hat{\mathbf i}+A_y\hat{\mathbf j}\). What units and dimension must \(A_x\) and \(A_y\) have?
+A: Each component must have the same unit, meters, and the same dimension, length \(L\), as the vector quantity. Unit vectors supply direction and have magnitude 1; they do not change the component's unit.
 
-## 2.6 Unit Vectors and Decomposition
+## Lesson 3 — Add arrows before adding components
 
-<!-- card-id: card-5a6531af-9501-4d15-ba6d-226efbea6b37 -->
-<!-- card-alias: 7e54836645b5df7d2a9a472ca1a889ae0b1352fa6aa0a3e219f8ddb013d9be43 -->
-Q: What is a unit vector?
-A: A vector with magnitude equal to 1, used to specify direction only.
+To add \(\vec A+\vec B\) geometrically, translate \(\vec B\) without rotating
+or stretching it so its tail meets the head of \(\vec A\). The **resultant**
+is the arrow from the original tail of \(\vec A\) to the final head of
+\(\vec B\).
 
-<!-- card-id: card-4cd543d7-85fe-4bed-9af0-6f19b4c7200b -->
-<!-- card-alias: b73d5a8c9f7801c02d1c7a0344146f302716d3ef2a063dcb0293de59d3f20eac -->
-C: The unit vector in the direction of $\vec{A}$ is $\hat{A} = [\vec{A}/A]$, where $A = |\vec{A}|$ is the magnitude.
+<!-- card-id: 112da66d-3555-4cc2-b477-6ffe0e2e33f7 -->
+Q: To construct \(\vec A+\vec B\), place B's tail at A's head without rotating or stretching either arrow. The resultant is the single arrow representing that sum.
 
-<!-- card-id: card-88f2457d-4859-4213-83e7-24a93936a429 -->
-<!-- card-alias: 87a487d8131426551b848f201d7e8fb65c3454e9425d77faf5416c78557379c7 -->
-Q: Why write any vector as magnitude times unit vector?
-A: It cleanly separates the "how much" (magnitude) from the "which way" (unit vector), making direction and size independently clear.
+![Vector A followed head-to-tail by vector B, with the direct start-to-finish arrow omitted](../figures/02_vectors/addition_path.svg)
 
-<!-- card-id: card-883c5069-7100-4c25-9327-f0b59d0f799f -->
-<!-- card-alias: 0ec6580a62922ceebf1b6aee903b84925d6c38273e91ab65c470f028ccf9ff92 -->
-Q: What are the radial and tangential unit vectors in polar coordinates?
-A: $\hat{r}$ points outward from the origin along the radial direction; $\hat{\theta}$ points perpendicular to $\hat{r}$ in the direction of increasing angle $\theta$.
+Where should the resultant begin and end?
+A: It begins at A's original tail and ends at B's final head.
 
-## 2.7 Worked Example — Vector Operations
+![The same head-to-tail arrows A and B with resultant R drawn from A's original tail to B's final head](../figures/02_vectors/addition_result.svg)
 
-<!-- card-id: card-96ec5d7e-188b-430a-b35e-f9d3be4ee6ba -->
-<!-- card-alias: 04110f07a0d3b460b7342922d796f877239ffd03799a94a34541f70c1ae4e70a -->
-P: Given $\vec{A} = 3\hat{i} - 4\hat{j}$ and $\vec{B} = -\hat{i} + 2\hat{j}$, find: (a) $|\vec{A}|$, (b) $\vec{A} + \vec{B}$, (c) $\vec{A}\cdot\vec{B}$.
+<!-- card-id: 3abc47bb-0b69-4182-840e-3e3c81bca8bb -->
+Q: A tail-to-head sum combines the two horizontal changes and, separately, the two vertical changes. If \(\vec R=\vec A+\vec B\), how are \(R_x\) and \(R_y\) found from the input components?
+A: Add matching components: \(R_x=A_x+B_x\) and \(R_y=A_y+B_y\). Horizontal and vertical contributions combine independently.
 
-S:
-**IDENTIFY**: Vector magnitude, vector addition, and dot product.
+<!-- card-id: 240cf3e4-7bd0-401a-b1dc-8d3e7469b8a2 -->
+P: The shorthand \(\vec A=(A_x,A_y)\) lists the x-component first and y-component second. On one Cartesian grid, \(\vec A=(3,-2)\) and \(\vec B=(-1,5)\), in grid units. Find \(\vec R=\vec A+\vec B\), then check by finding its magnitude.
+S: **IDENTIFY:** This is vector addition in a common coordinate system.
 
-**PLAN**:
-- Magnitude: $|\vec{A}| = \sqrt{A_x^2 + A_y^2}$
-- Addition: add $x$- and $y$-components separately
-- Dot product: $\vec{A}\cdot\vec{B} = A_xB_x + A_yB_y$
+**PLAN:** Add corresponding components.
 
-**EXECUTE**:
+**EXECUTE:** \(\vec R=(3+(-1),-2+5)=(2,3)\) grid units, or \(2\hat{\mathbf i}+3\hat{\mathbf j}\). Its magnitude is \(\sqrt{2^2+3^2}=\sqrt{13}\) grid units.
 
-(a) $|\vec{A}| = \sqrt{3^2 + (-4)^2} = \sqrt{9 + 16} = \sqrt{25} = 5$
+**EVALUATE:** The positive x- and y-components require a resultant pointing right and up, consistent with \((2,3)\).
 
-(b) $\vec{A} + \vec{B} = (3 + (-1))\hat{i} + (-4 + 2)\hat{j} = 2\hat{i} - 2\hat{j}$
+<!-- card-id: 3af48404-eafa-43c5-bdbb-c0909a261913 -->
+Q: Vector subtraction is defined by \(\vec A-\vec B=\vec A+(-\vec B)\). What graphical change converts a construction of \(\vec A+\vec B\) into one for \(\vec A-\vec B\)?
+A: Reverse B's direction without changing its magnitude, then add that opposite vector tail-to-head with A.
 
-(c) $\vec{A}\cdot\vec{B} = (3)(-1) + (-4)(2) = -3 - 8 = -11$
+<!-- card-id: 3ca7686b-6606-46ce-b6d7-95d32c414e3c -->
+P: Given \(\vec A=(4,1)\) and \(\vec B=(1,3)\) in the same axes, find \(\vec A-\vec B\) and verify it by an inverse operation.
+S: \(\vec A-\vec B=(4-1,1-3)=(3,-2)\). Check by adding \(\vec B\): \((3,-2)+(1,3)=(4,1)=\vec A\).
 
-**EVALUATE**:
-- Magnitude is positive: $|\vec{A}| = 5$ ✓ (a 3-4-5 right triangle)
-- Sum is a vector, dot product is a scalar — types are consistent ✓
-- Negative dot product confirms the angle between $\vec{A}$ and $\vec{B}$ is greater than 90°
+<!-- card-id: dc1d4af6-8fab-45da-b813-0625f5442067 -->
+Q: A learner claims that the magnitude of \(\vec A+\vec B\) always equals \(A+B\). What geometric fact shows the claim is generally false?
+A: Vector addition depends on direction as well as magnitude. The equality \(|\vec A+\vec B|=A+B\) holds when the nonzero vectors point in the same direction, but other angles give a shorter resultant and opposite directions can cancel.
+
+## Lesson 4 — The dot product measures signed alignment
+
+For two nonzero vectors drawn tail-to-tail, let \(\phi\) be the smaller angle
+between them, from \(0^\circ\) through \(180^\circ\). Their **dot product** is
+the scalar
+\[
+\vec A\mathbin{\boldsymbol\cdot}\vec B=AB\cos\phi.
+\]
+In components,
+\(\vec A\mathbin{\boldsymbol\cdot}\vec B=A_xB_x+A_yB_y\) in two dimensions.
+
+<!-- card-id: 9565c515-a2f7-4cc0-950e-9d9e7e2a0eac -->
+Q: For tail-to-tail nonzero vectors, the dot product is the scalar \(\vec A\mathbin{\boldsymbol\cdot}\vec B=AB\cos\phi\), where \(0^\circ\le\phi\le180^\circ\) is the angle between them. What sign must the dot product have when the angle is obtuse?
+A: Negative. For \(90^\circ<\phi\le180^\circ\), \(\cos\phi<0\), while magnitudes \(A\) and \(B\) are nonnegative.
+
+<!-- card-id: 3d21a554-6b79-493f-9e5e-86a22f409baf -->
+Q: Why is the dot product of two perpendicular nonzero vectors zero rather than the product of their magnitudes?
+A: Their angle is \(90^\circ\), so \(\vec A\mathbin{\boldsymbol\cdot}\vec B=AB\cos90^\circ=0\). Neither vector has a component along the other's direction.
+
+<!-- card-id: 045fc394-69ad-44b4-a64a-f8c5b6b0298e -->
+Q: The signed projection \(B_{\parallel}\) is the component of \(\vec B\) along \(\vec A\)'s direction.
+
+![Vectors A and B share a tail; a dashed perpendicular from B's head marks its signed projection onto A](../figures/02_vectors/dot_projection.svg)
+
+How does this projection give a geometric interpretation of \(\vec A\mathbin{\boldsymbol\cdot}\vec B\)?
+A: \(\vec A\mathbin{\boldsymbol\cdot}\vec B=A B_{\parallel}\). The dot product multiplies A's magnitude by the signed amount of B aligned with A.
+
+<!-- card-id: 6189fad3-8c79-4696-9acd-334183782c56 -->
+P: In Cartesian components, \(\vec A\mathbin{\boldsymbol\cdot}\vec B=A_xB_x+A_yB_y\). Compute the dot product of \(\vec A=(3,4)\) and \(\vec B=(-2,5)\). State whether the result is a scalar or vector.
+S: \(\vec A\mathbin{\boldsymbol\cdot}\vec B=(3)(-2)+(4)(5)=-6+20=14\). The result is the scalar \(14\), with units equal to the product of the input units if the vectors carry units.
+
+<!-- card-id: dea2fd3a-9931-439d-aa5f-3f08e2b22c11 -->
+P: Find the smaller angle between \(\vec A=(1,0)\) and \(\vec B=(1,\sqrt3)\). Use the dot product and show the magnitude step.
+S: \(A=1\), \(B=\sqrt{1^2+(\sqrt3)^2}=2\), and \(\vec A\mathbin{\boldsymbol\cdot}\vec B=1\). Thus \(\cos\phi=(\vec A\mathbin{\boldsymbol\cdot}\vec B)/(AB)=1/2\), so \(\phi=60^\circ\).
+
+<!-- card-id: affcc093-4ee8-4dc8-b233-eb0fde49d499 -->
+Q: Does reversing the order of a dot product change its value? Justify the answer from either the angle or component definition.
+A: No. \(\vec A\mathbin{\boldsymbol\cdot}\vec B=\vec B\mathbin{\boldsymbol\cdot}\vec A\): the angle is the same in either order, and each component product is ordinary-number multiplication.
+
+## Lesson 5 — The cross product represents perpendicular direction and area
+
+Add a z-axis to make a right-handed three-dimensional system. On a flat page,
++x points right, +y points up, and +z points out of the page. A circled dot
+\(\odot\) resembles an arrow tip coming toward you (out of the page); a
+circled cross \(\otimes\) resembles tail feathers receding from you (into the
+page). The unit vector \(\hat{\mathbf k}\) points along +z.
+
+The **cross product** \(\vec A\times\vec B\) is a vector perpendicular to both
+inputs. Its magnitude is \(AB\sin\phi\). Its direction follows the right-hand
+rule: point the right-hand fingers along the first vector and curl them toward
+the second through the smaller angle; the thumb gives the cross-product
+direction.
+
+<!-- card-id: 72a8c3e7-6a06-4add-9346-ab5d1bb9f8ee -->
+Q: In a right-handed system, +x points right, +y points up, and +z points out of the page. A cross product produces a vector perpendicular to both inputs. Curl the right-hand fingers from the first vector toward the second; the thumb gives its direction.
+
+![Vector A points right along +x and vector B points up along +y from a common tail; a question mark asks for the perpendicular page direction](../figures/02_vectors/cross_direction.svg)
+
+What is \(\hat{\mathbf i}\times\hat{\mathbf j}\), including its page direction?
+A: \(\hat{\mathbf i}\times\hat{\mathbf j}=\hat{\mathbf k}\), directed out of the page (\(\odot\)).
+
+<!-- card-id: 9383ff7a-be3d-4ab3-862e-02401ab38c7c -->
+Q: Reversing the order of a cross product reverses its direction. Given \(\hat{\mathbf i}\times\hat{\mathbf j}=\hat{\mathbf k}\), what is \(\hat{\mathbf j}\times\hat{\mathbf i}\)?
+A: \(\hat{\mathbf j}\times\hat{\mathbf i}=-\hat{\mathbf k}\), directed into the page (\(\otimes\)). In general, \(\vec B\times\vec A=-(\vec A\times\vec B)\).
+
+<!-- card-id: 44373b92-0bd7-433a-a01c-81fb05318668 -->
+Q: The cross-product magnitude is \(|\vec A\times\vec B|=AB\sin\phi\). Why is the cross product zero for parallel or opposite nonzero vectors?
+A: Their angle is \(0^\circ\) or \(180^\circ\), and the sine of either angle is zero. Geometrically, the two vectors span no parallelogram area.
+
+<!-- card-id: 3fa79b08-b730-49d7-a433-032547da7b5b -->
+Q: ![Vectors A and B form adjacent sides of a shaded parallelogram; a dashed perpendicular marks its height](../figures/02_vectors/cross_area.svg)
+
+What geometric quantity is represented by \(|\vec A\times\vec B|=AB\sin\phi\)?
+A: The area of the parallelogram spanned by \(\vec A\) and \(\vec B\). Its base is \(A\), its height is \(B\sin\phi\), and base times height gives \(AB\sin\phi\).
+
+<!-- card-id: 04f774f0-59c1-4909-8b44-a14587861a7b -->
+Q: For fixed nonzero magnitudes A and B, at what angle is \(|\vec A\times\vec B|\) largest, and why?
+A: At \(90^\circ\), because \(\sin90^\circ=1\), its maximum value. The largest magnitude is then \(AB\).
+
+<!-- card-id: c111e5df-414a-49f0-866a-43f582004c0f -->
+P: In a right-handed xy-plane, \(\vec A\) points along +x with magnitude 3 units. \(\vec B\) has magnitude 4 units and is \(30^\circ\) counterclockwise from \(\vec A\) toward +y. Find \(\vec A\times\vec B\), including magnitude, direction, and units.
+S: **IDENTIFY:** Use the cross product of two vectors in the xy-plane.
+
+**PLAN:** Compute \(AB\sin\phi\), then use the right-hand rule from A to B.
+
+**EXECUTE:** \(|\vec A\times\vec B|=(3)(4)\sin30^\circ=6\) square units. Curling from +x toward +y gives +z, so \(\vec A\times\vec B=6\hat{\mathbf k}\) square units.
+
+**EVALUATE:** The result is perpendicular to the xy-plane, and \(6<AB=12\), consistent with an angle smaller than \(90^\circ\).
+
+For three-dimensional component forms, the direct calculation rule is
+\[
+\vec A\times\vec B=
+(A_yB_z-A_zB_y)\hat{\mathbf i}
++(A_zB_x-A_xB_z)\hat{\mathbf j}
++(A_xB_y-A_yB_x)\hat{\mathbf k}.
+\]
+
+<!-- card-id: 157334e2-12db-417e-92d6-87cc9e490e9b -->
+P: In a right-handed xyz system, an ordered triple lists the x-, y-, and z-components in that order. Use
+\[
+\vec A\times\vec B=(A_yB_z-A_zB_y)\hat{\mathbf i}+(A_zB_x-A_xB_z)\hat{\mathbf j}+(A_xB_y-A_yB_x)\hat{\mathbf k}
+\]
+for \(\vec A=(1,2,0)\) and \(\vec B=(3,0,0)\). Check that the result is perpendicular to both inputs using dot products.
+S: Substitution gives \(\vec A\times\vec B=(0,0,-6)=-6\hat{\mathbf k}\). The checks are \((0,0,-6)\mathbin{\boldsymbol\cdot}(1,2,0)=0\) and \((0,0,-6)\mathbin{\boldsymbol\cdot}(3,0,0)=0\), so the result is perpendicular to both inputs.
+
+<!-- card-id: fd7ed1b5-edc4-4978-9df7-b29759e949fb -->
+Q: A task asks for one scalar that measures the signed alignment of two vectors, not a perpendicular vector or a spanned area. Which product matches the task, and what feature decides it?
+A: Use the dot product. It returns a scalar proportional to the signed projection of one vector along the other; the cross product instead returns a perpendicular vector whose magnitude is a spanned area.

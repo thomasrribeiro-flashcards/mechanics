@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" role="img" aria-labelledby="title desc">
+  <title id="title">Vector components on a Cartesian grid</title>
+  <desc id="desc">Vector A begins at the origin and ends four grid units right and three grid units up. Dashed projection lines connect its head to the x- and y-axes.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#d4d4d4" stroke-width="1"/>
+    </pattern>
+    <marker id="axis-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111"/>
+    </marker>
+    <marker id="vector-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b8860b"/>
+    </marker>
+  </defs>
+  <rect width="360" height="300" fill="#fff"/>
+  <rect x="20" y="20" width="320" height="240" fill="url(#grid)"/>
+  <line x1="40" y1="240" x2="336" y2="240" stroke="#111" stroke-width="3" marker-end="url(#axis-arrow)"/>
+  <line x1="80" y1="276" x2="80" y2="24" stroke="#111" stroke-width="3" marker-end="url(#axis-arrow)"/>
+  <text x="329" y="268" font-family="sans-serif" font-size="20" fill="#111">+x</text>
+  <text x="47" y="38" font-family="sans-serif" font-size="20" fill="#111">+y</text>
+  <text x="58" y="265" font-family="sans-serif" font-size="17" fill="#111">O</text>
+  <line x1="80" y1="240" x2="240" y2="120" stroke="#b8860b" stroke-width="7" stroke-linecap="round" marker-end="url(#vector-arrow)"/>
+  <line x1="240" y1="120" x2="240" y2="240" stroke="#555" stroke-width="3" stroke-dasharray="9 7"/>
+  <line x1="240" y1="120" x2="80" y2="120" stroke="#555" stroke-width="3" stroke-dasharray="9 7"/>
+  <text x="205" y="96" font-family="sans-serif" font-size="22" font-weight="700" fill="#111">A</text>
+</svg>
